@@ -16,11 +16,9 @@ GECustomWidgets:
 As the engine editor developed by the Qt framework, its needs to implement many custom widgets for present and manipulate artistic parameters.
 
 GEngine:
-
 The core system of the game engine
 
 GEditor:
-
 The editor of the game engine that make game project to directly load by the game
 
 
