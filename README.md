@@ -3,5 +3,17 @@
 
 Subprojects:
 
-GSceneConverter convert fbx scene using fbx sdk to a titly packed custom format it also can export addition data to the engine to utilize for somthing like physx convex mesh or compound shapes
+GSceneConverter:
+Convert FBX scene using FBX-SDK to a tightly packed custom format which support bone system and morph targets, it's also can export addition data to the engine to utilize for somthing like physx convex mesh or compound shapes
+
+GTextureConverter:
+Convert and pack image files to proper engine formats using DirectX "texconv" and "texassemble" tools
+
+GGlyphMaker: 
+Generate texture glyph atlas textures from system fonts
+
+GECustomWidgets:
+As the engine editor developed by the Qt framework, its needs to implement many custom widgets for present and manipulate artistic parameters.
+
+
   
