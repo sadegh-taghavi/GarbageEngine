@@ -29,6 +29,7 @@ Some shots from GEditor:
 ![  (35)](https://user-images.githubusercontent.com/47169854/169361218-1f20c28f-eed5-44ee-91d2-6ab2775ba4ae.jpg)
 ![  (36)](https://user-images.githubusercontent.com/47169854/169361232-9e964d85-400a-4623-8adf-bbf3afd03ad2.jpg)
 ![  (27)](https://user-images.githubusercontent.com/47169854/169361331-be9120f2-9b68-4dfe-ac13-bbb51b154bdd.jpg)
+![00016970](https://user-images.githubusercontent.com/47169854/169362971-e2b9a83f-c611-4a14-8653-63ad4ae7dc9f.png)
 
 
 A simple game has created by the engine that you can freely install and enjoy!
