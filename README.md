@@ -21,6 +21,8 @@ The core system of the game engine
 GEditor:
 The editor of the game engine that make game project to directly load by the game
 
+Editor binary files:
+https://github.com/sadegh-taghavi/GarbageEngine/blob/master/Bin/x64/Release/GEditor.exe
 
 Some shots from GEditor:
 
@@ -31,6 +33,10 @@ Some shots from GEditor:
 ![00019027](https://user-images.githubusercontent.com/47169854/169364905-93fe44a6-aa59-48ca-acab-f16f6d85b1b1.png)
 ![  (27)](https://user-images.githubusercontent.com/47169854/169361331-be9120f2-9b68-4dfe-ac13-bbb51b154bdd.jpg)
 ![00016970](https://user-images.githubusercontent.com/47169854/169362971-e2b9a83f-c611-4a14-8653-63ad4ae7dc9f.png)
+![Screenshot (37)](https://user-images.githubusercontent.com/47169854/169365740-ec9a27a4-1f50-4892-ad4b-5c79882844ed.png)
+![Screenshot (76)](https://user-images.githubusercontent.com/47169854/169365969-410f22f7-80c0-4d01-8452-7796ce69251e.png)
+![5](https://user-images.githubusercontent.com/47169854/169366016-23eb721c-a740-464f-99e6-d4d069e4e271.png)
+
 
 Train sculpt tools:
 
