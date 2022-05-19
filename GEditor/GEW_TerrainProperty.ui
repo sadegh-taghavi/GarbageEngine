@@ -1,0 +1,4523 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TerrainProperty</class>
+ <widget class="QWidget" name="TerrainProperty">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>330</width>
+    <height>758</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QGroupBox
+{
+	background-color:transparent;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border: 1px solid #005192;
+    border-top: none;
+    margin-top: 18px;
+}
+ 
+QGroupBox::title
+{
+	subcontrol-origin: margin;	
+    background:url(:/assets/subWindowBackground);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border: 1px solid #005192;
+    border-bottom: none;
+   background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #005192, stop: 1 #002f60);
+    padding: 2 5000 2 2; /* some large value, as QGrouBox actual width is not known */
+    color: white; 
+}
+</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <item row="0" column="0">
+    <widget class="ScrollArea" name="scrollArea">
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="scrollAreaWidgetContents">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>328</width>
+        <height>756</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_10">
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <property name="spacing">
+        <number>3</number>
+       </property>
+       <item row="0" column="0">
+        <widget class="QTabWidget" name="tabWidget">
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="currentIndex">
+          <number>0</number>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>16</width>
+           <height>16</height>
+          </size>
+         </property>
+         <widget class="QWidget" name="TerrainBaseMesh">
+          <property name="autoFillBackground">
+           <bool>true</bool>
+          </property>
+          <attribute name="icon">
+           <iconset resource="geditor.qrc">
+            <normaloff>:/Resources/MetroStyle/grid.png</normaloff>:/Resources/MetroStyle/grid.png</iconset>
+          </attribute>
+          <attribute name="title">
+           <string/>
+          </attribute>
+          <attribute name="toolTip">
+           <string>Base mesh</string>
+          </attribute>
+          <layout class="QGridLayout" name="gridLayout_9">
+           <property name="leftMargin">
+            <number>3</number>
+           </property>
+           <property name="topMargin">
+            <number>3</number>
+           </property>
+           <property name="rightMargin">
+            <number>3</number>
+           </property>
+           <property name="bottomMargin">
+            <number>3</number>
+           </property>
+           <property name="spacing">
+            <number>3</number>
+           </property>
+           <item row="1" column="0">
+            <spacer name="verticalSpacer">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>40</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="0" column="0">
+            <widget class="GroupBox" name="TerrainEnable">
+             <property name="title">
+              <string>Terrain</string>
+             </property>
+             <property name="checkable">
+              <bool>true</bool>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_22">
+              <property name="leftMargin">
+               <number>3</number>
+              </property>
+              <property name="topMargin">
+               <number>3</number>
+              </property>
+              <property name="rightMargin">
+               <number>3</number>
+              </property>
+              <property name="bottomMargin">
+               <number>3</number>
+              </property>
+              <property name="spacing">
+               <number>3</number>
+              </property>
+              <item row="12" column="1">
+               <widget class="GroupBox" name="groupBox_26">
+                <property name="title">
+                 <string>Mask map</string>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_32">
+                 <property name="leftMargin">
+                  <number>3</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>3</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>3</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>3</number>
+                 </property>
+                 <property name="spacing">
+                  <number>3</number>
+                 </property>
+                 <item row="1" column="0">
+                  <widget class="GroupBox" name="groupBox_30">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="title">
+                    <string>Map</string>
+                   </property>
+                   <layout class="QGridLayout" name="gridLayout_37">
+                    <property name="leftMargin">
+                     <number>3</number>
+                    </property>
+                    <property name="topMargin">
+                     <number>3</number>
+                    </property>
+                    <property name="rightMargin">
+                     <number>3</number>
+                    </property>
+                    <property name="bottomMargin">
+                     <number>3</number>
+                    </property>
+                    <property name="spacing">
+                     <number>3</number>
+                    </property>
+                    <item row="1" column="0">
+                     <widget class="PictureBox" name="BaseMaskMap">
+                      <property name="sizePolicy">
+                       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                        <horstretch>0</horstretch>
+                        <verstretch>0</verstretch>
+                       </sizepolicy>
+                      </property>
+                      <property name="minimumSize">
+                       <size>
+                        <width>128</width>
+                        <height>128</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>128</width>
+                        <height>128</height>
+                       </size>
+                      </property>
+                      <property name="acceptDrops">
+                       <bool>true</bool>
+                      </property>
+                      <property name="frameShape">
+                       <enum>QFrame::Box</enum>
+                      </property>
+                      <property name="scaledContents">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                 <item row="0" column="0">
+                  <widget class="GroupBox" name="groupBox_31">
+                   <property name="title">
+                    <string>Size</string>
+                   </property>
+                   <layout class="QGridLayout" name="gridLayout_38">
+                    <property name="leftMargin">
+                     <number>3</number>
+                    </property>
+                    <property name="topMargin">
+                     <number>3</number>
+                    </property>
+                    <property name="rightMargin">
+                     <number>3</number>
+                    </property>
+                    <property name="bottomMargin">
+                     <number>3</number>
+                    </property>
+                    <property name="spacing">
+                     <number>3</number>
+                    </property>
+                    <item row="0" column="0">
+                     <widget class="QPushButton" name="NewMaskMap">
+                      <property name="text">
+                       <string>New mask map</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="1">
+                     <widget class="QToolButton" name="SaveMaskMap">
+                      <property name="text">
+                       <string>...</string>
+                      </property>
+                      <property name="icon">
+                       <iconset resource="geditor.qrc">
+                        <normaloff>:/Resources/MetroStyle/save_as.png</normaloff>:/Resources/MetroStyle/save_as.png</iconset>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="0" colspan="2">
+                     <widget class="QComboBox" name="BaseMaskMapSize">
+                      <item>
+                       <property name="text">
+                        <string>4 x 4</string>
+                       </property>
+                       <property name="icon">
+                        <iconset resource="geditor.qrc">
+                         <normaloff>:/Resources/MetroStyle/appbar.arrow.expand.png</normaloff>:/Resources/MetroStyle/appbar.arrow.expand.png</iconset>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>8 x 8</string>
+                       </property>
+                       <property name="icon">
+                        <iconset resource="geditor.qrc">
+                         <normaloff>:/Resources/MetroStyle/appbar.arrow.expand.png</normaloff>:/Resources/MetroStyle/appbar.arrow.expand.png</iconset>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>16 x 16</string>
+                       </property>
+                       <property name="icon">
+                        <iconset resource="geditor.qrc">
+                         <normaloff>:/Resources/MetroStyle/appbar.arrow.expand.png</normaloff>:/Resources/MetroStyle/appbar.arrow.expand.png</iconset>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>32 x 32</string>
+                       </property>
+                       <property name="icon">
+                        <iconset resource="geditor.qrc">
+                         <normaloff>:/Resources/MetroStyle/appbar.arrow.expand.png</normaloff>:/Resources/MetroStyle/appbar.arrow.expand.png</iconset>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>64 x 64</string>
+                       </property>
+                       <property name="icon">
+                        <iconset resource="geditor.qrc">
+                         <normaloff>:/Resources/MetroStyle/appbar.arrow.expand.png</normaloff>:/Resources/MetroStyle/appbar.arrow.expand.png</iconset>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>128 x 128</string>
+                       </property>
+                       <property name="icon">
+                        <iconset resource="geditor.qrc">
+                         <normaloff>:/Resources/MetroStyle/appbar.arrow.expand.png</normaloff>:/Resources/MetroStyle/appbar.arrow.expand.png</iconset>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>256 x 256</string>
+                       </property>
+                       <property name="icon">
+                        <iconset resource="geditor.qrc">
+                         <normaloff>:/Resources/MetroStyle/appbar.arrow.expand.png</normaloff>:/Resources/MetroStyle/appbar.arrow.expand.png</iconset>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>512 x 512</string>
+                       </property>
+                       <property name="icon">
+                        <iconset resource="geditor.qrc">
+                         <normaloff>:/Resources/MetroStyle/appbar.arrow.expand.png</normaloff>:/Resources/MetroStyle/appbar.arrow.expand.png</iconset>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>1024 x 1024</string>
+                       </property>
+                       <property name="icon">
+                        <iconset resource="geditor.qrc">
+                         <normaloff>:/Resources/MetroStyle/appbar.arrow.expand.png</normaloff>:/Resources/MetroStyle/appbar.arrow.expand.png</iconset>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>2048 x 2048</string>
+                       </property>
+                       <property name="icon">
+                        <iconset resource="geditor.qrc">
+                         <normaloff>:/Resources/MetroStyle/appbar.arrow.expand.png</normaloff>:/Resources/MetroStyle/appbar.arrow.expand.png</iconset>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>4096 x 4096</string>
+                       </property>
+                       <property name="icon">
+                        <iconset resource="geditor.qrc">
+                         <normaloff>:/Resources/MetroStyle/appbar.arrow.expand.png</normaloff>:/Resources/MetroStyle/appbar.arrow.expand.png</iconset>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>8192 x 8192</string>
+                       </property>
+                       <property name="icon">
+                        <iconset resource="geditor.qrc">
+                         <normaloff>:/Resources/MetroStyle/appbar.arrow.expand.png</normaloff>:/Resources/MetroStyle/appbar.arrow.expand.png</iconset>
+                       </property>
+                      </item>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item row="2" column="0">
+               <widget class="GroupBox" name="groupBox_25">
+                <property name="title">
+                 <string>Quad density</string>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_31">
+                 <property name="leftMargin">
+                  <number>3</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>3</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>3</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>3</number>
+                 </property>
+                 <property name="spacing">
+                  <number>3</number>
+                 </property>
+                 <item row="2" column="0">
+                  <widget class="QComboBox" name="BaseQuadDensity">
+                   <item>
+                    <property name="text">
+                     <string>2 x 2</string>
+                    </property>
+                    <property name="icon">
+                     <iconset resource="geditor.qrc">
+                      <normaloff>:/Resources/MetroStyle/appbar.arrow.expand.png</normaloff>:/Resources/MetroStyle/appbar.arrow.expand.png</iconset>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>4 x 4</string>
+                    </property>
+                    <property name="icon">
+                     <iconset resource="geditor.qrc">
+                      <normaloff>:/Resources/MetroStyle/appbar.arrow.expand.png</normaloff>:/Resources/MetroStyle/appbar.arrow.expand.png</iconset>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>8 x 8</string>
+                    </property>
+                    <property name="icon">
+                     <iconset resource="geditor.qrc">
+                      <normaloff>:/Resources/MetroStyle/appbar.arrow.expand.png</normaloff>:/Resources/MetroStyle/appbar.arrow.expand.png</iconset>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>16 x 16</string>
+                    </property>
+                    <property name="icon">
+                     <iconset resource="geditor.qrc">
+                      <normaloff>:/Resources/MetroStyle/appbar.arrow.expand.png</normaloff>:/Resources/MetroStyle/appbar.arrow.expand.png</iconset>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>32 x 32</string>
+                    </property>
+                    <property name="icon">
+                     <iconset resource="geditor.qrc">
+                      <normaloff>:/Resources/MetroStyle/appbar.arrow.expand.png</normaloff>:/Resources/MetroStyle/appbar.arrow.expand.png</iconset>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>64 x 64</string>
+                    </property>
+                    <property name="icon">
+                     <iconset resource="geditor.qrc">
+                      <normaloff>:/Resources/MetroStyle/appbar.arrow.expand.png</normaloff>:/Resources/MetroStyle/appbar.arrow.expand.png</iconset>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>128 x 128</string>
+                    </property>
+                    <property name="icon">
+                     <iconset resource="geditor.qrc">
+                      <normaloff>:/Resources/MetroStyle/appbar.arrow.expand.png</normaloff>:/Resources/MetroStyle/appbar.arrow.expand.png</iconset>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>256 x 256</string>
+                    </property>
+                    <property name="icon">
+                     <iconset resource="geditor.qrc">
+                      <normaloff>:/Resources/MetroStyle/appbar.arrow.expand.png</normaloff>:/Resources/MetroStyle/appbar.arrow.expand.png</iconset>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>512 x 512</string>
+                    </property>
+                    <property name="icon">
+                     <iconset resource="geditor.qrc">
+                      <normaloff>:/Resources/MetroStyle/appbar.arrow.expand.png</normaloff>:/Resources/MetroStyle/appbar.arrow.expand.png</iconset>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>1024 x 1024</string>
+                    </property>
+                    <property name="icon">
+                     <iconset resource="geditor.qrc">
+                      <normaloff>:/Resources/MetroStyle/appbar.arrow.expand.png</normaloff>:/Resources/MetroStyle/appbar.arrow.expand.png</iconset>
+                    </property>
+                   </item>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item row="1" column="1">
+               <widget class="GroupBox" name="groupBox_32">
+                <property name="title">
+                 <string>Max height</string>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_39">
+                 <property name="leftMargin">
+                  <number>3</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>3</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>3</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>3</number>
+                 </property>
+                 <property name="spacing">
+                  <number>3</number>
+                 </property>
+                 <item row="0" column="0">
+                  <widget class="DoubleSpinBox" name="BaseMaxHeight">
+                   <property name="minimum">
+                    <double>1.000000000000000</double>
+                   </property>
+                   <property name="maximum">
+                    <double>10000.000000000000000</double>
+                   </property>
+                   <property name="singleStep">
+                    <double>0.010000000000000</double>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item row="2" column="1">
+               <widget class="GroupBox" name="groupBox_27">
+                <property name="title">
+                 <string>LOD multiplier</string>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_33">
+                 <property name="leftMargin">
+                  <number>3</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>3</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>3</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>3</number>
+                 </property>
+                 <property name="spacing">
+                  <number>3</number>
+                 </property>
+                 <item row="0" column="0">
+                  <widget class="DoubleSpinBox" name="BaseLODMultiplier">
+                   <property name="decimals">
+                    <number>1</number>
+                   </property>
+                   <property name="minimum">
+                    <double>1.000000000000000</double>
+                   </property>
+                   <property name="maximum">
+                    <double>1000.000000000000000</double>
+                   </property>
+                   <property name="singleStep">
+                    <double>0.100000000000000</double>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <widget class="GroupBox" name="groupBox_34">
+                <property name="title">
+                 <string>Height bias</string>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_41">
+                 <property name="leftMargin">
+                  <number>3</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>3</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>3</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>3</number>
+                 </property>
+                 <property name="spacing">
+                  <number>3</number>
+                 </property>
+                 <item row="0" column="0">
+                  <widget class="DoubleSpinBox" name="BaseHeightBias">
+                   <property name="minimum">
+                    <double>-10000.000000000000000</double>
+                   </property>
+                   <property name="maximum">
+                    <double>10000.000000000000000</double>
+                   </property>
+                   <property name="singleStep">
+                    <double>0.010000000000000</double>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item row="13" column="0" colspan="2">
+               <widget class="GroupBox" name="groupBox_16">
+                <property name="title">
+                 <string>Info</string>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_21">
+                 <property name="leftMargin">
+                  <number>3</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>3</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>3</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>3</number>
+                 </property>
+                 <property name="spacing">
+                  <number>3</number>
+                 </property>
+                 <item row="0" column="0">
+                  <widget class="GroupBox" name="groupBox_13">
+                   <property name="title">
+                    <string>Horizon</string>
+                   </property>
+                   <layout class="QGridLayout" name="gridLayout_18">
+                    <property name="leftMargin">
+                     <number>3</number>
+                    </property>
+                    <property name="topMargin">
+                     <number>3</number>
+                    </property>
+                    <property name="rightMargin">
+                     <number>3</number>
+                    </property>
+                    <property name="bottomMargin">
+                     <number>3</number>
+                    </property>
+                    <property name="spacing">
+                     <number>3</number>
+                    </property>
+                    <item row="0" column="0">
+                     <widget class="QCheckBox" name="BaseVisualizeHorizonEnable">
+                      <property name="sizePolicy">
+                       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                        <horstretch>0</horstretch>
+                        <verstretch>0</verstretch>
+                       </sizepolicy>
+                      </property>
+                      <property name="text">
+                       <string>Visualize</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="1">
+                     <widget class="ColorSelector" name="baseVisualizeHorizonColor">
+                      <property name="color" stdset="0">
+                       <color>
+                        <red>255</red>
+                        <green>255</green>
+                        <blue>0</blue>
+                       </color>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item row="1" column="0">
+               <widget class="GroupBox" name="groupBox_14">
+                <property name="title">
+                 <string>Number of chunks</string>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_2">
+                 <property name="leftMargin">
+                  <number>3</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>3</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>3</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>3</number>
+                 </property>
+                 <property name="spacing">
+                  <number>3</number>
+                 </property>
+                 <item row="2" column="0">
+                  <widget class="QComboBox" name="BaseNumberOfChunks">
+                   <item>
+                    <property name="text">
+                     <string>2 x 2</string>
+                    </property>
+                    <property name="icon">
+                     <iconset resource="geditor.qrc">
+                      <normaloff>:/Resources/MetroStyle/appbar.arrow.expand.png</normaloff>:/Resources/MetroStyle/appbar.arrow.expand.png</iconset>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>4 x 4</string>
+                    </property>
+                    <property name="icon">
+                     <iconset resource="geditor.qrc">
+                      <normaloff>:/Resources/MetroStyle/appbar.arrow.expand.png</normaloff>:/Resources/MetroStyle/appbar.arrow.expand.png</iconset>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>8 x 8</string>
+                    </property>
+                    <property name="icon">
+                     <iconset resource="geditor.qrc">
+                      <normaloff>:/Resources/MetroStyle/appbar.arrow.expand.png</normaloff>:/Resources/MetroStyle/appbar.arrow.expand.png</iconset>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>16 x 16</string>
+                    </property>
+                    <property name="icon">
+                     <iconset resource="geditor.qrc">
+                      <normaloff>:/Resources/MetroStyle/appbar.arrow.expand.png</normaloff>:/Resources/MetroStyle/appbar.arrow.expand.png</iconset>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>32 x 32</string>
+                    </property>
+                    <property name="icon">
+                     <iconset resource="geditor.qrc">
+                      <normaloff>:/Resources/MetroStyle/appbar.arrow.expand.png</normaloff>:/Resources/MetroStyle/appbar.arrow.expand.png</iconset>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>64 x 64</string>
+                    </property>
+                    <property name="icon">
+                     <iconset resource="geditor.qrc">
+                      <normaloff>:/Resources/MetroStyle/appbar.arrow.expand.png</normaloff>:/Resources/MetroStyle/appbar.arrow.expand.png</iconset>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>128 x 128</string>
+                    </property>
+                    <property name="icon">
+                     <iconset resource="geditor.qrc">
+                      <normaloff>:/Resources/MetroStyle/appbar.arrow.expand.png</normaloff>:/Resources/MetroStyle/appbar.arrow.expand.png</iconset>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>256 x 256</string>
+                    </property>
+                    <property name="icon">
+                     <iconset resource="geditor.qrc">
+                      <normaloff>:/Resources/MetroStyle/appbar.arrow.expand.png</normaloff>:/Resources/MetroStyle/appbar.arrow.expand.png</iconset>
+                    </property>
+                   </item>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item row="0" column="0">
+               <widget class="GroupBox" name="groupBox_28">
+                <property name="title">
+                 <string>Size</string>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_34">
+                 <property name="leftMargin">
+                  <number>3</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>3</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>3</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>3</number>
+                 </property>
+                 <property name="spacing">
+                  <number>3</number>
+                 </property>
+                 <item row="0" column="0">
+                  <widget class="DoubleSpinBox" name="BaseSize">
+                   <property name="minimum">
+                    <double>1.000000000000000</double>
+                   </property>
+                   <property name="maximum">
+                    <double>1000000.000000000000000</double>
+                   </property>
+                   <property name="singleStep">
+                    <double>0.010000000000000</double>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item row="12" column="0">
+               <widget class="GroupBox" name="groupBox_15">
+                <property name="title">
+                 <string>Height map</string>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_30">
+                 <property name="leftMargin">
+                  <number>3</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>3</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>3</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>3</number>
+                 </property>
+                 <property name="spacing">
+                  <number>3</number>
+                 </property>
+                 <item row="0" column="0">
+                  <widget class="GroupBox" name="groupBox_29">
+                   <property name="title">
+                    <string>Size</string>
+                   </property>
+                   <layout class="QGridLayout" name="gridLayout_35">
+                    <property name="leftMargin">
+                     <number>3</number>
+                    </property>
+                    <property name="topMargin">
+                     <number>3</number>
+                    </property>
+                    <property name="rightMargin">
+                     <number>3</number>
+                    </property>
+                    <property name="bottomMargin">
+                     <number>3</number>
+                    </property>
+                    <property name="spacing">
+                     <number>3</number>
+                    </property>
+                    <item row="0" column="0">
+                     <widget class="QPushButton" name="NewHeightMap">
+                      <property name="text">
+                       <string>New height map</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="1">
+                     <widget class="QToolButton" name="SaveHeightMap">
+                      <property name="text">
+                       <string>...</string>
+                      </property>
+                      <property name="icon">
+                       <iconset resource="geditor.qrc">
+                        <normaloff>:/Resources/MetroStyle/save_as.png</normaloff>:/Resources/MetroStyle/save_as.png</iconset>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="0" colspan="2">
+                     <widget class="QComboBox" name="BaseHeightMapSize">
+                      <item>
+                       <property name="text">
+                        <string>4 x 4</string>
+                       </property>
+                       <property name="icon">
+                        <iconset resource="geditor.qrc">
+                         <normaloff>:/Resources/MetroStyle/appbar.arrow.expand.png</normaloff>:/Resources/MetroStyle/appbar.arrow.expand.png</iconset>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>8 x 8</string>
+                       </property>
+                       <property name="icon">
+                        <iconset resource="geditor.qrc">
+                         <normaloff>:/Resources/MetroStyle/appbar.arrow.expand.png</normaloff>:/Resources/MetroStyle/appbar.arrow.expand.png</iconset>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>16 x 16</string>
+                       </property>
+                       <property name="icon">
+                        <iconset resource="geditor.qrc">
+                         <normaloff>:/Resources/MetroStyle/appbar.arrow.expand.png</normaloff>:/Resources/MetroStyle/appbar.arrow.expand.png</iconset>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>32 x 32</string>
+                       </property>
+                       <property name="icon">
+                        <iconset resource="geditor.qrc">
+                         <normaloff>:/Resources/MetroStyle/appbar.arrow.expand.png</normaloff>:/Resources/MetroStyle/appbar.arrow.expand.png</iconset>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>64 x 64</string>
+                       </property>
+                       <property name="icon">
+                        <iconset resource="geditor.qrc">
+                         <normaloff>:/Resources/MetroStyle/appbar.arrow.expand.png</normaloff>:/Resources/MetroStyle/appbar.arrow.expand.png</iconset>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>128 x 128</string>
+                       </property>
+                       <property name="icon">
+                        <iconset resource="geditor.qrc">
+                         <normaloff>:/Resources/MetroStyle/appbar.arrow.expand.png</normaloff>:/Resources/MetroStyle/appbar.arrow.expand.png</iconset>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>256 x 256</string>
+                       </property>
+                       <property name="icon">
+                        <iconset resource="geditor.qrc">
+                         <normaloff>:/Resources/MetroStyle/appbar.arrow.expand.png</normaloff>:/Resources/MetroStyle/appbar.arrow.expand.png</iconset>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>512 x 512</string>
+                       </property>
+                       <property name="icon">
+                        <iconset resource="geditor.qrc">
+                         <normaloff>:/Resources/MetroStyle/appbar.arrow.expand.png</normaloff>:/Resources/MetroStyle/appbar.arrow.expand.png</iconset>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>1024 x 1024</string>
+                       </property>
+                       <property name="icon">
+                        <iconset resource="geditor.qrc">
+                         <normaloff>:/Resources/MetroStyle/appbar.arrow.expand.png</normaloff>:/Resources/MetroStyle/appbar.arrow.expand.png</iconset>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>2048 x 2048</string>
+                       </property>
+                       <property name="icon">
+                        <iconset resource="geditor.qrc">
+                         <normaloff>:/Resources/MetroStyle/appbar.arrow.expand.png</normaloff>:/Resources/MetroStyle/appbar.arrow.expand.png</iconset>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>4096 x 4096</string>
+                       </property>
+                       <property name="icon">
+                        <iconset resource="geditor.qrc">
+                         <normaloff>:/Resources/MetroStyle/appbar.arrow.expand.png</normaloff>:/Resources/MetroStyle/appbar.arrow.expand.png</iconset>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>8192 x 8192</string>
+                       </property>
+                       <property name="icon">
+                        <iconset resource="geditor.qrc">
+                         <normaloff>:/Resources/MetroStyle/appbar.arrow.expand.png</normaloff>:/Resources/MetroStyle/appbar.arrow.expand.png</iconset>
+                       </property>
+                      </item>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                 <item row="1" column="0">
+                  <widget class="GroupBox" name="groupBox">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="title">
+                    <string>Map</string>
+                   </property>
+                   <layout class="QGridLayout" name="gridLayout_36">
+                    <property name="leftMargin">
+                     <number>3</number>
+                    </property>
+                    <property name="topMargin">
+                     <number>3</number>
+                    </property>
+                    <property name="rightMargin">
+                     <number>3</number>
+                    </property>
+                    <property name="bottomMargin">
+                     <number>3</number>
+                    </property>
+                    <property name="spacing">
+                     <number>3</number>
+                    </property>
+                    <item row="1" column="0">
+                     <widget class="PictureBox" name="BaseHeightMap">
+                      <property name="sizePolicy">
+                       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                        <horstretch>0</horstretch>
+                        <verstretch>0</verstretch>
+                       </sizepolicy>
+                      </property>
+                      <property name="minimumSize">
+                       <size>
+                        <width>128</width>
+                        <height>128</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>128</width>
+                        <height>128</height>
+                       </size>
+                      </property>
+                      <property name="acceptDrops">
+                       <bool>true</bool>
+                      </property>
+                      <property name="frameShape">
+                       <enum>QFrame::Box</enum>
+                      </property>
+                      <property name="scaledContents">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item row="4" column="0" colspan="2">
+               <widget class="GroupBox" name="groupBox_33">
+                <property name="title">
+                 <string>Normal aspect</string>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_40">
+                 <property name="leftMargin">
+                  <number>3</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>3</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>3</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>3</number>
+                 </property>
+                 <property name="spacing">
+                  <number>3</number>
+                 </property>
+                 <item row="0" column="0">
+                  <widget class="DoubleSpinBox" name="BaseNormalAspect">
+                   <property name="decimals">
+                    <number>3</number>
+                   </property>
+                   <property name="minimum">
+                    <double>0.000000000000000</double>
+                   </property>
+                   <property name="maximum">
+                    <double>10000.000000000000000</double>
+                   </property>
+                   <property name="singleStep">
+                    <double>0.001000000000000</double>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="TerrainSplatting">
+          <property name="autoFillBackground">
+           <bool>true</bool>
+          </property>
+          <attribute name="icon">
+           <iconset resource="geditor.qrc">
+            <normaloff>:/Resources/MetroStyle/mountain.png</normaloff>:/Resources/MetroStyle/mountain.png</iconset>
+          </attribute>
+          <attribute name="title">
+           <string/>
+          </attribute>
+          <attribute name="toolTip">
+           <string>Splatting &amp; Material</string>
+          </attribute>
+          <layout class="QGridLayout" name="gridLayout_16">
+           <property name="leftMargin">
+            <number>3</number>
+           </property>
+           <property name="topMargin">
+            <number>3</number>
+           </property>
+           <property name="rightMargin">
+            <number>3</number>
+           </property>
+           <property name="bottomMargin">
+            <number>3</number>
+           </property>
+           <property name="spacing">
+            <number>3</number>
+           </property>
+           <item row="0" column="0">
+            <widget class="QTabWidget" name="tabWidget_2">
+             <property name="currentIndex">
+              <number>0</number>
+             </property>
+             <widget class="QWidget" name="tab">
+              <property name="autoFillBackground">
+               <bool>true</bool>
+              </property>
+              <attribute name="title">
+               <string>Splatting</string>
+              </attribute>
+              <layout class="QGridLayout" name="gridLayout_26">
+               <property name="leftMargin">
+                <number>3</number>
+               </property>
+               <property name="topMargin">
+                <number>3</number>
+               </property>
+               <property name="rightMargin">
+                <number>3</number>
+               </property>
+               <property name="bottomMargin">
+                <number>3</number>
+               </property>
+               <property name="spacing">
+                <number>3</number>
+               </property>
+               <item row="0" column="0">
+                <widget class="GroupBox" name="groupBox_20">
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>270</height>
+                  </size>
+                 </property>
+                 <property name="title">
+                  <string>Layers</string>
+                 </property>
+                 <layout class="QGridLayout" name="gridLayout_45">
+                  <property name="leftMargin">
+                   <number>3</number>
+                  </property>
+                  <property name="topMargin">
+                   <number>3</number>
+                  </property>
+                  <property name="rightMargin">
+                   <number>3</number>
+                  </property>
+                  <property name="bottomMargin">
+                   <number>3</number>
+                  </property>
+                  <property name="spacing">
+                   <number>3</number>
+                  </property>
+                  <item row="0" column="0">
+                   <widget class="QListWidget" name="SplattingLayerList">
+                    <item>
+                     <property name="text">
+                      <string>Procedural layer 1</string>
+                     </property>
+                     <property name="checkState">
+                      <enum>Unchecked</enum>
+                     </property>
+                     <property name="icon">
+                      <iconset resource="geditor.qrc">
+                       <normaloff>:/Resources/MetroStyle/calculator.png</normaloff>:/Resources/MetroStyle/calculator.png</iconset>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Procedural layer 2</string>
+                     </property>
+                     <property name="checkState">
+                      <enum>Unchecked</enum>
+                     </property>
+                     <property name="icon">
+                      <iconset resource="geditor.qrc">
+                       <normaloff>:/Resources/MetroStyle/calculator.png</normaloff>:/Resources/MetroStyle/calculator.png</iconset>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Procedural layer 3</string>
+                     </property>
+                     <property name="checkState">
+                      <enum>Unchecked</enum>
+                     </property>
+                     <property name="icon">
+                      <iconset resource="geditor.qrc">
+                       <normaloff>:/Resources/MetroStyle/calculator.png</normaloff>:/Resources/MetroStyle/calculator.png</iconset>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Procedural layer 4</string>
+                     </property>
+                     <property name="checkState">
+                      <enum>Unchecked</enum>
+                     </property>
+                     <property name="icon">
+                      <iconset resource="geditor.qrc">
+                       <normaloff>:/Resources/MetroStyle/calculator.png</normaloff>:/Resources/MetroStyle/calculator.png</iconset>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Procedural layer 5</string>
+                     </property>
+                     <property name="checkState">
+                      <enum>Unchecked</enum>
+                     </property>
+                     <property name="icon">
+                      <iconset resource="geditor.qrc">
+                       <normaloff>:/Resources/MetroStyle/calculator.png</normaloff>:/Resources/MetroStyle/calculator.png</iconset>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Procedural layer 6</string>
+                     </property>
+                     <property name="checkState">
+                      <enum>Unchecked</enum>
+                     </property>
+                     <property name="icon">
+                      <iconset resource="geditor.qrc">
+                       <normaloff>:/Resources/MetroStyle/calculator.png</normaloff>:/Resources/MetroStyle/calculator.png</iconset>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Procedural layer 7</string>
+                     </property>
+                     <property name="checkState">
+                      <enum>Unchecked</enum>
+                     </property>
+                     <property name="icon">
+                      <iconset resource="geditor.qrc">
+                       <normaloff>:/Resources/MetroStyle/calculator.png</normaloff>:/Resources/MetroStyle/calculator.png</iconset>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Procedural layer 8</string>
+                     </property>
+                     <property name="checkState">
+                      <enum>Unchecked</enum>
+                     </property>
+                     <property name="icon">
+                      <iconset resource="geditor.qrc">
+                       <normaloff>:/Resources/MetroStyle/calculator.png</normaloff>:/Resources/MetroStyle/calculator.png</iconset>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Mask layer R</string>
+                     </property>
+                     <property name="checkState">
+                      <enum>Unchecked</enum>
+                     </property>
+                     <property name="icon">
+                      <iconset resource="geditor.qrc">
+                       <normaloff>:/Resources/MetroStyle/brush-24.png</normaloff>:/Resources/MetroStyle/brush-24.png</iconset>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Mask layer G</string>
+                     </property>
+                     <property name="checkState">
+                      <enum>Unchecked</enum>
+                     </property>
+                     <property name="icon">
+                      <iconset resource="geditor.qrc">
+                       <normaloff>:/Resources/MetroStyle/brush-24.png</normaloff>:/Resources/MetroStyle/brush-24.png</iconset>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Mask layer B</string>
+                     </property>
+                     <property name="checkState">
+                      <enum>Unchecked</enum>
+                     </property>
+                     <property name="icon">
+                      <iconset resource="geditor.qrc">
+                       <normaloff>:/Resources/MetroStyle/brush-24.png</normaloff>:/Resources/MetroStyle/brush-24.png</iconset>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Mask layer A</string>
+                     </property>
+                     <property name="checkState">
+                      <enum>Unchecked</enum>
+                     </property>
+                     <property name="icon">
+                      <iconset resource="geditor.qrc">
+                       <normaloff>:/Resources/MetroStyle/brush-24.png</normaloff>:/Resources/MetroStyle/brush-24.png</iconset>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item row="3" column="0">
+                <widget class="QPushButton" name="SplattingReloadMaps">
+                 <property name="text">
+                  <string>Reload Maps</string>
+                 </property>
+                 <property name="icon">
+                  <iconset resource="geditor.qrc">
+                   <normaloff>:/Resources/MetroStyle/sinchronize.png</normaloff>:/Resources/MetroStyle/sinchronize.png</iconset>
+                 </property>
+                 <property name="autoDefault">
+                  <bool>false</bool>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="1" rowspan="4">
+                <widget class="GroupBox" name="groupBox_21">
+                 <property name="title">
+                  <string>Parameters</string>
+                 </property>
+                 <layout class="QGridLayout" name="gridLayout_54">
+                  <property name="leftMargin">
+                   <number>3</number>
+                  </property>
+                  <property name="topMargin">
+                   <number>3</number>
+                  </property>
+                  <property name="rightMargin">
+                   <number>3</number>
+                  </property>
+                  <property name="bottomMargin">
+                   <number>3</number>
+                  </property>
+                  <property name="spacing">
+                   <number>3</number>
+                  </property>
+                  <item row="7" column="0">
+                   <spacer name="verticalSpacer_3">
+                    <property name="orientation">
+                     <enum>Qt::Vertical</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>20</width>
+                      <height>40</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                  <item row="5" column="0">
+                   <widget class="GroupBox" name="SplattingAngleGroup">
+                    <property name="title">
+                     <string>Angle</string>
+                    </property>
+                    <layout class="QGridLayout" name="gridLayout_62">
+                     <property name="leftMargin">
+                      <number>3</number>
+                     </property>
+                     <property name="topMargin">
+                      <number>3</number>
+                     </property>
+                     <property name="rightMargin">
+                      <number>3</number>
+                     </property>
+                     <property name="bottomMargin">
+                      <number>3</number>
+                     </property>
+                     <property name="spacing">
+                      <number>3</number>
+                     </property>
+                     <item row="3" column="0">
+                      <widget class="QLabel" name="label_18">
+                       <property name="sizePolicy">
+                        <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                         <horstretch>0</horstretch>
+                         <verstretch>0</verstretch>
+                        </sizepolicy>
+                       </property>
+                       <property name="text">
+                        <string>Hardness:</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="1" column="1">
+                      <widget class="DoubleSpinBox" name="SplattingAngleField">
+                       <property name="decimals">
+                        <number>1</number>
+                       </property>
+                       <property name="minimum">
+                        <double>0.000000000000000</double>
+                       </property>
+                       <property name="maximum">
+                        <double>90.000000000000000</double>
+                       </property>
+                       <property name="singleStep">
+                        <double>0.100000000000000</double>
+                       </property>
+                       <property name="value">
+                        <double>0.000000000000000</double>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="2" column="1">
+                      <widget class="DoubleSpinBox" name="SplattingAngleFalloff">
+                       <property name="decimals">
+                        <number>0</number>
+                       </property>
+                       <property name="minimum">
+                        <double>0.000000000000000</double>
+                       </property>
+                       <property name="maximum">
+                        <double>100.000000000000000</double>
+                       </property>
+                       <property name="singleStep">
+                        <double>1.000000000000000</double>
+                       </property>
+                       <property name="value">
+                        <double>0.000000000000000</double>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="3" column="1">
+                      <widget class="DoubleSpinBox" name="SplattingAngleHardness">
+                       <property name="decimals">
+                        <number>0</number>
+                       </property>
+                       <property name="minimum">
+                        <double>0.000000000000000</double>
+                       </property>
+                       <property name="maximum">
+                        <double>100.000000000000000</double>
+                       </property>
+                       <property name="singleStep">
+                        <double>1.000000000000000</double>
+                       </property>
+                       <property name="value">
+                        <double>0.000000000000000</double>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="2" column="0">
+                      <widget class="QLabel" name="label_17">
+                       <property name="sizePolicy">
+                        <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                         <horstretch>0</horstretch>
+                         <verstretch>0</verstretch>
+                        </sizepolicy>
+                       </property>
+                       <property name="text">
+                        <string>Falloff:</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="1" column="0">
+                      <widget class="QLabel" name="label_30">
+                       <property name="sizePolicy">
+                        <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                         <horstretch>0</horstretch>
+                         <verstretch>0</verstretch>
+                        </sizepolicy>
+                       </property>
+                       <property name="text">
+                        <string>Field:</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="0" column="1">
+                      <widget class="DoubleSpinBox" name="SplattingAngle">
+                       <property name="decimals">
+                        <number>1</number>
+                       </property>
+                       <property name="minimum">
+                        <double>0.000000000000000</double>
+                       </property>
+                       <property name="maximum">
+                        <double>90.000000000000000</double>
+                       </property>
+                       <property name="singleStep">
+                        <double>0.100000000000000</double>
+                       </property>
+                       <property name="value">
+                        <double>0.000000000000000</double>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="0" column="0">
+                      <widget class="QLabel" name="label_29">
+                       <property name="sizePolicy">
+                        <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                         <horstretch>0</horstretch>
+                         <verstretch>0</verstretch>
+                        </sizepolicy>
+                       </property>
+                       <property name="text">
+                        <string>Angle:</string>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                  <item row="4" column="0">
+                   <widget class="GroupBox" name="SplattingHeightGroup">
+                    <property name="title">
+                     <string>Height</string>
+                    </property>
+                    <layout class="QGridLayout" name="gridLayout_59">
+                     <property name="leftMargin">
+                      <number>3</number>
+                     </property>
+                     <property name="topMargin">
+                      <number>3</number>
+                     </property>
+                     <property name="rightMargin">
+                      <number>3</number>
+                     </property>
+                     <property name="bottomMargin">
+                      <number>3</number>
+                     </property>
+                     <property name="spacing">
+                      <number>3</number>
+                     </property>
+                     <item row="1" column="1">
+                      <widget class="DoubleSpinBox" name="SplattingHeightField">
+                       <property name="minimum">
+                        <double>0.000000000000000</double>
+                       </property>
+                       <property name="maximum">
+                        <double>10000.000000000000000</double>
+                       </property>
+                       <property name="singleStep">
+                        <double>1.000000000000000</double>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="2" column="1">
+                      <widget class="DoubleSpinBox" name="SplattingHeightFalloff">
+                       <property name="decimals">
+                        <number>0</number>
+                       </property>
+                       <property name="minimum">
+                        <double>0.000000000000000</double>
+                       </property>
+                       <property name="maximum">
+                        <double>100.000000000000000</double>
+                       </property>
+                       <property name="singleStep">
+                        <double>1.000000000000000</double>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="3" column="1">
+                      <widget class="DoubleSpinBox" name="SplattingHeightHardness">
+                       <property name="decimals">
+                        <number>0</number>
+                       </property>
+                       <property name="minimum">
+                        <double>0.000000000000000</double>
+                       </property>
+                       <property name="maximum">
+                        <double>100.000000000000000</double>
+                       </property>
+                       <property name="singleStep">
+                        <double>1.000000000000000</double>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="0" column="1">
+                      <widget class="DoubleSpinBox" name="SplattingHeight">
+                       <property name="minimum">
+                        <double>0.000000000000000</double>
+                       </property>
+                       <property name="maximum">
+                        <double>10000.000000000000000</double>
+                       </property>
+                       <property name="singleStep">
+                        <double>1.000000000000000</double>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="0" column="0">
+                      <widget class="QLabel" name="label_23">
+                       <property name="sizePolicy">
+                        <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                         <horstretch>0</horstretch>
+                         <verstretch>0</verstretch>
+                        </sizepolicy>
+                       </property>
+                       <property name="text">
+                        <string>Height:</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="1" column="0">
+                      <widget class="QLabel" name="label_24">
+                       <property name="sizePolicy">
+                        <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                         <horstretch>0</horstretch>
+                         <verstretch>0</verstretch>
+                        </sizepolicy>
+                       </property>
+                       <property name="text">
+                        <string>Field:</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="2" column="0">
+                      <widget class="QLabel" name="label_25">
+                       <property name="sizePolicy">
+                        <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                         <horstretch>0</horstretch>
+                         <verstretch>0</verstretch>
+                        </sizepolicy>
+                       </property>
+                       <property name="text">
+                        <string>Falloff:</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="3" column="0">
+                      <widget class="QLabel" name="label_26">
+                       <property name="sizePolicy">
+                        <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                         <horstretch>0</horstretch>
+                         <verstretch>0</verstretch>
+                        </sizepolicy>
+                       </property>
+                       <property name="text">
+                        <string>Hardness:</string>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                  <item row="0" column="0">
+                   <widget class="GroupBox" name="groupBox_40">
+                    <property name="title">
+                     <string>Opacity</string>
+                    </property>
+                    <layout class="QGridLayout" name="gridLayout_55">
+                     <property name="leftMargin">
+                      <number>3</number>
+                     </property>
+                     <property name="topMargin">
+                      <number>3</number>
+                     </property>
+                     <property name="rightMargin">
+                      <number>3</number>
+                     </property>
+                     <property name="bottomMargin">
+                      <number>3</number>
+                     </property>
+                     <property name="spacing">
+                      <number>3</number>
+                     </property>
+                     <item row="0" column="0">
+                      <widget class="DoubleSpinBox" name="SplattingOpacity">
+                       <property name="decimals">
+                        <number>2</number>
+                       </property>
+                       <property name="minimum">
+                        <double>0.000000000000000</double>
+                       </property>
+                       <property name="maximum">
+                        <double>100.000000000000000</double>
+                       </property>
+                       <property name="singleStep">
+                        <double>0.010000000000000</double>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                  <item row="2" column="0">
+                   <widget class="GroupBox" name="groupBox_22">
+                    <property name="enabled">
+                     <bool>true</bool>
+                    </property>
+                    <property name="title">
+                     <string>UV position</string>
+                    </property>
+                    <layout class="QGridLayout" name="gridLayout_27">
+                     <property name="leftMargin">
+                      <number>3</number>
+                     </property>
+                     <property name="topMargin">
+                      <number>3</number>
+                     </property>
+                     <property name="rightMargin">
+                      <number>3</number>
+                     </property>
+                     <property name="bottomMargin">
+                      <number>3</number>
+                     </property>
+                     <property name="spacing">
+                      <number>3</number>
+                     </property>
+                     <item row="0" column="0">
+                      <widget class="QLabel" name="label_19">
+                       <property name="sizePolicy">
+                        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                         <horstretch>0</horstretch>
+                         <verstretch>0</verstretch>
+                        </sizepolicy>
+                       </property>
+                       <property name="text">
+                        <string>U:</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="0" column="1">
+                      <widget class="DoubleSpinBox" name="SplattingPositionU">
+                       <property name="decimals">
+                        <number>3</number>
+                       </property>
+                       <property name="minimum">
+                        <double>-1.000000000000000</double>
+                       </property>
+                       <property name="maximum">
+                        <double>1.000000000000000</double>
+                       </property>
+                       <property name="singleStep">
+                        <double>0.001000000000000</double>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="1" column="0">
+                      <widget class="QLabel" name="label_20">
+                       <property name="sizePolicy">
+                        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                         <horstretch>0</horstretch>
+                         <verstretch>0</verstretch>
+                        </sizepolicy>
+                       </property>
+                       <property name="text">
+                        <string>V:</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="1" column="1">
+                      <widget class="DoubleSpinBox" name="SplattingPositionV">
+                       <property name="decimals">
+                        <number>3</number>
+                       </property>
+                       <property name="minimum">
+                        <double>-1.000000000000000</double>
+                       </property>
+                       <property name="maximum">
+                        <double>1.000000000000000</double>
+                       </property>
+                       <property name="singleStep">
+                        <double>0.001000000000000</double>
+                       </property>
+                       <property name="value">
+                        <double>0.000000000000000</double>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                  <item row="1" column="0">
+                   <widget class="GroupBox" name="groupBox_23">
+                    <property name="enabled">
+                     <bool>true</bool>
+                    </property>
+                    <property name="title">
+                     <string>UV tile</string>
+                    </property>
+                    <layout class="QGridLayout" name="gridLayout_28">
+                     <property name="leftMargin">
+                      <number>3</number>
+                     </property>
+                     <property name="topMargin">
+                      <number>3</number>
+                     </property>
+                     <property name="rightMargin">
+                      <number>3</number>
+                     </property>
+                     <property name="bottomMargin">
+                      <number>3</number>
+                     </property>
+                     <property name="spacing">
+                      <number>3</number>
+                     </property>
+                     <item row="0" column="0">
+                      <widget class="QLabel" name="label_21">
+                       <property name="sizePolicy">
+                        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                         <horstretch>0</horstretch>
+                         <verstretch>0</verstretch>
+                        </sizepolicy>
+                       </property>
+                       <property name="text">
+                        <string>U:</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="0" column="1">
+                      <widget class="DoubleSpinBox" name="SplattingTileU">
+                       <property name="decimals">
+                        <number>2</number>
+                       </property>
+                       <property name="minimum">
+                        <double>0.000000000000000</double>
+                       </property>
+                       <property name="maximum">
+                        <double>1000000.000000000000000</double>
+                       </property>
+                       <property name="singleStep">
+                        <double>1.000000000000000</double>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="1" column="0">
+                      <widget class="QLabel" name="label_22">
+                       <property name="sizePolicy">
+                        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                         <horstretch>0</horstretch>
+                         <verstretch>0</verstretch>
+                        </sizepolicy>
+                       </property>
+                       <property name="text">
+                        <string>V:</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="1" column="1">
+                      <widget class="DoubleSpinBox" name="SplattingTileV">
+                       <property name="decimals">
+                        <number>2</number>
+                       </property>
+                       <property name="minimum">
+                        <double>0.000000000000000</double>
+                       </property>
+                       <property name="maximum">
+                        <double>1000000.000000000000000</double>
+                       </property>
+                       <property name="singleStep">
+                        <double>0.001000000000000</double>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                  <item row="6" column="0">
+                   <widget class="GroupBox" name="SplattingMaskGroup">
+                    <property name="title">
+                     <string>Mask</string>
+                    </property>
+                    <layout class="QGridLayout" name="gridLayout_67">
+                     <property name="leftMargin">
+                      <number>3</number>
+                     </property>
+                     <property name="topMargin">
+                      <number>3</number>
+                     </property>
+                     <property name="rightMargin">
+                      <number>3</number>
+                     </property>
+                     <property name="bottomMargin">
+                      <number>3</number>
+                     </property>
+                     <property name="spacing">
+                      <number>3</number>
+                     </property>
+                     <item row="0" column="1">
+                      <widget class="DoubleSpinBox" name="SplattingMaskPositionX">
+                       <property name="minimum">
+                        <double>-1000000.000000000000000</double>
+                       </property>
+                       <property name="maximum">
+                        <double>1000000.000000000000000</double>
+                       </property>
+                       <property name="singleStep">
+                        <double>1.000000000000000</double>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="0" column="0">
+                      <widget class="QLabel" name="label_35">
+                       <property name="sizePolicy">
+                        <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                         <horstretch>0</horstretch>
+                         <verstretch>0</verstretch>
+                        </sizepolicy>
+                       </property>
+                       <property name="text">
+                        <string>Pos X:</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="1" column="0">
+                      <widget class="QLabel" name="label_36">
+                       <property name="sizePolicy">
+                        <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                         <horstretch>0</horstretch>
+                         <verstretch>0</verstretch>
+                        </sizepolicy>
+                       </property>
+                       <property name="text">
+                        <string>Pos Y:</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="3" column="1">
+                      <widget class="DoubleSpinBox" name="SplattingMaskFalloff">
+                       <property name="decimals">
+                        <number>0</number>
+                       </property>
+                       <property name="minimum">
+                        <double>0.000000000000000</double>
+                       </property>
+                       <property name="maximum">
+                        <double>100.000000000000000</double>
+                       </property>
+                       <property name="singleStep">
+                        <double>1.000000000000000</double>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="2" column="0">
+                      <widget class="QLabel" name="label_37">
+                       <property name="sizePolicy">
+                        <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                         <horstretch>0</horstretch>
+                         <verstretch>0</verstretch>
+                        </sizepolicy>
+                       </property>
+                       <property name="text">
+                        <string>Field:</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="2" column="1">
+                      <widget class="DoubleSpinBox" name="SplattingMaskField">
+                       <property name="minimum">
+                        <double>0.000000000000000</double>
+                       </property>
+                       <property name="maximum">
+                        <double>1000000.000000000000000</double>
+                       </property>
+                       <property name="singleStep">
+                        <double>1.000000000000000</double>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="7" column="0" colspan="2">
+                      <widget class="GroupBox" name="groupBox_36">
+                       <property name="enabled">
+                        <bool>true</bool>
+                       </property>
+                       <property name="title">
+                        <string>UV tile</string>
+                       </property>
+                       <layout class="QGridLayout" name="gridLayout_50">
+                        <property name="leftMargin">
+                         <number>3</number>
+                        </property>
+                        <property name="topMargin">
+                         <number>3</number>
+                        </property>
+                        <property name="rightMargin">
+                         <number>3</number>
+                        </property>
+                        <property name="bottomMargin">
+                         <number>3</number>
+                        </property>
+                        <property name="spacing">
+                         <number>3</number>
+                        </property>
+                        <item row="0" column="1">
+                         <widget class="DoubleSpinBox" name="SplattingMaskTileU">
+                          <property name="decimals">
+                           <number>2</number>
+                          </property>
+                          <property name="minimum">
+                           <double>0.000000000000000</double>
+                          </property>
+                          <property name="maximum">
+                           <double>1000000.000000000000000</double>
+                          </property>
+                          <property name="singleStep">
+                           <double>1.000000000000000</double>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="0" column="0">
+                         <widget class="QLabel" name="label_33">
+                          <property name="sizePolicy">
+                           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                           </sizepolicy>
+                          </property>
+                          <property name="text">
+                           <string>U:</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="1" column="0">
+                         <widget class="QLabel" name="label_34">
+                          <property name="sizePolicy">
+                           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                           </sizepolicy>
+                          </property>
+                          <property name="text">
+                           <string>V:</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="1" column="1">
+                         <widget class="DoubleSpinBox" name="SplattingMaskTileV">
+                          <property name="decimals">
+                           <number>2</number>
+                          </property>
+                          <property name="minimum">
+                           <double>0.000000000000000</double>
+                          </property>
+                          <property name="maximum">
+                           <double>1000000.000000000000000</double>
+                          </property>
+                          <property name="singleStep">
+                           <double>0.001000000000000</double>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                     <item row="8" column="0" colspan="2">
+                      <widget class="GroupBox" name="groupBox_35">
+                       <property name="enabled">
+                        <bool>true</bool>
+                       </property>
+                       <property name="title">
+                        <string>UV position</string>
+                       </property>
+                       <layout class="QGridLayout" name="gridLayout_49">
+                        <property name="leftMargin">
+                         <number>3</number>
+                        </property>
+                        <property name="topMargin">
+                         <number>3</number>
+                        </property>
+                        <property name="rightMargin">
+                         <number>3</number>
+                        </property>
+                        <property name="bottomMargin">
+                         <number>3</number>
+                        </property>
+                        <property name="spacing">
+                         <number>3</number>
+                        </property>
+                        <item row="1" column="0">
+                         <widget class="QLabel" name="label_32">
+                          <property name="sizePolicy">
+                           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                           </sizepolicy>
+                          </property>
+                          <property name="text">
+                           <string>V:</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="0" column="0">
+                         <widget class="QLabel" name="label_31">
+                          <property name="sizePolicy">
+                           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                           </sizepolicy>
+                          </property>
+                          <property name="text">
+                           <string>U:</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="0" column="1">
+                         <widget class="DoubleSpinBox" name="SplattingMaskPositionU">
+                          <property name="decimals">
+                           <number>3</number>
+                          </property>
+                          <property name="minimum">
+                           <double>-1.000000000000000</double>
+                          </property>
+                          <property name="maximum">
+                           <double>1.000000000000000</double>
+                          </property>
+                          <property name="singleStep">
+                           <double>0.001000000000000</double>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="1" column="1">
+                         <widget class="DoubleSpinBox" name="SplattingMaskPositionV">
+                          <property name="decimals">
+                           <number>3</number>
+                          </property>
+                          <property name="minimum">
+                           <double>-1.000000000000000</double>
+                          </property>
+                          <property name="maximum">
+                           <double>1.000000000000000</double>
+                          </property>
+                          <property name="singleStep">
+                           <double>0.001000000000000</double>
+                          </property>
+                          <property name="value">
+                           <double>0.000000000000000</double>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                     <item row="1" column="1">
+                      <widget class="DoubleSpinBox" name="SplattingMaskPositionY">
+                       <property name="minimum">
+                        <double>-1000000.000000000000000</double>
+                       </property>
+                       <property name="maximum">
+                        <double>1000000.000000000000000</double>
+                       </property>
+                       <property name="singleStep">
+                        <double>1.000000000000000</double>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="3" column="0">
+                      <widget class="QLabel" name="label_38">
+                       <property name="sizePolicy">
+                        <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                         <horstretch>0</horstretch>
+                         <verstretch>0</verstretch>
+                        </sizepolicy>
+                       </property>
+                       <property name="text">
+                        <string>Falloff:</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="4" column="1">
+                      <widget class="DoubleSpinBox" name="SplattingMaskHardness">
+                       <property name="decimals">
+                        <number>0</number>
+                       </property>
+                       <property name="minimum">
+                        <double>0.000000000000000</double>
+                       </property>
+                       <property name="maximum">
+                        <double>100.000000000000000</double>
+                       </property>
+                       <property name="singleStep">
+                        <double>1.000000000000000</double>
+                       </property>
+                       <property name="value">
+                        <double>0.000000000000000</double>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="4" column="0">
+                      <widget class="QLabel" name="label_39">
+                       <property name="sizePolicy">
+                        <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                         <horstretch>0</horstretch>
+                         <verstretch>0</verstretch>
+                        </sizepolicy>
+                       </property>
+                       <property name="text">
+                        <string>Hardness:</string>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item row="1" column="0" rowspan="2">
+                <layout class="QVBoxLayout" name="verticalLayout">
+                 <property name="spacing">
+                  <number>3</number>
+                 </property>
+                 <item>
+                  <widget class="QGroupBox" name="groupBox_19">
+                   <property name="title">
+                    <string>Diffuse map</string>
+                   </property>
+                   <layout class="QGridLayout" name="gridLayout_44" rowstretch="0">
+                    <property name="leftMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="topMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="rightMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="bottomMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="spacing">
+                     <number>3</number>
+                    </property>
+                    <item row="0" column="0">
+                     <widget class="PictureBox" name="SplattingDiffuseMap">
+                      <property name="sizePolicy">
+                       <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+                        <horstretch>0</horstretch>
+                        <verstretch>0</verstretch>
+                       </sizepolicy>
+                      </property>
+                      <property name="minimumSize">
+                       <size>
+                        <width>32</width>
+                        <height>32</height>
+                       </size>
+                      </property>
+                      <property name="focusPolicy">
+                       <enum>Qt::ClickFocus</enum>
+                      </property>
+                      <property name="acceptDrops">
+                       <bool>true</bool>
+                      </property>
+                      <property name="frameShape">
+                       <enum>QFrame::StyledPanel</enum>
+                      </property>
+                      <property name="scaledContents">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QGroupBox" name="groupBox_2">
+                   <property name="title">
+                    <string>Normal map</string>
+                   </property>
+                   <layout class="QGridLayout" name="gridLayout_42">
+                    <property name="leftMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="topMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="rightMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="bottomMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="spacing">
+                     <number>3</number>
+                    </property>
+                    <item row="0" column="0">
+                     <widget class="PictureBox" name="SplattingNormalMap">
+                      <property name="sizePolicy">
+                       <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+                        <horstretch>0</horstretch>
+                        <verstretch>0</verstretch>
+                       </sizepolicy>
+                      </property>
+                      <property name="minimumSize">
+                       <size>
+                        <width>32</width>
+                        <height>32</height>
+                       </size>
+                      </property>
+                      <property name="focusPolicy">
+                       <enum>Qt::ClickFocus</enum>
+                      </property>
+                      <property name="acceptDrops">
+                       <bool>true</bool>
+                      </property>
+                      <property name="frameShape">
+                       <enum>QFrame::StyledPanel</enum>
+                      </property>
+                      <property name="scaledContents">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QGroupBox" name="groupBox_18">
+                   <property name="title">
+                    <string>GSRM map</string>
+                   </property>
+                   <layout class="QGridLayout" name="gridLayout_43">
+                    <property name="leftMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="topMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="rightMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="bottomMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="spacing">
+                     <number>3</number>
+                    </property>
+                    <item row="0" column="0">
+                     <widget class="PictureBox" name="SplattingGSRMap">
+                      <property name="sizePolicy">
+                       <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+                        <horstretch>0</horstretch>
+                        <verstretch>0</verstretch>
+                       </sizepolicy>
+                      </property>
+                      <property name="minimumSize">
+                       <size>
+                        <width>32</width>
+                        <height>32</height>
+                       </size>
+                      </property>
+                      <property name="focusPolicy">
+                       <enum>Qt::ClickFocus</enum>
+                      </property>
+                      <property name="acceptDrops">
+                       <bool>true</bool>
+                      </property>
+                      <property name="frameShape">
+                       <enum>QFrame::StyledPanel</enum>
+                      </property>
+                      <property name="scaledContents">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QGroupBox" name="MaskMapGroup">
+                   <property name="title">
+                    <string>Mask map</string>
+                   </property>
+                   <layout class="QGridLayout" name="gridLayout_46">
+                    <property name="leftMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="topMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="rightMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="bottomMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="spacing">
+                     <number>3</number>
+                    </property>
+                    <item row="0" column="0">
+                     <widget class="PictureBox" name="SplattingMaskMap">
+                      <property name="sizePolicy">
+                       <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+                        <horstretch>0</horstretch>
+                        <verstretch>0</verstretch>
+                       </sizepolicy>
+                      </property>
+                      <property name="minimumSize">
+                       <size>
+                        <width>32</width>
+                        <height>32</height>
+                       </size>
+                      </property>
+                      <property name="focusPolicy">
+                       <enum>Qt::ClickFocus</enum>
+                      </property>
+                      <property name="acceptDrops">
+                       <bool>true</bool>
+                      </property>
+                      <property name="frameShape">
+                       <enum>QFrame::StyledPanel</enum>
+                      </property>
+                      <property name="scaledContents">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </widget>
+             <widget class="QWidget" name="tab_2">
+              <property name="autoFillBackground">
+               <bool>true</bool>
+              </property>
+              <attribute name="title">
+               <string>Material</string>
+              </attribute>
+              <layout class="QGridLayout" name="gridLayout_23">
+               <property name="leftMargin">
+                <number>3</number>
+               </property>
+               <property name="topMargin">
+                <number>3</number>
+               </property>
+               <property name="rightMargin">
+                <number>3</number>
+               </property>
+               <property name="bottomMargin">
+                <number>3</number>
+               </property>
+               <property name="spacing">
+                <number>3</number>
+               </property>
+               <item row="9" column="0">
+                <spacer name="verticalSpacer_4">
+                 <property name="orientation">
+                  <enum>Qt::Vertical</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>20</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+               <item row="0" column="0">
+                <widget class="GroupBox" name="groupBox_46">
+                 <property name="title">
+                  <string>Ambient</string>
+                 </property>
+                 <layout class="QGridLayout" name="gridLayout_24">
+                  <property name="leftMargin">
+                   <number>3</number>
+                  </property>
+                  <property name="topMargin">
+                   <number>3</number>
+                  </property>
+                  <property name="rightMargin">
+                   <number>3</number>
+                  </property>
+                  <property name="bottomMargin">
+                   <number>3</number>
+                  </property>
+                  <property name="spacing">
+                   <number>3</number>
+                  </property>
+                  <item row="0" column="0">
+                   <widget class="ColorSelector" name="MaterialAmbientColor">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="1">
+                   <widget class="DoubleSpinBox" name="MaterialAmbientColorIntensity">
+                    <property name="accelerated">
+                     <bool>true</bool>
+                    </property>
+                    <property name="decimals">
+                     <number>3</number>
+                    </property>
+                    <property name="maximum">
+                     <double>100.000000000000000</double>
+                    </property>
+                    <property name="singleStep">
+                     <double>0.001000000000000</double>
+                    </property>
+                    <property name="value">
+                     <double>1.000000000000000</double>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item row="0" column="1">
+                <widget class="GroupBox" name="groupBox_47">
+                 <property name="title">
+                  <string>Diffuse</string>
+                 </property>
+                 <layout class="QGridLayout" name="gridLayout_47">
+                  <property name="leftMargin">
+                   <number>3</number>
+                  </property>
+                  <property name="topMargin">
+                   <number>3</number>
+                  </property>
+                  <property name="rightMargin">
+                   <number>3</number>
+                  </property>
+                  <property name="bottomMargin">
+                   <number>3</number>
+                  </property>
+                  <property name="spacing">
+                   <number>3</number>
+                  </property>
+                  <item row="0" column="1">
+                   <widget class="DoubleSpinBox" name="MaterialDiffuseColorIntensity">
+                    <property name="accelerated">
+                     <bool>true</bool>
+                    </property>
+                    <property name="decimals">
+                     <number>3</number>
+                    </property>
+                    <property name="maximum">
+                     <double>100.000000000000000</double>
+                    </property>
+                    <property name="singleStep">
+                     <double>0.001000000000000</double>
+                    </property>
+                    <property name="value">
+                     <double>1.000000000000000</double>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="0">
+                   <widget class="ColorSelector" name="MaterialDiffuseColor">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item row="1" column="1">
+                <widget class="GroupBox" name="groupBox_49">
+                 <property name="title">
+                  <string>Glow</string>
+                 </property>
+                 <layout class="QGridLayout" name="gridLayout_60">
+                  <property name="leftMargin">
+                   <number>3</number>
+                  </property>
+                  <property name="topMargin">
+                   <number>3</number>
+                  </property>
+                  <property name="rightMargin">
+                   <number>3</number>
+                  </property>
+                  <property name="bottomMargin">
+                   <number>3</number>
+                  </property>
+                  <property name="spacing">
+                   <number>3</number>
+                  </property>
+                  <item row="0" column="1">
+                   <widget class="DoubleSpinBox" name="MaterialGlowColorIntensity">
+                    <property name="accelerated">
+                     <bool>true</bool>
+                    </property>
+                    <property name="decimals">
+                     <number>3</number>
+                    </property>
+                    <property name="maximum">
+                     <double>100.000000000000000</double>
+                    </property>
+                    <property name="singleStep">
+                     <double>0.001000000000000</double>
+                    </property>
+                    <property name="value">
+                     <double>1.000000000000000</double>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="0">
+                   <widget class="ColorSelector" name="MaterialGlowColor">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item row="4" column="1">
+                <widget class="GroupBox" name="groupBox_52">
+                 <property name="title">
+                  <string>Roughness</string>
+                 </property>
+                 <layout class="QGridLayout" name="gridLayout_64">
+                  <property name="leftMargin">
+                   <number>3</number>
+                  </property>
+                  <property name="topMargin">
+                   <number>3</number>
+                  </property>
+                  <property name="rightMargin">
+                   <number>3</number>
+                  </property>
+                  <property name="bottomMargin">
+                   <number>3</number>
+                  </property>
+                  <property name="spacing">
+                   <number>3</number>
+                  </property>
+                  <item row="0" column="0">
+                   <widget class="DoubleSpinBox" name="MaterialRoughness">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="accelerated">
+                     <bool>true</bool>
+                    </property>
+                    <property name="decimals">
+                     <number>4</number>
+                    </property>
+                    <property name="minimum">
+                     <double>0.000000000000000</double>
+                    </property>
+                    <property name="maximum">
+                     <double>1.000000000000000</double>
+                    </property>
+                    <property name="singleStep">
+                     <double>0.000100000000000</double>
+                    </property>
+                    <property name="value">
+                     <double>1.000000000000000</double>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item row="3" column="0">
+                <widget class="GroupBox" name="groupBox_51">
+                 <property name="title">
+                  <string>Specular power</string>
+                 </property>
+                 <layout class="QGridLayout" name="gridLayout_63">
+                  <property name="leftMargin">
+                   <number>3</number>
+                  </property>
+                  <property name="topMargin">
+                   <number>3</number>
+                  </property>
+                  <property name="rightMargin">
+                   <number>3</number>
+                  </property>
+                  <property name="bottomMargin">
+                   <number>3</number>
+                  </property>
+                  <property name="spacing">
+                   <number>3</number>
+                  </property>
+                  <item row="0" column="0">
+                   <widget class="DoubleSpinBox" name="MaterialSpecularPower">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="accelerated">
+                     <bool>true</bool>
+                    </property>
+                    <property name="decimals">
+                     <number>2</number>
+                    </property>
+                    <property name="minimum">
+                     <double>0.000000000000000</double>
+                    </property>
+                    <property name="maximum">
+                     <double>100000.000000000000000</double>
+                    </property>
+                    <property name="singleStep">
+                     <double>0.010000000000000</double>
+                    </property>
+                    <property name="value">
+                     <double>10.000000000000000</double>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item row="3" column="1">
+                <widget class="GroupBox" name="groupBox_53">
+                 <property name="title">
+                  <string>Bumpiness</string>
+                 </property>
+                 <layout class="QGridLayout" name="gridLayout_65">
+                  <property name="leftMargin">
+                   <number>3</number>
+                  </property>
+                  <property name="topMargin">
+                   <number>3</number>
+                  </property>
+                  <property name="rightMargin">
+                   <number>3</number>
+                  </property>
+                  <property name="bottomMargin">
+                   <number>3</number>
+                  </property>
+                  <property name="spacing">
+                   <number>3</number>
+                  </property>
+                  <item row="0" column="0">
+                   <widget class="DoubleSpinBox" name="MaterialBumpiness">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="accelerated">
+                     <bool>true</bool>
+                    </property>
+                    <property name="decimals">
+                     <number>3</number>
+                    </property>
+                    <property name="minimum">
+                     <double>-99.000000000000000</double>
+                    </property>
+                    <property name="maximum">
+                     <double>99.000000000000000</double>
+                    </property>
+                    <property name="singleStep">
+                     <double>0.001000000000000</double>
+                    </property>
+                    <property name="value">
+                     <double>1.000000000000000</double>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item row="2" column="0" colspan="2">
+                <widget class="GroupBox" name="groupBox_50">
+                 <property name="title">
+                  <string>Emissive</string>
+                 </property>
+                 <layout class="QGridLayout" name="gridLayout_61">
+                  <property name="leftMargin">
+                   <number>3</number>
+                  </property>
+                  <property name="topMargin">
+                   <number>3</number>
+                  </property>
+                  <property name="rightMargin">
+                   <number>3</number>
+                  </property>
+                  <property name="bottomMargin">
+                   <number>3</number>
+                  </property>
+                  <property name="spacing">
+                   <number>3</number>
+                  </property>
+                  <item row="0" column="1">
+                   <widget class="DoubleSpinBox" name="MaterialEmissiveColorIntensity">
+                    <property name="accelerated">
+                     <bool>true</bool>
+                    </property>
+                    <property name="decimals">
+                     <number>3</number>
+                    </property>
+                    <property name="maximum">
+                     <double>100.000000000000000</double>
+                    </property>
+                    <property name="singleStep">
+                     <double>0.001000000000000</double>
+                    </property>
+                    <property name="value">
+                     <double>1.000000000000000</double>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="0">
+                   <widget class="ColorSelector" name="MaterialEmissiveColor">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item row="1" column="0">
+                <widget class="GroupBox" name="groupBox_48">
+                 <property name="title">
+                  <string>Specular</string>
+                 </property>
+                 <layout class="QGridLayout" name="gridLayout_58">
+                  <property name="leftMargin">
+                   <number>3</number>
+                  </property>
+                  <property name="topMargin">
+                   <number>3</number>
+                  </property>
+                  <property name="rightMargin">
+                   <number>3</number>
+                  </property>
+                  <property name="bottomMargin">
+                   <number>3</number>
+                  </property>
+                  <property name="spacing">
+                   <number>3</number>
+                  </property>
+                  <item row="0" column="1">
+                   <widget class="DoubleSpinBox" name="MaterialSpecularColorIntensity">
+                    <property name="accelerated">
+                     <bool>true</bool>
+                    </property>
+                    <property name="decimals">
+                     <number>3</number>
+                    </property>
+                    <property name="maximum">
+                     <double>100.000000000000000</double>
+                    </property>
+                    <property name="singleStep">
+                     <double>0.001000000000000</double>
+                    </property>
+                    <property name="value">
+                     <double>1.000000000000000</double>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="0">
+                   <widget class="ColorSelector" name="MaterialSpecularColor">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item row="4" column="0">
+                <widget class="GroupBox" name="groupBox_54">
+                 <property name="title">
+                  <string>Reflect mask</string>
+                 </property>
+                 <layout class="QGridLayout" name="gridLayout_66">
+                  <property name="leftMargin">
+                   <number>3</number>
+                  </property>
+                  <property name="topMargin">
+                   <number>3</number>
+                  </property>
+                  <property name="rightMargin">
+                   <number>3</number>
+                  </property>
+                  <property name="bottomMargin">
+                   <number>3</number>
+                  </property>
+                  <property name="spacing">
+                   <number>3</number>
+                  </property>
+                  <item row="0" column="0">
+                   <widget class="DoubleSpinBox" name="MaterialReflectmask">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="accelerated">
+                     <bool>true</bool>
+                    </property>
+                    <property name="decimals">
+                     <number>4</number>
+                    </property>
+                    <property name="minimum">
+                     <double>0.000000000000000</double>
+                    </property>
+                    <property name="maximum">
+                     <double>1.000000000000000</double>
+                    </property>
+                    <property name="singleStep">
+                     <double>0.000100000000000</double>
+                    </property>
+                    <property name="value">
+                     <double>1.000000000000000</double>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item row="6" column="1">
+                <widget class="GroupBox" name="groupBox_39">
+                 <property name="title">
+                  <string>Normal noise map</string>
+                 </property>
+                 <layout class="QGridLayout" name="gridLayout_52">
+                  <property name="leftMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="topMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="rightMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="bottomMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="spacing">
+                   <number>3</number>
+                  </property>
+                  <item row="0" column="0">
+                   <widget class="PictureBox" name="NormalNoiseMap">
+                    <property name="minimumSize">
+                     <size>
+                      <width>32</width>
+                      <height>32</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>128</width>
+                      <height>128</height>
+                     </size>
+                    </property>
+                    <property name="focusPolicy">
+                     <enum>Qt::ClickFocus</enum>
+                    </property>
+                    <property name="acceptDrops">
+                     <bool>true</bool>
+                    </property>
+                    <property name="frameShape">
+                     <enum>QFrame::StyledPanel</enum>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="scaledContents">
+                     <bool>true</bool>
+                    </property>
+                    <property name="filter">
+                     <string>Texture files(*.dds)</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item row="5" column="0" colspan="2">
+                <widget class="GroupBox" name="groupBox_55">
+                 <property name="title">
+                  <string>Normal noise map UV tile</string>
+                 </property>
+                 <layout class="QGridLayout" name="gridLayout_68">
+                  <property name="leftMargin">
+                   <number>3</number>
+                  </property>
+                  <property name="topMargin">
+                   <number>3</number>
+                  </property>
+                  <property name="rightMargin">
+                   <number>3</number>
+                  </property>
+                  <property name="bottomMargin">
+                   <number>3</number>
+                  </property>
+                  <property name="spacing">
+                   <number>3</number>
+                  </property>
+                  <item row="0" column="3">
+                   <widget class="DoubleSpinBox" name="NormalNoiseTileV">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="accelerated">
+                     <bool>true</bool>
+                    </property>
+                    <property name="decimals">
+                     <number>2</number>
+                    </property>
+                    <property name="minimum">
+                     <double>0.000000000000000</double>
+                    </property>
+                    <property name="maximum">
+                     <double>1000000.000000000000000</double>
+                    </property>
+                    <property name="singleStep">
+                     <double>1.000000000000000</double>
+                    </property>
+                    <property name="value">
+                     <double>10000.000000000000000</double>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="0">
+                   <widget class="QLabel" name="label">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="text">
+                     <string>U:</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="1">
+                   <widget class="DoubleSpinBox" name="NormalNoiseTileU">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="accelerated">
+                     <bool>true</bool>
+                    </property>
+                    <property name="decimals">
+                     <number>2</number>
+                    </property>
+                    <property name="minimum">
+                     <double>0.000000000000000</double>
+                    </property>
+                    <property name="maximum">
+                     <double>1000000.000000000000000</double>
+                    </property>
+                    <property name="singleStep">
+                     <double>1.000000000000000</double>
+                    </property>
+                    <property name="value">
+                     <double>10000.000000000000000</double>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="2">
+                   <widget class="QLabel" name="label_2">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="text">
+                     <string>V:</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item row="6" column="0">
+                <widget class="GroupBox" name="groupBox_11">
+                 <property name="title">
+                  <string>Reflect map</string>
+                 </property>
+                 <layout class="QGridLayout" name="gridLayout_20">
+                  <property name="leftMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="topMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="rightMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="bottomMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="spacing">
+                   <number>3</number>
+                  </property>
+                  <item row="0" column="0">
+                   <widget class="PictureBox" name="MaterialReflectMap">
+                    <property name="minimumSize">
+                     <size>
+                      <width>32</width>
+                      <height>32</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>128</width>
+                      <height>128</height>
+                     </size>
+                    </property>
+                    <property name="focusPolicy">
+                     <enum>Qt::ClickFocus</enum>
+                    </property>
+                    <property name="acceptDrops">
+                     <bool>true</bool>
+                    </property>
+                    <property name="frameShape">
+                     <enum>QFrame::StyledPanel</enum>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="scaledContents">
+                     <bool>true</bool>
+                    </property>
+                    <property name="filter">
+                     <string>Texture files(*.dds)</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="TerrainSculpt">
+          <property name="autoFillBackground">
+           <bool>true</bool>
+          </property>
+          <attribute name="icon">
+           <iconset resource="geditor.qrc">
+            <normaloff>:/Resources/MetroStyle/pyramids.png</normaloff>:/Resources/MetroStyle/pyramids.png</iconset>
+          </attribute>
+          <attribute name="title">
+           <string/>
+          </attribute>
+          <attribute name="toolTip">
+           <string>Sculpt</string>
+          </attribute>
+          <layout class="QGridLayout" name="gridLayout_6">
+           <property name="leftMargin">
+            <number>3</number>
+           </property>
+           <property name="topMargin">
+            <number>3</number>
+           </property>
+           <property name="rightMargin">
+            <number>3</number>
+           </property>
+           <property name="bottomMargin">
+            <number>3</number>
+           </property>
+           <property name="spacing">
+            <number>3</number>
+           </property>
+           <item row="4" column="0">
+            <spacer name="verticalSpacer_2">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>40</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="2" column="0">
+            <widget class="GroupBox" name="SculptUseMask">
+             <property name="enabled">
+              <bool>true</bool>
+             </property>
+             <property name="title">
+              <string>Mask</string>
+             </property>
+             <property name="checkable">
+              <bool>true</bool>
+             </property>
+             <property name="checked">
+              <bool>false</bool>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_7">
+              <property name="leftMargin">
+               <number>3</number>
+              </property>
+              <property name="topMargin">
+               <number>3</number>
+              </property>
+              <property name="rightMargin">
+               <number>3</number>
+              </property>
+              <property name="bottomMargin">
+               <number>3</number>
+              </property>
+              <property name="spacing">
+               <number>3</number>
+              </property>
+              <item row="0" column="1">
+               <widget class="GroupBox" name="groupBox_6">
+                <property name="enabled">
+                 <bool>false</bool>
+                </property>
+                <property name="title">
+                 <string>Tile</string>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_8">
+                 <property name="leftMargin">
+                  <number>3</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>3</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>3</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>3</number>
+                 </property>
+                 <property name="spacing">
+                  <number>3</number>
+                 </property>
+                 <item row="0" column="0">
+                  <widget class="QLabel" name="label_10">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="text">
+                    <string>U:</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="1">
+                  <widget class="DoubleSpinBox" name="SculptMaskTileU">
+                   <property name="decimals">
+                    <number>2</number>
+                   </property>
+                   <property name="minimum">
+                    <double>0.000000000000000</double>
+                   </property>
+                   <property name="maximum">
+                    <double>1000000.000000000000000</double>
+                   </property>
+                   <property name="singleStep">
+                    <double>1.000000000000000</double>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="0">
+                  <widget class="QLabel" name="label_11">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="text">
+                    <string>V:</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="1">
+                  <widget class="DoubleSpinBox" name="SculptMaskTileV">
+                   <property name="decimals">
+                    <number>2</number>
+                   </property>
+                   <property name="minimum">
+                    <double>0.000000000000000</double>
+                   </property>
+                   <property name="maximum">
+                    <double>1000000.000000000000000</double>
+                   </property>
+                   <property name="singleStep">
+                    <double>1.000000000000000</double>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item row="0" column="0">
+               <widget class="GroupBox" name="groupBox_4">
+                <property name="enabled">
+                 <bool>false</bool>
+                </property>
+                <property name="title">
+                 <string>Position</string>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_3">
+                 <property name="leftMargin">
+                  <number>3</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>3</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>3</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>3</number>
+                 </property>
+                 <property name="spacing">
+                  <number>3</number>
+                 </property>
+                 <item row="0" column="0">
+                  <widget class="QLabel" name="label_4">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="text">
+                    <string>U:</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="1">
+                  <widget class="DoubleSpinBox" name="SculptMaskPositionU">
+                   <property name="decimals">
+                    <number>3</number>
+                   </property>
+                   <property name="minimum">
+                    <double>-1.000000000000000</double>
+                   </property>
+                   <property name="maximum">
+                    <double>1.000000000000000</double>
+                   </property>
+                   <property name="singleStep">
+                    <double>0.001000000000000</double>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="0">
+                  <widget class="QLabel" name="label_9">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="text">
+                    <string>V:</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="1">
+                  <widget class="DoubleSpinBox" name="SculptMaskPositionV">
+                   <property name="decimals">
+                    <number>3</number>
+                   </property>
+                   <property name="minimum">
+                    <double>-1.000000000000000</double>
+                   </property>
+                   <property name="maximum">
+                    <double>1.000000000000000</double>
+                   </property>
+                   <property name="singleStep">
+                    <double>0.001000000000000</double>
+                   </property>
+                   <property name="value">
+                    <double>0.000000000000000</double>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item row="3" column="0" colspan="2">
+               <widget class="GroupBox" name="groupBox_3">
+                <property name="enabled">
+                 <bool>false</bool>
+                </property>
+                <property name="title">
+                 <string>Map</string>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_11">
+                 <property name="leftMargin">
+                  <number>3</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>3</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>3</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>3</number>
+                 </property>
+                 <property name="spacing">
+                  <number>3</number>
+                 </property>
+                 <item row="0" column="0">
+                  <widget class="PictureBox" name="SculptMask">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="minimumSize">
+                    <size>
+                     <width>128</width>
+                     <height>128</height>
+                    </size>
+                   </property>
+                   <property name="acceptDrops">
+                    <bool>true</bool>
+                   </property>
+                   <property name="frameShape">
+                    <enum>QFrame::Box</enum>
+                   </property>
+                   <property name="scaledContents">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item row="2" column="0" colspan="2">
+               <widget class="GroupBox" name="groupBox_5">
+                <property name="enabled">
+                 <bool>false</bool>
+                </property>
+                <property name="title">
+                 <string>Rotation</string>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_5">
+                 <property name="leftMargin">
+                  <number>3</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>3</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>3</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>3</number>
+                 </property>
+                 <property name="spacing">
+                  <number>3</number>
+                 </property>
+                 <item row="0" column="1">
+                  <widget class="DoubleSpinBox" name="SculptMaskRotation">
+                   <property name="decimals">
+                    <number>1</number>
+                   </property>
+                   <property name="minimum">
+                    <double>-360.000000000000000</double>
+                   </property>
+                   <property name="maximum">
+                    <double>360.000000000000000</double>
+                   </property>
+                   <property name="singleStep">
+                    <double>0.100000000000000</double>
+                   </property>
+                   <property name="value">
+                    <double>0.100000000000000</double>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="0">
+                  <widget class="QCheckBox" name="SculptMaskRotationRandomize">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="text">
+                    <string>Randomize</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="GroupBox" name="SculptEditMode">
+             <property name="title">
+              <string>Enable</string>
+             </property>
+             <property name="checkable">
+              <bool>true</bool>
+             </property>
+             <property name="checked">
+              <bool>true</bool>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_19">
+              <property name="leftMargin">
+               <number>3</number>
+              </property>
+              <property name="topMargin">
+               <number>3</number>
+              </property>
+              <property name="rightMargin">
+               <number>3</number>
+              </property>
+              <property name="bottomMargin">
+               <number>3</number>
+              </property>
+              <property name="spacing">
+               <number>3</number>
+              </property>
+              <item row="0" column="1" colspan="2">
+               <widget class="GroupBox" name="groupBox_17">
+                <property name="title">
+                 <string>Type</string>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_25">
+                 <property name="leftMargin">
+                  <number>3</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>3</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>3</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>3</number>
+                 </property>
+                 <property name="spacing">
+                  <number>3</number>
+                 </property>
+                 <item row="0" column="5">
+                  <widget class="Line" name="line">
+                   <property name="orientation">
+                    <enum>Qt::Vertical</enum>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="8">
+                  <widget class="QToolButton" name="SculptRedo">
+                   <property name="toolTip">
+                    <string>Redo</string>
+                   </property>
+                   <property name="text">
+                    <string>...</string>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="geditor.qrc">
+                     <normaloff>:/Resources/MetroStyle/redo.png</normaloff>:/Resources/MetroStyle/redo.png</iconset>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="7">
+                  <widget class="QToolButton" name="SculptUndo">
+                   <property name="toolTip">
+                    <string>Undo</string>
+                   </property>
+                   <property name="text">
+                    <string>...</string>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="geditor.qrc">
+                     <normaloff>:/Resources/MetroStyle/undo.png</normaloff>:/Resources/MetroStyle/undo.png</iconset>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="0">
+                  <widget class="QToolButton" name="SculptTypeSculptPositive">
+                   <property name="toolTip">
+                    <string>Positive</string>
+                   </property>
+                   <property name="text">
+                    <string>...</string>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="geditor.qrc">
+                     <normaloff>:/Resources/MetroStyle/up1.png</normaloff>:/Resources/MetroStyle/up1.png</iconset>
+                   </property>
+                   <property name="checkable">
+                    <bool>true</bool>
+                   </property>
+                   <property name="autoExclusive">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="2">
+                  <widget class="QToolButton" name="SculptTypeSmooth">
+                   <property name="toolTip">
+                    <string>Smooth</string>
+                   </property>
+                   <property name="text">
+                    <string>...</string>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="geditor.qrc">
+                     <normaloff>:/Resources/MetroStyle/record.png</normaloff>:/Resources/MetroStyle/record.png</iconset>
+                   </property>
+                   <property name="checkable">
+                    <bool>true</bool>
+                   </property>
+                   <property name="autoExclusive">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="1">
+                  <widget class="QToolButton" name="SculptTypeSculptNegative">
+                   <property name="toolTip">
+                    <string>Negative</string>
+                   </property>
+                   <property name="text">
+                    <string>...</string>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="geditor.qrc">
+                     <normaloff>:/Resources/MetroStyle/down1.png</normaloff>:/Resources/MetroStyle/down1.png</iconset>
+                   </property>
+                   <property name="checkable">
+                    <bool>true</bool>
+                   </property>
+                   <property name="autoExclusive">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="3">
+                  <widget class="QToolButton" name="SculptTypeFlat">
+                   <property name="toolTip">
+                    <string>Flat</string>
+                   </property>
+                   <property name="text">
+                    <string>...</string>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="geditor.qrc">
+                     <normaloff>:/Resources/MetroStyle/eraser.png</normaloff>:/Resources/MetroStyle/eraser.png</iconset>
+                   </property>
+                   <property name="checkable">
+                    <bool>true</bool>
+                   </property>
+                   <property name="autoExclusive">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="4">
+                  <spacer name="horizontalSpacer">
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>40</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item row="0" column="3">
+               <widget class="GroupBox" name="groupBox_24">
+                <property name="title">
+                 <string>Mode</string>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_29">
+                 <property name="leftMargin">
+                  <number>3</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>3</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>3</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>3</number>
+                 </property>
+                 <property name="spacing">
+                  <number>3</number>
+                 </property>
+                 <item row="0" column="3">
+                  <widget class="QToolButton" name="SculptModeMaskR">
+                   <property name="toolTip">
+                    <string>R</string>
+                   </property>
+                   <property name="text">
+                    <string>...</string>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="geditor.qrc">
+                     <normaloff>:/Resources/MetroStyle/brush-24.png</normaloff>:/Resources/MetroStyle/brush-24.png</iconset>
+                   </property>
+                   <property name="checkable">
+                    <bool>true</bool>
+                   </property>
+                   <property name="autoExclusive">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="5">
+                  <widget class="QToolButton" name="SculptModeMaskB">
+                   <property name="toolTip">
+                    <string>B</string>
+                   </property>
+                   <property name="text">
+                    <string>...</string>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="geditor.qrc">
+                     <normaloff>:/Resources/MetroStyle/brush-24.png</normaloff>:/Resources/MetroStyle/brush-24.png</iconset>
+                   </property>
+                   <property name="checkable">
+                    <bool>true</bool>
+                   </property>
+                   <property name="autoExclusive">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="4">
+                  <widget class="QToolButton" name="SculptModeMaskG">
+                   <property name="toolTip">
+                    <string>G</string>
+                   </property>
+                   <property name="text">
+                    <string>...</string>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="geditor.qrc">
+                     <normaloff>:/Resources/MetroStyle/brush-24.png</normaloff>:/Resources/MetroStyle/brush-24.png</iconset>
+                   </property>
+                   <property name="checkable">
+                    <bool>true</bool>
+                   </property>
+                   <property name="autoExclusive">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="6">
+                  <widget class="QToolButton" name="SculptModeMaskA">
+                   <property name="toolTip">
+                    <string>A</string>
+                   </property>
+                   <property name="text">
+                    <string>...</string>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="geditor.qrc">
+                     <normaloff>:/Resources/MetroStyle/brush-24.png</normaloff>:/Resources/MetroStyle/brush-24.png</iconset>
+                   </property>
+                   <property name="checkable">
+                    <bool>true</bool>
+                   </property>
+                   <property name="autoExclusive">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="2">
+                  <widget class="QToolButton" name="SculptModeHeight">
+                   <property name="toolTip">
+                    <string>Height</string>
+                   </property>
+                   <property name="text">
+                    <string>...</string>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="geditor.qrc">
+                     <normaloff>:/Resources/MetroStyle/pyramids.png</normaloff>:/Resources/MetroStyle/pyramids.png</iconset>
+                   </property>
+                   <property name="checkable">
+                    <bool>true</bool>
+                   </property>
+                   <property name="autoExclusive">
+                    <bool>true</bool>
+                   </property>
+                   <property name="toolButtonStyle">
+                    <enum>Qt::ToolButtonIconOnly</enum>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item row="1" column="1" colspan="3">
+               <widget class="GroupBox" name="groupBox_37">
+                <property name="title">
+                 <string>Presets</string>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_48">
+                 <property name="leftMargin">
+                  <number>3</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>3</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>3</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>3</number>
+                 </property>
+                 <property name="spacing">
+                  <number>3</number>
+                 </property>
+                 <item row="0" column="3">
+                  <widget class="QToolButton" name="SculptPresetRemove">
+                   <property name="toolTip">
+                    <string>Remove preset</string>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="geditor.qrc">
+                     <normaloff>:/Resources/MetroStyle/minus.png</normaloff>:/Resources/MetroStyle/minus.png</iconset>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="0">
+                  <widget class="QComboBox" name="SculptPresets">
+                   <property name="toolTip">
+                    <string>Presets</string>
+                   </property>
+                   <property name="statusTip">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="4">
+                  <widget class="QToolButton" name="SculptPresetAdd">
+                   <property name="toolTip">
+                    <string>Add preset</string>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="geditor.qrc">
+                     <normaloff>:/Resources/MetroStyle/plus.png</normaloff>:/Resources/MetroStyle/plus.png</iconset>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="6">
+                  <widget class="QToolButton" name="SculptPresetLoad">
+                   <property name="toolTip">
+                    <string>Load presets</string>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="geditor.qrc">
+                     <normaloff>:/Resources/MetroStyle/file.png</normaloff>:/Resources/MetroStyle/file.png</iconset>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="5">
+                  <widget class="QToolButton" name="SculptPresetSave">
+                   <property name="toolTip">
+                    <string>Save presets</string>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="geditor.qrc">
+                     <normaloff>:/Resources/MetroStyle/save_as.png</normaloff>:/Resources/MetroStyle/save_as.png</iconset>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item row="4" column="1" colspan="3">
+               <widget class="GroupBox" name="groupBox_8">
+                <property name="title">
+                 <string>Volume or Intensity</string>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_13">
+                 <property name="leftMargin">
+                  <number>3</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>3</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>3</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>3</number>
+                 </property>
+                 <property name="spacing">
+                  <number>3</number>
+                 </property>
+                 <item row="1" column="0">
+                  <widget class="DoubleSpinBox" name="SculptVolumeValue">
+                   <property name="minimum">
+                    <double>0.000000000000000</double>
+                   </property>
+                   <property name="maximum">
+                    <double>1000000.000000000000000</double>
+                   </property>
+                   <property name="singleStep">
+                    <double>0.010000000000000</double>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="1">
+                  <widget class="DoubleSpinBox" name="SculptIntensity">
+                   <property name="decimals">
+                    <number>3</number>
+                   </property>
+                   <property name="minimum">
+                    <double>0.000000000000000</double>
+                   </property>
+                   <property name="maximum">
+                    <double>1.000000000000000</double>
+                   </property>
+                   <property name="singleStep">
+                    <double>0.001000000000000</double>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item row="5" column="1" colspan="3">
+               <layout class="QGridLayout" name="gridLayout_4">
+                <property name="spacing">
+                 <number>3</number>
+                </property>
+                <item row="0" column="0">
+                 <widget class="GroupBox" name="groupBox_7">
+                  <property name="title">
+                   <string>Size</string>
+                  </property>
+                  <layout class="QGridLayout" name="gridLayout_12">
+                   <property name="leftMargin">
+                    <number>3</number>
+                   </property>
+                   <property name="topMargin">
+                    <number>3</number>
+                   </property>
+                   <property name="rightMargin">
+                    <number>3</number>
+                   </property>
+                   <property name="bottomMargin">
+                    <number>3</number>
+                   </property>
+                   <property name="spacing">
+                    <number>3</number>
+                   </property>
+                   <item row="1" column="0">
+                    <widget class="DoubleSpinBox" name="SculptSizeValue">
+                     <property name="minimum">
+                      <double>0.010000000000000</double>
+                     </property>
+                     <property name="maximum">
+                      <double>1000000.000000000000000</double>
+                     </property>
+                     <property name="singleStep">
+                      <double>1.000000000000000</double>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item row="0" column="2">
+                 <widget class="GroupBox" name="groupBox_9">
+                  <property name="title">
+                   <string>Repeat distance</string>
+                  </property>
+                  <layout class="QGridLayout" name="gridLayout_14">
+                   <property name="leftMargin">
+                    <number>3</number>
+                   </property>
+                   <property name="topMargin">
+                    <number>3</number>
+                   </property>
+                   <property name="rightMargin">
+                    <number>3</number>
+                   </property>
+                   <property name="bottomMargin">
+                    <number>3</number>
+                   </property>
+                   <property name="spacing">
+                    <number>3</number>
+                   </property>
+                   <item row="1" column="0">
+                    <widget class="DoubleSpinBox" name="SculptRepeatDistanceValue">
+                     <property name="maximum">
+                      <double>1000000.000000000000000</double>
+                     </property>
+                     <property name="singleStep">
+                      <double>1.000000000000000</double>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item row="6" column="1" colspan="3">
+               <layout class="QHBoxLayout" name="horizontalLayout">
+                <property name="spacing">
+                 <number>1</number>
+                </property>
+                <item>
+                 <widget class="GroupBox" name="groupBox_10">
+                  <property name="title">
+                   <string>Falloff</string>
+                  </property>
+                  <layout class="QGridLayout" name="gridLayout_15">
+                   <property name="leftMargin">
+                    <number>3</number>
+                   </property>
+                   <property name="topMargin">
+                    <number>3</number>
+                   </property>
+                   <property name="rightMargin">
+                    <number>3</number>
+                   </property>
+                   <property name="bottomMargin">
+                    <number>3</number>
+                   </property>
+                   <property name="spacing">
+                    <number>3</number>
+                   </property>
+                   <item row="1" column="1">
+                    <widget class="SpinBox" name="SculptFalloffValue">
+                     <property name="minimum">
+                      <number>0</number>
+                     </property>
+                     <property name="maximum">
+                      <number>100</number>
+                     </property>
+                     <property name="value">
+                      <number>0</number>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="1" column="0">
+                    <widget class="QSlider" name="SculptFalloff">
+                     <property name="minimum">
+                      <number>0</number>
+                     </property>
+                     <property name="maximum">
+                      <number>100</number>
+                     </property>
+                     <property name="orientation">
+                      <enum>Qt::Horizontal</enum>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="GroupBox" name="groupBox_12">
+                  <property name="title">
+                   <string>Hardness</string>
+                  </property>
+                  <layout class="QGridLayout" name="gridLayout_17">
+                   <property name="leftMargin">
+                    <number>3</number>
+                   </property>
+                   <property name="topMargin">
+                    <number>3</number>
+                   </property>
+                   <property name="rightMargin">
+                    <number>3</number>
+                   </property>
+                   <property name="bottomMargin">
+                    <number>3</number>
+                   </property>
+                   <property name="spacing">
+                    <number>3</number>
+                   </property>
+                   <item row="1" column="1">
+                    <widget class="SpinBox" name="SculptHardnessValue">
+                     <property name="minimum">
+                      <number>0</number>
+                     </property>
+                     <property name="maximum">
+                      <number>100</number>
+                     </property>
+                     <property name="value">
+                      <number>0</number>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="1" column="0">
+                    <widget class="QSlider" name="SculptHardness">
+                     <property name="minimum">
+                      <number>0</number>
+                     </property>
+                     <property name="maximum">
+                      <number>100</number>
+                     </property>
+                     <property name="orientation">
+                      <enum>Qt::Horizontal</enum>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="TerrainPhsyx">
+          <property name="autoFillBackground">
+           <bool>true</bool>
+          </property>
+          <attribute name="icon">
+           <iconset resource="geditor.qrc">
+            <normaloff>:/Resources/MetroStyle/physics.png</normaloff>:/Resources/MetroStyle/physics.png</iconset>
+          </attribute>
+          <attribute name="title">
+           <string/>
+          </attribute>
+          <attribute name="toolTip">
+           <string>Physx</string>
+          </attribute>
+          <layout class="QGridLayout" name="gridLayout_51">
+           <property name="leftMargin">
+            <number>3</number>
+           </property>
+           <property name="topMargin">
+            <number>3</number>
+           </property>
+           <property name="rightMargin">
+            <number>3</number>
+           </property>
+           <property name="bottomMargin">
+            <number>3</number>
+           </property>
+           <property name="spacing">
+            <number>3</number>
+           </property>
+           <item row="0" column="0">
+            <widget class="GroupBox" name="groupBox_38">
+             <property name="title">
+              <string>Height field</string>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_56">
+              <property name="leftMargin">
+               <number>3</number>
+              </property>
+              <property name="topMargin">
+               <number>3</number>
+              </property>
+              <property name="rightMargin">
+               <number>3</number>
+              </property>
+              <property name="bottomMargin">
+               <number>3</number>
+              </property>
+              <property name="spacing">
+               <number>3</number>
+              </property>
+              <item row="0" column="0">
+               <widget class="GroupBox" name="groupBox_41">
+                <property name="title">
+                 <string>Quad density</string>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_53">
+                 <property name="leftMargin">
+                  <number>3</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>3</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>3</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>3</number>
+                 </property>
+                 <property name="spacing">
+                  <number>3</number>
+                 </property>
+                 <item row="0" column="0">
+                  <widget class="SpinBox" name="PhysxQuadDensity">
+                   <property name="minimum">
+                    <number>1</number>
+                   </property>
+                   <property name="maximum">
+                    <number>1000</number>
+                   </property>
+                   <property name="value">
+                    <number>400</number>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="1">
+                  <widget class="QCheckBox" name="PhysxQuadDensityVisualize">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="text">
+                    <string>Visualize</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item row="1" column="0">
+               <spacer name="verticalSpacer_5">
+                <property name="orientation">
+                 <enum>Qt::Vertical</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>20</width>
+                  <height>647</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>PictureBox</class>
+   <extends>QLabel</extends>
+   <header>PictureBox.h</header>
+  </customwidget>
+  <customwidget>
+   <class>DoubleSpinBox</class>
+   <extends>QDoubleSpinBox</extends>
+   <header>DoubleSpinBox.h</header>
+  </customwidget>
+  <customwidget>
+   <class>SpinBox</class>
+   <extends>QSpinBox</extends>
+   <header>SpinBox.h</header>
+  </customwidget>
+  <customwidget>
+   <class>ScrollArea</class>
+   <extends>QScrollArea</extends>
+   <header>ScrollArea.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>ColorPreview</class>
+   <extends>QWidget</extends>
+   <header>ColorPreview.h</header>
+  </customwidget>
+  <customwidget>
+   <class>ColorSelector</class>
+   <extends>ColorPreview</extends>
+   <header>ColorSelector.h</header>
+  </customwidget>
+  <customwidget>
+   <class>GroupBox</class>
+   <extends>QGroupBox</extends>
+   <header>GroupBox.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="geditor.qrc"/>
+  <include location="GEditor.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>SculptUseMask</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>groupBox_6</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>117</x>
+     <y>526</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>313</x>
+     <y>363</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>SculptHardnessValue</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>SculptHardness</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>308</x>
+     <y>264</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>264</x>
+     <y>266</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>SculptFalloff</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>SculptFalloffValue</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>90</x>
+     <y>266</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>264</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>SculptUseMask</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>groupBox_4</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>34</x>
+     <y>520</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>43</x>
+     <y>363</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>SculptEditMode</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>SculptUseMask</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>64</x>
+     <y>37</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>78</x>
+     <y>345</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>SculptUseMask</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>groupBox_5</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>165</x>
+     <y>525</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>109</x>
+     <y>409</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>SculptFalloffValue</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>SculptFalloff</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>157</x>
+     <y>264</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>90</x>
+     <y>266</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>SculptHardness</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>SculptHardnessValue</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>264</x>
+     <y>266</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>308</x>
+     <y>264</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>SculptUseMask</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>groupBox_3</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>245</x>
+     <y>531</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>243</x>
+     <y>565</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

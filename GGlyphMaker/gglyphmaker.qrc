@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="GGlyphMaker">
+    <file>transparent.png</file>
+  </qresource>
+</RCC>

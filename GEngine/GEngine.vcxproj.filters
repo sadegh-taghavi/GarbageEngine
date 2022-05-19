@@ -1,0 +1,979 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{98e7e78c-0223-4bed-bf02-42a0d152a68e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\Basic">
+      <UniqueIdentifier>{66714595-b5bd-456e-bf6a-913bb84eddde}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\Decal">
+      <UniqueIdentifier>{bed136b6-ede5-42bb-8c78-77a19555cb5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\DeferredGeometry">
+      <UniqueIdentifier>{39a40da1-7ab4-4d90-92e8-7b96785ec496}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\DeferredPost">
+      <UniqueIdentifier>{4901f724-f54d-4ec9-b902-81e61a8bc0c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\EnvironmentProb">
+      <UniqueIdentifier>{6d691b59-1cae-47c5-a5cf-1a8cd6a87fce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\LightMap">
+      <UniqueIdentifier>{c33e10a9-0fb3-48b1-9c17-2d0590cffc59}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\Occluder">
+      <UniqueIdentifier>{d9b49843-b02c-4da0-b7d3-fc52b27ce79d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\Particle">
+      <UniqueIdentifier>{3869952c-679e-4b6b-9be4-e32751d341bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\PostProcess">
+      <UniqueIdentifier>{87d3042c-d306-4b57-903a-9153cce2d5ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\RenderUtility">
+      <UniqueIdentifier>{d22ba800-ed00-4449-a986-7484c7cd77f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\Sky">
+      <UniqueIdentifier>{5e744320-0ffd-4bbf-b6ba-c877e46a26d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\Sprite">
+      <UniqueIdentifier>{d374f71a-e82f-40ff-bdf8-cc7d09858113}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\Terrain">
+      <UniqueIdentifier>{02817844-2eeb-4c54-831e-281e0ba671be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\DeferredGeometryTransparent">
+      <UniqueIdentifier>{20fc76b8-0d51-4738-a5cf-e3b80b7779c6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Shaders\GE_Terrain\GE_Terrain.hlsli">
+      <Filter>Shaders\Terrain</Filter>
+    </None>
+    <None Include="Shaders\GE_Terrain\GE_Terrain_PS_TEMPLATE.hlsli">
+      <Filter>Shaders\Terrain</Filter>
+    </None>
+    <None Include="Shaders\GE_Decal\GE_Decal.hlsli">
+      <Filter>Shaders\Decal</Filter>
+    </None>
+    <None Include="Shaders\GE_Decal\GE_Decal_PS_TEMPLATE.hlsli">
+      <Filter>Shaders\Decal</Filter>
+    </None>
+    <None Include="Shaders\GE_DeferredGeometry\GE_DG.hlsli">
+      <Filter>Shaders\DeferredGeometry</Filter>
+    </None>
+    <None Include="Shaders\GE_DeferredGeometry\GE_DG_PS_TEMPLATE.hlsli">
+      <Filter>Shaders\DeferredGeometry</Filter>
+    </None>
+    <None Include="Shaders\GE_DeferredGeometryTransparent\GE_DGT.hlsli">
+      <Filter>Shaders\DeferredGeometryTransparent</Filter>
+    </None>
+    <None Include="Shaders\GE_DeferredGeometryTransparent\GE_DGT_PS_TEMPLATE.hlsli">
+      <Filter>Shaders\DeferredGeometryTransparent</Filter>
+    </None>
+    <None Include="Shaders\GE_DeferredPost\GE_DP.hlsli">
+      <Filter>Shaders\DeferredPost</Filter>
+    </None>
+    <None Include="Shaders\GE_DeferredPost\GE_DP_PS_DIR_TEMPLATE.hlsli">
+      <Filter>Shaders\DeferredPost</Filter>
+    </None>
+    <None Include="Shaders\GE_DeferredPost\GE_DP_PS_POINT_TEMPLATE.hlsli">
+      <Filter>Shaders\DeferredPost</Filter>
+    </None>
+    <None Include="Shaders\GE_DeferredPost\GE_DP_PS_SPOT_TEMPLATE.hlsli">
+      <Filter>Shaders\DeferredPost</Filter>
+    </None>
+    <None Include="Shaders\GE_EnvironmentProb\GE_EnvironmentProb.hlsli">
+      <Filter>Shaders\EnvironmentProb</Filter>
+    </None>
+    <None Include="Shaders\GE_LightMap\GE_LM.hlsli">
+      <Filter>Shaders\LightMap</Filter>
+    </None>
+    <None Include="Shaders\GE_Occluder\GE_Occluder.hlsli">
+      <Filter>Shaders\Occluder</Filter>
+    </None>
+    <None Include="Shaders\GE_Particle\GE_P_GS_TEMPLATE.hlsli">
+      <Filter>Shaders\Particle</Filter>
+    </None>
+    <None Include="Shaders\GE_Particle\GE_P_PS_TEMPLATE.hlsli">
+      <Filter>Shaders\Particle</Filter>
+    </None>
+    <None Include="Shaders\GE_Particle\GE_Particle.hlsli">
+      <Filter>Shaders\Particle</Filter>
+    </None>
+    <None Include="Shaders\GE_PostProcess\GE_PostProcess.hlsli">
+      <Filter>Shaders\PostProcess</Filter>
+    </None>
+    <None Include="Shaders\GE_PostProcess\GE_PP_PS_DepthOfField_TEMPLATE.hlsli">
+      <Filter>Shaders\PostProcess</Filter>
+    </None>
+    <None Include="Shaders\GE_PostProcess\GE_PP_PS_FXAA_TEMPLATE.hlsli">
+      <Filter>Shaders\PostProcess</Filter>
+    </None>
+    <None Include="Shaders\GE_RenderUtility\GE_RU_PS_TEMPLATE.hlsli">
+      <Filter>Shaders\RenderUtility</Filter>
+    </None>
+    <None Include="Shaders\GE_RenderUtility\RenderUtility.hlsli">
+      <Filter>Shaders\RenderUtility</Filter>
+    </None>
+    <None Include="Shaders\GE_Sky\GE_SK_PS_TEMPLATE.hlsli">
+      <Filter>Shaders\Sky</Filter>
+    </None>
+    <None Include="Shaders\GE_Sky\GE_Sky.hlsli">
+      <Filter>Shaders\Sky</Filter>
+    </None>
+    <None Include="Shaders\GE_Sprite\GE_S_PS_Template.hlsli">
+      <Filter>Shaders\Sprite</Filter>
+    </None>
+    <None Include="Shaders\GE_Sprite\GE_S_VS_Template.hlsli">
+      <Filter>Shaders\Sprite</Filter>
+    </None>
+    <None Include="Shaders\GE_Sprite\GE_Sprite.hlsli">
+      <Filter>Shaders\Sprite</Filter>
+    </None>
+    <None Include="Shaders\GE_Basic\GE_Basic.hlsli">
+      <Filter>Shaders\Basic</Filter>
+    </None>
+    <None Include="Shaders\GE_Basic\GE_Basic_PS_TEMPLATE.hlsli">
+      <Filter>Shaders\Basic</Filter>
+    </None>
+    <None Include="GE_BasicRenderer.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="GE_Core.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="GE_EnvironmentProbe.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="GE_Frustum.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="GE_LightMapCooker.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="GE_Mat4x4.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="GE_Material.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="GE_Model.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="GE_Quat.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="GE_RenderUtility.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="GE_Terrain.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="GE_Vec2.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="GE_Vec3.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="GE_Vec4.inl">
+      <Filter>Header Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="Shaders\GE_Terrain\GE_Terrain_PS_Mask0_Proc1.hlsl">
+      <Filter>Shaders\Terrain</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_Terrain\GE_Terrain_PS_Mask0_Proc2.hlsl">
+      <Filter>Shaders\Terrain</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_Terrain\GE_Terrain_PS_Mask0_Proc3.hlsl">
+      <Filter>Shaders\Terrain</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_Terrain\GE_Terrain_PS_Mask0_Proc4.hlsl">
+      <Filter>Shaders\Terrain</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_Terrain\GE_Terrain_PS_Mask0_Proc5.hlsl">
+      <Filter>Shaders\Terrain</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_Terrain\GE_Terrain_PS_Mask0_Proc6.hlsl">
+      <Filter>Shaders\Terrain</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_Terrain\GE_Terrain_PS_Mask0_Proc7.hlsl">
+      <Filter>Shaders\Terrain</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_Terrain\GE_Terrain_PS_Mask0_Proc8.hlsl">
+      <Filter>Shaders\Terrain</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_Terrain\GE_Terrain_PS_Mask1_Proc0.hlsl">
+      <Filter>Shaders\Terrain</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_Terrain\GE_Terrain_PS_Mask1_Proc1.hlsl">
+      <Filter>Shaders\Terrain</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_Terrain\GE_Terrain_PS_Mask1_Proc2.hlsl">
+      <Filter>Shaders\Terrain</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_Terrain\GE_Terrain_PS_Mask1_Proc3.hlsl">
+      <Filter>Shaders\Terrain</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_Terrain\GE_Terrain_PS_Mask1_Proc4.hlsl">
+      <Filter>Shaders\Terrain</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_Terrain\GE_Terrain_PS_Mask1_Proc5.hlsl">
+      <Filter>Shaders\Terrain</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_Terrain\GE_Terrain_PS_Mask1_Proc6.hlsl">
+      <Filter>Shaders\Terrain</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_Terrain\GE_Terrain_PS_Mask1_Proc7.hlsl">
+      <Filter>Shaders\Terrain</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_Terrain\GE_Terrain_PS_Mask1_Proc8.hlsl">
+      <Filter>Shaders\Terrain</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_Terrain\GE_Terrain_PS_Mask2_Proc0.hlsl">
+      <Filter>Shaders\Terrain</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_Terrain\GE_Terrain_PS_Mask2_Proc1.hlsl">
+      <Filter>Shaders\Terrain</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_Terrain\GE_Terrain_PS_Mask2_Proc2.hlsl">
+      <Filter>Shaders\Terrain</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_Terrain\GE_Terrain_PS_Mask2_Proc3.hlsl">
+      <Filter>Shaders\Terrain</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_Terrain\GE_Terrain_PS_Mask2_Proc4.hlsl">
+      <Filter>Shaders\Terrain</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_Terrain\GE_Terrain_PS_Mask2_Proc5.hlsl">
+      <Filter>Shaders\Terrain</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_Terrain\GE_Terrain_PS_Mask2_Proc6.hlsl">
+      <Filter>Shaders\Terrain</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_Terrain\GE_Terrain_PS_Mask2_Proc7.hlsl">
+      <Filter>Shaders\Terrain</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_Terrain\GE_Terrain_PS_Mask2_Proc8.hlsl">
+      <Filter>Shaders\Terrain</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_Terrain\GE_Terrain_PS_Mask3_Proc0.hlsl">
+      <Filter>Shaders\Terrain</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_Terrain\GE_Terrain_PS_Mask3_Proc1.hlsl">
+      <Filter>Shaders\Terrain</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_Terrain\GE_Terrain_PS_Mask3_Proc2.hlsl">
+      <Filter>Shaders\Terrain</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_Terrain\GE_Terrain_PS_Mask3_Proc3.hlsl">
+      <Filter>Shaders\Terrain</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_Terrain\GE_Terrain_PS_Mask3_Proc4.hlsl">
+      <Filter>Shaders\Terrain</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_Terrain\GE_Terrain_PS_Mask3_Proc5.hlsl">
+      <Filter>Shaders\Terrain</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_Terrain\GE_Terrain_PS_Mask3_Proc6.hlsl">
+      <Filter>Shaders\Terrain</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_Terrain\GE_Terrain_PS_Mask3_Proc7.hlsl">
+      <Filter>Shaders\Terrain</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_Terrain\GE_Terrain_PS_Mask3_Proc8.hlsl">
+      <Filter>Shaders\Terrain</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_Terrain\GE_Terrain_PS_Mask4_Proc0.hlsl">
+      <Filter>Shaders\Terrain</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_Terrain\GE_Terrain_PS_Mask4_Proc1.hlsl">
+      <Filter>Shaders\Terrain</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_Terrain\GE_Terrain_PS_Mask4_Proc2.hlsl">
+      <Filter>Shaders\Terrain</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_Terrain\GE_Terrain_PS_Mask4_Proc3.hlsl">
+      <Filter>Shaders\Terrain</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_Terrain\GE_Terrain_PS_Mask4_Proc4.hlsl">
+      <Filter>Shaders\Terrain</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_Terrain\GE_Terrain_PS_Mask4_Proc5.hlsl">
+      <Filter>Shaders\Terrain</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_Terrain\GE_Terrain_PS_Mask4_Proc6.hlsl">
+      <Filter>Shaders\Terrain</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_Terrain\GE_Terrain_PS_Mask4_Proc7.hlsl">
+      <Filter>Shaders\Terrain</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_Terrain\GE_Terrain_PS_Mask4_Proc8.hlsl">
+      <Filter>Shaders\Terrain</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_Terrain\GE_Terrain_VS.hlsl">
+      <Filter>Shaders\Terrain</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_Decal\GE_Decal_GS.hlsl">
+      <Filter>Shaders\Decal</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_Decal\GE_Decal_PS_D.hlsl">
+      <Filter>Shaders\Decal</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_Decal\GE_Decal_PS_DM.hlsl">
+      <Filter>Shaders\Decal</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_Decal\GE_Decal_PS_DMR.hlsl">
+      <Filter>Shaders\Decal</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_Decal\GE_Decal_PS_DN.hlsl">
+      <Filter>Shaders\Decal</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_Decal\GE_Decal_PS_DNM.hlsl">
+      <Filter>Shaders\Decal</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_Decal\GE_Decal_PS_DNMR.hlsl">
+      <Filter>Shaders\Decal</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_Decal\GE_Decal_PS_DNR.hlsl">
+      <Filter>Shaders\Decal</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_Decal\GE_Decal_PS_DR.hlsl">
+      <Filter>Shaders\Decal</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_Decal\GE_Decal_VS.hlsl">
+      <Filter>Shaders\Decal</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_DeferredGeometry\GE_DG_GS_StreamOut.hlsl">
+      <Filter>Shaders\DeferredGeometry</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_DeferredGeometry\GE_DG_PS.hlsl">
+      <Filter>Shaders\DeferredGeometry</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_DeferredGeometry\GE_DG_PS_LightMap.hlsl">
+      <Filter>Shaders\DeferredGeometry</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_DeferredGeometry\GE_DG_PS_LightMap_Reflect.hlsl">
+      <Filter>Shaders\DeferredGeometry</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_DeferredGeometry\GE_DG_PS_MultiLayer.hlsl">
+      <Filter>Shaders\DeferredGeometry</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_DeferredGeometry\GE_DG_PS_MultiLayer_LightMap.hlsl">
+      <Filter>Shaders\DeferredGeometry</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_DeferredGeometry\GE_DG_PS_MultiLayer_LightMap_Reflect.hlsl">
+      <Filter>Shaders\DeferredGeometry</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_DeferredGeometry\GE_DG_PS_MultiLayer_Reflect.hlsl">
+      <Filter>Shaders\DeferredGeometry</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_DeferredGeometry\GE_DG_PS_Reflect.hlsl">
+      <Filter>Shaders\DeferredGeometry</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_DeferredGeometry\GE_DG_VS.hlsl">
+      <Filter>Shaders\DeferredGeometry</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_DeferredGeometry\GE_DG_VS_Instance.hlsl">
+      <Filter>Shaders\DeferredGeometry</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_DeferredGeometry\GE_DG_VS_Morph.hlsl">
+      <Filter>Shaders\DeferredGeometry</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_DeferredGeometry\GE_DG_VS_Morph_Skin.hlsl">
+      <Filter>Shaders\DeferredGeometry</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_DeferredGeometry\GE_DG_VS_Morph_Skin_StreamOut.hlsl">
+      <Filter>Shaders\DeferredGeometry</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_DeferredGeometry\GE_DG_VS_Morph_StreamOut.hlsl">
+      <Filter>Shaders\DeferredGeometry</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_DeferredGeometry\GE_DG_VS_Skin.hlsl">
+      <Filter>Shaders\DeferredGeometry</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_DeferredGeometry\GE_DG_VS_Skin_StreamOut.hlsl">
+      <Filter>Shaders\DeferredGeometry</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_DeferredGeometryTransparent\GE_DGT_GS_StreamOut.hlsl">
+      <Filter>Shaders\DeferredGeometryTransparent</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_DeferredGeometryTransparent\GE_DGT_PS.hlsl">
+      <Filter>Shaders\DeferredGeometryTransparent</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_DeferredGeometryTransparent\GE_DGT_PS_LightMap.hlsl">
+      <Filter>Shaders\DeferredGeometryTransparent</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_DeferredGeometryTransparent\GE_DGT_PS_LightMap_Reflect.hlsl">
+      <Filter>Shaders\DeferredGeometryTransparent</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_DeferredGeometryTransparent\GE_DGT_PS_MultiLayer.hlsl">
+      <Filter>Shaders\DeferredGeometryTransparent</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_DeferredGeometryTransparent\GE_DGT_PS_MultiLayer_LightMap.hlsl">
+      <Filter>Shaders\DeferredGeometryTransparent</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_DeferredGeometryTransparent\GE_DGT_PS_MultiLayer_LightMap_Reflect.hlsl">
+      <Filter>Shaders\DeferredGeometryTransparent</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_DeferredGeometryTransparent\GE_DGT_PS_MultiLayer_Reflect.hlsl">
+      <Filter>Shaders\DeferredGeometryTransparent</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_DeferredGeometryTransparent\GE_DGT_PS_Reflect.hlsl">
+      <Filter>Shaders\DeferredGeometryTransparent</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_DeferredGeometryTransparent\GE_DGT_VS.hlsl">
+      <Filter>Shaders\DeferredGeometryTransparent</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_DeferredGeometryTransparent\GE_DGT_VS_Instance.hlsl">
+      <Filter>Shaders\DeferredGeometryTransparent</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_DeferredGeometryTransparent\GE_DGT_VS_Morph.hlsl">
+      <Filter>Shaders\DeferredGeometryTransparent</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_DeferredGeometryTransparent\GE_DGT_VS_Morph_Skin.hlsl">
+      <Filter>Shaders\DeferredGeometryTransparent</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_DeferredGeometryTransparent\GE_DGT_VS_Morph_Skin_StreamOut.hlsl">
+      <Filter>Shaders\DeferredGeometryTransparent</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_DeferredGeometryTransparent\GE_DGT_VS_Morph_StreamOut.hlsl">
+      <Filter>Shaders\DeferredGeometryTransparent</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_DeferredGeometryTransparent\GE_DGT_VS_Skin.hlsl">
+      <Filter>Shaders\DeferredGeometryTransparent</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_DeferredGeometryTransparent\GE_DGT_VS_Skin_StreamOut.hlsl">
+      <Filter>Shaders\DeferredGeometryTransparent</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_DeferredPost\GE_DP_PS_DIR.hlsl">
+      <Filter>Shaders\DeferredPost</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_DeferredPost\GE_DP_PS_DIR1.hlsl">
+      <Filter>Shaders\DeferredPost</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_DeferredPost\GE_DP_PS_DIR1_VISUALIZE.hlsl">
+      <Filter>Shaders\DeferredPost</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_DeferredPost\GE_DP_PS_DIR2.hlsl">
+      <Filter>Shaders\DeferredPost</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_DeferredPost\GE_DP_PS_DIR2_VISUALIZE.hlsl">
+      <Filter>Shaders\DeferredPost</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_DeferredPost\GE_DP_PS_DIR3.hlsl">
+      <Filter>Shaders\DeferredPost</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_DeferredPost\GE_DP_PS_DIR3_VISUALIZE.hlsl">
+      <Filter>Shaders\DeferredPost</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_DeferredPost\GE_DP_PS_DIR4.hlsl">
+      <Filter>Shaders\DeferredPost</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_DeferredPost\GE_DP_PS_DIR4_VISUALIZE.hlsl">
+      <Filter>Shaders\DeferredPost</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_DeferredPost\GE_DP_PS_POINT_Filter_NoShadow.hlsl">
+      <Filter>Shaders\DeferredPost</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_DeferredPost\GE_DP_PS_POINT_Filter_Shadow.hlsl">
+      <Filter>Shaders\DeferredPost</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_DeferredPost\GE_DP_PS_POINT_NoFilter_NoShadow.hlsl">
+      <Filter>Shaders\DeferredPost</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_DeferredPost\GE_DP_PS_POINT_NoFilter_Shadow.hlsl">
+      <Filter>Shaders\DeferredPost</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_DeferredPost\GE_DP_PS_SPOT_NoShadow_Filter.hlsl">
+      <Filter>Shaders\DeferredPost</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_DeferredPost\GE_DP_PS_SPOT_NoShadow_NoFilter.hlsl">
+      <Filter>Shaders\DeferredPost</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_DeferredPost\GE_DP_PS_SPOT_Shadow_Filter.hlsl">
+      <Filter>Shaders\DeferredPost</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_DeferredPost\GE_DP_PS_SPOT_Shadow_NoFilter.hlsl">
+      <Filter>Shaders\DeferredPost</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_DeferredPost\GE_DP_VS.hlsl">
+      <Filter>Shaders\DeferredPost</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_DeferredPost\GE_DP_VS_DIR.hlsl">
+      <Filter>Shaders\DeferredPost</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_EnvironmentProb\GE_EnvironmentProb_GS_Cube.hlsl">
+      <Filter>Shaders\EnvironmentProb</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_EnvironmentProb\GE_EnvironmentProb_PS.hlsl">
+      <Filter>Shaders\EnvironmentProb</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_EnvironmentProb\GE_EnvironmentProb_PS_Cube.hlsl">
+      <Filter>Shaders\EnvironmentProb</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_EnvironmentProb\GE_EnvironmentProb_VS.hlsl">
+      <Filter>Shaders\EnvironmentProb</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_EnvironmentProb\GE_EnvironmentProb_VS_Cube.hlsl">
+      <Filter>Shaders\EnvironmentProb</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_LightMap\GE_LM_PS_DIR.hlsl">
+      <Filter>Shaders\LightMap</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_LightMap\GE_LM_PS_POINT.hlsl">
+      <Filter>Shaders\LightMap</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_LightMap\GE_LM_PS_SPOT.hlsl">
+      <Filter>Shaders\LightMap</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_LightMap\GE_LM_VS.hlsl">
+      <Filter>Shaders\LightMap</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_Occluder\GE_O_VS.hlsl">
+      <Filter>Shaders\Occluder</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_Particle\GE_P_GS.hlsl">
+      <Filter>Shaders\Particle</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_Particle\GE_P_GS_INSTANCE.hlsl">
+      <Filter>Shaders\Particle</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_Particle\GE_P_PS.hlsl">
+      <Filter>Shaders\Particle</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_Particle\GE_P_PS_SHIMMER.hlsl">
+      <Filter>Shaders\Particle</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_Particle\GE_P_VS.hlsl">
+      <Filter>Shaders\Particle</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_PostProcess\GE_PP_PS_Adaptation.hlsl">
+      <Filter>Shaders\PostProcess</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_PostProcess\GE_PP_PS_AtmosphereFog.hlsl">
+      <Filter>Shaders\PostProcess</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_PostProcess\GE_PP_PS_BlurHorizontal.hlsl">
+      <Filter>Shaders\PostProcess</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_PostProcess\GE_PP_PS_BlurVertical.hlsl">
+      <Filter>Shaders\PostProcess</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_PostProcess\GE_PP_PS_Border.hlsl">
+      <Filter>Shaders\PostProcess</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_PostProcess\GE_PP_PS_BrightCalculate.hlsl">
+      <Filter>Shaders\PostProcess</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_PostProcess\GE_PP_PS_BrightCalculateAlpha.hlsl">
+      <Filter>Shaders\PostProcess</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_PostProcess\GE_PP_PS_BrightCalculateBoth.hlsl">
+      <Filter>Shaders\PostProcess</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_PostProcess\GE_PP_PS_CartoonEdge.hlsl">
+      <Filter>Shaders\PostProcess</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_PostProcess\GE_PP_PS_Combine.hlsl">
+      <Filter>Shaders\PostProcess</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_PostProcess\GE_PP_PS_Convert.hlsl">
+      <Filter>Shaders\PostProcess</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_PostProcess\GE_PP_PS_DOF.hlsl">
+      <Filter>Shaders\PostProcess</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_PostProcess\GE_PP_PS_DOFAuto.hlsl">
+      <Filter>Shaders\PostProcess</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_PostProcess\GE_PP_PS_Down.hlsl">
+      <Filter>Shaders\PostProcess</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_PostProcess\GE_PP_PS_Down2X2.hlsl">
+      <Filter>Shaders\PostProcess</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_PostProcess\GE_PP_PS_Down3X3.hlsl">
+      <Filter>Shaders\PostProcess</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_PostProcess\GE_PP_PS_DownMulAlpha.hlsl">
+      <Filter>Shaders\PostProcess</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_PostProcess\GE_PP_PS_Edge.hlsl">
+      <Filter>Shaders\PostProcess</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_PostProcess\GE_PP_PS_FlipUV.hlsl">
+      <Filter>Shaders\PostProcess</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_PostProcess\GE_PP_PS_FXAA.hlsl">
+      <Filter>Shaders\PostProcess</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_PostProcess\GE_PP_PS_FXAA_1.hlsl">
+      <Filter>Shaders\PostProcess</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_PostProcess\GE_PP_PS_FXAA_2.hlsl">
+      <Filter>Shaders\PostProcess</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_PostProcess\GE_PP_PS_FXAA_3.hlsl">
+      <Filter>Shaders\PostProcess</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_PostProcess\GE_PP_PS_FXAA_4.hlsl">
+      <Filter>Shaders\PostProcess</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_PostProcess\GE_PP_PS_FXAA_5.hlsl">
+      <Filter>Shaders\PostProcess</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_PostProcess\GE_PP_PS_Grayscale.hlsl">
+      <Filter>Shaders\PostProcess</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_PostProcess\GE_PP_PS_GrowByAlpha.hlsl">
+      <Filter>Shaders\PostProcess</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_PostProcess\GE_PP_PS_LensDirt.hlsl">
+      <Filter>Shaders\PostProcess</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_PostProcess\GE_PP_PS_Lerp.hlsl">
+      <Filter>Shaders\PostProcess</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_PostProcess\GE_PP_PS_LightScatter.hlsl">
+      <Filter>Shaders\PostProcess</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_PostProcess\GE_PP_PS_MaskWithAlpha.hlsl">
+      <Filter>Shaders\PostProcess</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_PostProcess\GE_PP_PS_MotionBlur.hlsl">
+      <Filter>Shaders\PostProcess</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_PostProcess\GE_PP_PS_Multiple.hlsl">
+      <Filter>Shaders\PostProcess</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_PostProcess\GE_PP_PS_RadialBlur.hlsl">
+      <Filter>Shaders\PostProcess</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_PostProcess\GE_PP_PS_RadialBlurDouble.hlsl">
+      <Filter>Shaders\PostProcess</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_PostProcess\GE_PP_PS_SSAO.hlsl">
+      <Filter>Shaders\PostProcess</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_PostProcess\GE_PP_PS_Subtract.hlsl">
+      <Filter>Shaders\PostProcess</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_PostProcess\GE_PP_PS_To1x1.hlsl">
+      <Filter>Shaders\PostProcess</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_PostProcess\GE_PP_PS_ToneMap.hlsl">
+      <Filter>Shaders\PostProcess</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_PostProcess\GE_PP_VS.hlsl">
+      <Filter>Shaders\PostProcess</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_RenderUtility\GE_RU_PS.hlsl">
+      <Filter>Shaders\RenderUtility</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_RenderUtility\GE_RU_PS_COLOR.hlsl">
+      <Filter>Shaders\RenderUtility</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_RenderUtility\GE_RU_PS_COLOR_DEPTH.hlsl">
+      <Filter>Shaders\RenderUtility</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_RenderUtility\GE_RU_PS_COLOR_TEXTURE.hlsl">
+      <Filter>Shaders\RenderUtility</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_RenderUtility\GE_RU_PS_COLOR_TEXTURE_DEPTH.hlsl">
+      <Filter>Shaders\RenderUtility</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_RenderUtility\GE_RU_PS_DEPTH.hlsl">
+      <Filter>Shaders\RenderUtility</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_RenderUtility\GE_RU_PS_TEXTURE.hlsl">
+      <Filter>Shaders\RenderUtility</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_RenderUtility\GE_RU_PS_TEXTURE_DEPTH.hlsl">
+      <Filter>Shaders\RenderUtility</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_RenderUtility\GE_RU_VS.hlsl">
+      <Filter>Shaders\RenderUtility</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_Sky\GE_SK_PS.hlsl">
+      <Filter>Shaders\Sky</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_Sky\GE_SK_PS_Map01.hlsl">
+      <Filter>Shaders\Sky</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_Sky\GE_SK_PS_Map10.hlsl">
+      <Filter>Shaders\Sky</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_Sky\GE_SK_PS_Map11.hlsl">
+      <Filter>Shaders\Sky</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_Sky\GE_SK_VS.hlsl">
+      <Filter>Shaders\Sky</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_Sprite\GE_S_PS.hlsl">
+      <Filter>Shaders\Sprite</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_Sprite\GE_S_PS_Shimmer.hlsl">
+      <Filter>Shaders\Sprite</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_Sprite\GE_S_VS.hlsl">
+      <Filter>Shaders\Sprite</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_Sprite\GE_S_VS_Instance.hlsl">
+      <Filter>Shaders\Sprite</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_Basic\GE_Basic_GS_StreamOut.hlsl">
+      <Filter>Shaders\Basic</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_Basic\GE_Basic_PS.hlsl">
+      <Filter>Shaders\Basic</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_Basic\GE_Basic_PS_Texture.hlsl">
+      <Filter>Shaders\Basic</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_Basic\GE_Basic_VS.hlsl">
+      <Filter>Shaders\Basic</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_Basic\GE_Basic_VS_Instance.hlsl">
+      <Filter>Shaders\Basic</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_Basic\GE_Basic_VS_Morph.hlsl">
+      <Filter>Shaders\Basic</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_Basic\GE_Basic_VS_Morph_Skin.hlsl">
+      <Filter>Shaders\Basic</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_Basic\GE_Basic_VS_Morph_Skin_StreamOut.hlsl">
+      <Filter>Shaders\Basic</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_Basic\GE_Basic_VS_Morph_StreamOut.hlsl">
+      <Filter>Shaders\Basic</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_Basic\GE_Basic_VS_Skin.hlsl">
+      <Filter>Shaders\Basic</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_Basic\GE_Basic_VS_Skin_StreamOut.hlsl">
+      <Filter>Shaders\Basic</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_QuadVertexLayout.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_Terrain\GE_Terrain_GS_StreamOut.hlsl">
+      <Filter>Shaders\Terrain</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GE_Terrain\GE_Terrain_VS_StreamOut.hlsl">
+      <Filter>Shaders\Terrain</Filter>
+    </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GE_BasicRenderer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GE_Bound.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GE_BufferResource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GE_Core.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GE_Decal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GE_DeferredGeometry.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GE_DeferredPost.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GE_EnvironmentProbe.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GE_Frustum.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GE_Lens.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GE_Light.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GE_LightMapCooker.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GE_Mat4x4.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GE_Material.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GE_Math.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GE_Model.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GE_MorphController.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GE_Occluder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GE_Particle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GE_PostProcess.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GE_Prerequisites.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GE_Quat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GE_RenderTarget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GE_RenderUtility.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GE_SkeletonController.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GE_Sky.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GE_Sprite.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GE_StreamMap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GE_Terrain.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GE_Texture.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GE_TransformController.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GE_Utility.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GE_Vec2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GE_Vec3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GE_Vec4.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GE_View.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GE_BasicRenderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GE_Bound.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GE_BufferResource.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GE_Core.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GE_Decal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GE_DeferredGeometry.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GE_DeferredPost.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GE_EnvironmentProbe.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GE_Lens.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GE_Light.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GE_LightMapCooker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GE_Material.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GE_Model.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GE_MorphController.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GE_Occluder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GE_Particle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GE_PostProcess.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GE_RenderTarget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GE_RenderUtility.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GE_SkeletonController.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GE_Sky.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GE_Sprite.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GE_StreamMap.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GE_Terrain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GE_Texture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GE_TransformController.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GE_Utility.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GE_View.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

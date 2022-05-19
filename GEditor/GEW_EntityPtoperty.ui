@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>EntityPtoperty</class>
+ <widget class="QWidget" name="EntityPtoperty">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>354</width>
+    <height>646</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <item row="0" column="0">
+    <widget class="Line" name="line">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <layout class="QHBoxLayout" name="ToolbarLayout"/>
+   </item>
+   <item row="2" column="0">
+    <widget class="QTableWidget" name="BindTable">
+     <property name="alternatingRowColors">
+      <bool>true</bool>
+     </property>
+     <property name="selectionMode">
+      <enum>QAbstractItemView::SingleSelection</enum>
+     </property>
+     <property name="selectionBehavior">
+      <enum>QAbstractItemView::SelectRows</enum>
+     </property>
+     <property name="verticalScrollMode">
+      <enum>QAbstractItemView::ScrollPerPixel</enum>
+     </property>
+     <property name="horizontalScrollMode">
+      <enum>QAbstractItemView::ScrollPerPixel</enum>
+     </property>
+     <attribute name="horizontalHeaderDefaultSectionSize">
+      <number>20</number>
+     </attribute>
+     <column>
+      <property name="text">
+       <string>Parent</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Bind Type</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Bind Pos</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Child</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>O</string>
+      </property>
+      <property name="toolTip">
+       <string>Offset</string>
+      </property>
+     </column>
+    </widget>
+   </item>
+  </layout>
+  <action name="Add">
+   <property name="icon">
+    <iconset resource="geditor.qrc">
+     <normaloff>:/Resources/MetroStyle/plus.png</normaloff>:/Resources/MetroStyle/plus.png</iconset>
+   </property>
+   <property name="text">
+    <string>Add</string>
+   </property>
+   <property name="toolTip">
+    <string>Add bind</string>
+   </property>
+  </action>
+  <action name="Remove">
+   <property name="icon">
+    <iconset resource="geditor.qrc">
+     <normaloff>:/Resources/MetroStyle/minus.png</normaloff>:/Resources/MetroStyle/minus.png</iconset>
+   </property>
+   <property name="text">
+    <string>Remove</string>
+   </property>
+   <property name="toolTip">
+    <string>Remove bind</string>
+   </property>
+  </action>
+  <action name="Search">
+   <property name="icon">
+    <iconset resource="geditor.qrc">
+     <normaloff>:/Resources/MetroStyle/search.png</normaloff>:/Resources/MetroStyle/search.png</iconset>
+   </property>
+   <property name="text">
+    <string>Search</string>
+   </property>
+   <property name="toolTip">
+    <string>Search bind</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="geditor.qrc"/>
+ </resources>
+ <connections/>
+</ui>

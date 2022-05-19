@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>GEditorClass</class>
+ <widget class="QMainWindow" name="GEditorClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>690</width>
+    <height>471</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>GEditor</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QGroupBox
+{
+	background-color:transparent;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border: 1px solid #dd8f08;/*#acacac;*/
+    border-top: none;
+    margin-top: 18px;
+}
+ 
+QGroupBox::title
+{
+	subcontrol-origin: margin;	
+    background:url(:/assets/subWindowBackground);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border: 1px solid #0b477b;
+    border-bottom: none;
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #005192, stop: 1 #002f60);
+    padding: 2 5000 2 2; /* some large value, as QGrouBox actual width is not known */
+    color: white; 
+}
+</string>
+  </property>
+  <property name="animated">
+   <bool>false</bool>
+  </property>
+  <property name="documentMode">
+   <bool>true</bool>
+  </property>
+  <property name="dockOptions">
+   <set>QMainWindow::AllowNestedDocks|QMainWindow::AllowTabbedDocks|QMainWindow::VerticalTabs</set>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout_3">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <item row="0" column="0">
+     <widget class="GEW_Setting" name="Setting" native="true">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>20</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="GEW_Viewport" name="Viewport" native="true">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="autoFillBackground">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="GEW_Prs" name="PRS" native="true">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>20</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>690</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="New"/>
+    <addaction name="Open"/>
+    <addaction name="Save"/>
+    <addaction name="SaveAs"/>
+   </widget>
+   <widget class="QMenu" name="menuView">
+    <property name="title">
+     <string>View</string>
+    </property>
+    <addaction name="SettingBar"/>
+    <addaction name="PRSBar"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuView"/>
+  </widget>
+  <widget class="QDockWidget" name="dockWidget">
+   <property name="windowTitle">
+    <string>Items</string>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>1</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents_2">
+    <layout class="QGridLayout" name="gridLayout">
+     <property name="leftMargin">
+      <number>0</number>
+     </property>
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+     <property name="rightMargin">
+      <number>0</number>
+     </property>
+     <property name="bottomMargin">
+      <number>0</number>
+     </property>
+     <item row="0" column="0">
+      <widget class="GEW_ItemList" name="ItemList" native="true"/>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QDockWidget" name="dockWidget_2">
+   <property name="windowTitle">
+    <string>Properties</string>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>2</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents_3">
+    <layout class="QGridLayout" name="gridLayout_2">
+     <property name="leftMargin">
+      <number>0</number>
+     </property>
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+     <property name="rightMargin">
+      <number>0</number>
+     </property>
+     <property name="bottomMargin">
+      <number>0</number>
+     </property>
+     <property name="spacing">
+      <number>3</number>
+     </property>
+     <item row="0" column="0">
+      <widget class="GEW_Propeties" name="Propeties" native="true"/>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <action name="Save">
+   <property name="icon">
+    <iconset resource="geditor.qrc">
+     <normaloff>:/Resources/MetroStyle/save_as.png</normaloff>:/Resources/MetroStyle/save_as.png</iconset>
+   </property>
+   <property name="text">
+    <string>Save</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="Open">
+   <property name="icon">
+    <iconset resource="geditor.qrc">
+     <normaloff>:/Resources/MetroStyle/documents.png</normaloff>:/Resources/MetroStyle/documents.png</iconset>
+   </property>
+   <property name="text">
+    <string>Open</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="PRSBar">
+   <property name="icon">
+    <iconset resource="geditor.qrc">
+     <normaloff>:/Resources/MetroStyle/pin.png</normaloff>:/Resources/MetroStyle/pin.png</iconset>
+   </property>
+   <property name="text">
+    <string>PRS Bar</string>
+   </property>
+   <property name="toolTip">
+    <string>PRS Bar</string>
+   </property>
+  </action>
+  <action name="SettingBar">
+   <property name="icon">
+    <iconset resource="geditor.qrc">
+     <normaloff>:/Resources/MetroStyle/pin.png</normaloff>:/Resources/MetroStyle/pin.png</iconset>
+   </property>
+   <property name="text">
+    <string>Setting Bar</string>
+   </property>
+  </action>
+  <action name="SaveAs">
+   <property name="icon">
+    <iconset resource="geditor.qrc">
+     <normaloff>:/Resources/MetroStyle/save_as-26.png</normaloff>:/Resources/MetroStyle/save_as-26.png</iconset>
+   </property>
+   <property name="text">
+    <string>Save As</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+S</string>
+   </property>
+  </action>
+  <action name="New">
+   <property name="icon">
+    <iconset resource="geditor.qrc">
+     <normaloff>:/Resources/MetroStyle/file.png</normaloff>:/Resources/MetroStyle/file.png</iconset>
+   </property>
+   <property name="text">
+    <string>New</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>GEW_ItemList</class>
+   <extends>QWidget</extends>
+   <header>GEW_ItemList.h</header>
+   <container>1</container>
+   <slots>
+    <signal>signalItemChanged(GEW_Item*)</signal>
+   </slots>
+  </customwidget>
+  <customwidget>
+   <class>GEW_Viewport</class>
+   <extends>QWidget</extends>
+   <header>GEW_Viewport.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>GEW_Propeties</class>
+   <extends>QWidget</extends>
+   <header>GEW_Propeties.h</header>
+   <container>1</container>
+   <slots>
+    <slot>slotSetItem(GEW_Item*)</slot>
+   </slots>
+  </customwidget>
+  <customwidget>
+   <class>GEW_Prs</class>
+   <extends>QWidget</extends>
+   <header>GEW_Prs.h</header>
+   <container>1</container>
+   <slots>
+    <slot>slotSetItem(GEW_Item*)</slot>
+    <slot>showBar()</slot>
+   </slots>
+  </customwidget>
+  <customwidget>
+   <class>GEW_Setting</class>
+   <extends>QWidget</extends>
+   <header>GEW_Setting.h</header>
+   <container>1</container>
+   <slots>
+    <slot>showBar()</slot>
+   </slots>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="geditor.qrc"/>
+  <include location="GEditor.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>ItemList</sender>
+   <signal>signalItemChanged(GEW_Item*)</signal>
+   <receiver>Propeties</receiver>
+   <slot>slotSetItem(GEW_Item*)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>28</x>
+     <y>74</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>682</x>
+     <y>125</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ItemList</sender>
+   <signal>signalItemChanged(GEW_Item*)</signal>
+   <receiver>PRS</receiver>
+   <slot>slotSetItem(GEW_Item*)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>79</x>
+     <y>297</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>357</x>
+     <y>548</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>PRSBar</sender>
+   <signal>triggered()</signal>
+   <receiver>PRS</receiver>
+   <slot>showBar()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>344</x>
+     <y>460</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>SettingBar</sender>
+   <signal>triggered()</signal>
+   <receiver>Setting</receiver>
+   <slot>showBar()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>344</x>
+     <y>30</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

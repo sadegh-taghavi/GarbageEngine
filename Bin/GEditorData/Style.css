@@ -1,0 +1,125 @@
+/* make the selection span the entire width of the view */
+/*QListView {
+    show-decoration-selected: 1; 
+}*/
+
+QListView::item:alternate {
+    background: #e2e2e2;
+}
+
+/*QListView::item:selected {
+    border: 1px solid #0a62ff;
+}*/
+
+QListView::item:selected:!active {
+    background: #99cbff;/*qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #ABAFE5, stop: 1 #8588B2);*/
+}
+
+QListView::item:selected:active {
+    background: #62b0ff;/*qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #6a6ea9, stop: 1 #888dd9);*/
+}
+
+/*QListView::item:hover {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #FAFBFE, stop: 1 #DCDEF1);
+}*/
+
+QTableView::item:alternate {
+    background: #e2e2e2;
+}
+
+/*QListView::item:selected {
+    border: 1px solid #0a62ff;
+}*/
+
+QTableView::item:selected:!active {
+    background: #99cbff;/*qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #ABAFE5, stop: 1 #8588B2);*/
+}
+
+QTableView::item:selected:active {
+    background: #62b0ff;/*qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #6a6ea9, stop: 1 #888dd9);*/
+}
+
+/*Tree View ----------------------------------------------------------------------*/
+
+/*make the selection span the entire width of the view*/
+/*QTreeView {
+    show-decoration-selected: 1;  
+}*/
+
+QTreeView::item:alternate {
+    background: #e2e2e2;
+}
+
+/*QTreeView::item:selected {
+    border: 1px solid #0a62ff;
+}*/
+
+QTreeView::item:selected:!active {
+    background: #99cbff;/*qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #ABAFE5, stop: 1 #8588B2);*/
+}
+
+QTreeView::item:selected:active {
+    background: #62b0ff;/*qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #6a6ea9, stop: 1 #888dd9);*/
+}
+
+QTreeView::branch:has-siblings:!adjoins-item {
+    border-image: url(:/Resources/MetroStyle/stylesheet-vline.png) 0;
+}
+
+QTreeView::branch:has-siblings:adjoins-item {
+    border-image: url(:/Resources/MetroStyle/stylesheet-branch-more.png) 0;
+}
+
+QTreeView::branch:!has-children:!has-siblings:adjoins-item {
+    border-image: url(:/Resources/MetroStyle/stylesheet-branch-end.png) 0;
+}
+
+QTreeView::branch:has-children:!has-siblings:closed {
+    border-image: none;
+    image: url(:/Resources/MetroStyle/stylesheet-branch-closed-noSibling.png);
+}
+
+QTreeView::branch:has-children:has-siblings:closed {
+    border-image: none;
+    image: url(:/Resources/MetroStyle/stylesheet-branch-closed.png);
+}
+
+QTreeView::branch:open:has-children:!has-siblings {
+    border-image: none;
+    image: url(:/Resources/MetroStyle/stylesheet-branch-open-noSibling.png);
+}
+
+QTreeView::branch:open:has-children:has-siblings  {
+    border-image: none;
+    image: url(:/Resources/MetroStyle/stylesheet-branch-open.png);
+}
+
+QGroupBox
+{
+	background-color:transparent;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border: 1px solid #acacac;
+    border-top: none;
+    margin-top: 18px;
+}
+ 
+QGroupBox::title
+{
+	subcontrol-origin: margin;	
+    background:url(:/assets/subWindowBackground);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border: 1px solid #0b477b;
+    border-bottom: none;
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #005192, stop: 1 #002f60);
+    padding: 2 5000 2 2; /* some large value, as QGrouBox actual width is not known */
+    color: white; 
+}

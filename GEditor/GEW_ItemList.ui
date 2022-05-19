@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>GEW_ItemList</class>
+ <widget class="QWidget" name="GEW_ItemList">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>305</width>
+    <height>664</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <item row="0" column="0">
+    <layout class="QHBoxLayout" name="MenuBarLayout">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+    </layout>
+   </item>
+   <item row="1" column="0">
+    <layout class="QGridLayout" name="gridLayout">
+     <property name="bottomMargin">
+      <number>3</number>
+     </property>
+     <property name="spacing">
+      <number>3</number>
+     </property>
+     <item row="0" column="0">
+      <widget class="QPushButton" name="ObjectVisible">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="toolTip">
+        <string>Object visible</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="GEditor.qrc">
+         <normaloff>:/Resources/MetroStyle/empty_flag.png</normaloff>
+         <normalon>:/Resources/MetroStyle/filled_flag.png</normalon>:/Resources/MetroStyle/empty_flag.png</iconset>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <property name="checked">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLineEdit" name="SearchText"/>
+     </item>
+     <item row="0" column="2">
+      <widget class="QPushButton" name="Search">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="GEditor.qrc">
+         <normaloff>:/Resources/MetroStyle/search.png</normaloff>:/Resources/MetroStyle/search.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0" colspan="3">
+      <widget class="TreeWidget" name="ItemList">
+       <property name="contextMenuPolicy">
+        <enum>Qt::CustomContextMenu</enum>
+       </property>
+       <property name="editTriggers">
+        <set>QAbstractItemView::AllEditTriggers</set>
+       </property>
+       <property name="dragDropMode">
+        <enum>QAbstractItemView::InternalMove</enum>
+       </property>
+       <property name="alternatingRowColors">
+        <bool>true</bool>
+       </property>
+       <property name="selectionMode">
+        <enum>QAbstractItemView::ExtendedSelection</enum>
+       </property>
+       <property name="headerHidden">
+        <bool>false</bool>
+       </property>
+       <property name="expandsOnDoubleClick">
+        <bool>false</bool>
+       </property>
+       <attribute name="headerDefaultSectionSize">
+        <number>17</number>
+       </attribute>
+       <column>
+        <property name="text">
+         <string>Item</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>E</string>
+        </property>
+        <property name="toolTip">
+         <string>Enable/Visible</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>D</string>
+        </property>
+        <property name="toolTip">
+         <string>Dynamic</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>P</string>
+        </property>
+        <property name="toolTip">
+         <string>Physics</string>
+        </property>
+       </column>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>Unic ID:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1" colspan="2">
+      <widget class="QLineEdit" name="UnicID">
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+  <action name="AddModel">
+   <property name="icon">
+    <iconset resource="GEditor.qrc">
+     <normaloff>:/Resources/MetroStyle/teapot.png</normaloff>:/Resources/MetroStyle/teapot.png</iconset>
+   </property>
+   <property name="text">
+    <string>Model</string>
+   </property>
+  </action>
+  <action name="AddLight">
+   <property name="icon">
+    <iconset resource="GEditor.qrc">
+     <normaloff>:/Resources/MetroStyle/solutions.png</normaloff>:/Resources/MetroStyle/solutions.png</iconset>
+   </property>
+   <property name="text">
+    <string>Light</string>
+   </property>
+  </action>
+  <action name="AddFlare">
+   <property name="icon">
+    <iconset resource="GEditor.qrc">
+     <normaloff>:/Resources/MetroStyle/flare.png</normaloff>:/Resources/MetroStyle/flare.png</iconset>
+   </property>
+   <property name="text">
+    <string>Flare</string>
+   </property>
+  </action>
+  <action name="AddEnvironmentProbe">
+   <property name="icon">
+    <iconset resource="GEditor.qrc">
+     <normaloff>:/Resources/MetroStyle/geometry-26.png</normaloff>:/Resources/MetroStyle/geometry-26.png</iconset>
+   </property>
+   <property name="text">
+    <string>Environment Probe</string>
+   </property>
+  </action>
+  <action name="AddDecal">
+   <property name="icon">
+    <iconset resource="GEditor.qrc">
+     <normaloff>:/Resources/MetroStyle/paper-26.png</normaloff>:/Resources/MetroStyle/paper-26.png</iconset>
+   </property>
+   <property name="text">
+    <string>Decal</string>
+   </property>
+  </action>
+  <action name="AddCamera">
+   <property name="icon">
+    <iconset resource="GEditor.qrc">
+     <normaloff>:/Resources/MetroStyle/camcoder_pro.png</normaloff>:/Resources/MetroStyle/camcoder_pro.png</iconset>
+   </property>
+   <property name="text">
+    <string>Camera</string>
+   </property>
+  </action>
+  <action name="AddSound">
+   <property name="icon">
+    <iconset resource="GEditor.qrc">
+     <normaloff>:/Resources/MetroStyle/treble_clef.png</normaloff>:/Resources/MetroStyle/treble_clef.png</iconset>
+   </property>
+   <property name="text">
+    <string>Sound</string>
+   </property>
+  </action>
+  <action name="AddVehicle">
+   <property name="icon">
+    <iconset resource="GEditor.qrc">
+     <normaloff>:/Resources/MetroStyle/tractor.png</normaloff>:/Resources/MetroStyle/tractor.png</iconset>
+   </property>
+   <property name="text">
+    <string>Vehicle</string>
+   </property>
+  </action>
+  <action name="AddTree">
+   <property name="icon">
+    <iconset resource="GEditor.qrc">
+     <normaloff>:/Resources/MetroStyle/deciduous_tree-26.png</normaloff>:/Resources/MetroStyle/deciduous_tree-26.png</iconset>
+   </property>
+   <property name="text">
+    <string>Tree</string>
+   </property>
+  </action>
+  <action name="AddGroup">
+   <property name="icon">
+    <iconset resource="GEditor.qrc">
+     <normaloff>:/Resources/MetroStyle/folder.png</normaloff>:/Resources/MetroStyle/folder.png</iconset>
+   </property>
+   <property name="text">
+    <string>Add Group</string>
+   </property>
+  </action>
+  <action name="actionAddBasic">
+   <property name="icon">
+    <iconset resource="GEditor.qrc">
+     <normaloff>:/Resources/MetroStyle/geography-25.png</normaloff>:/Resources/MetroStyle/geography-25.png</iconset>
+   </property>
+   <property name="text">
+    <string>Add Basic</string>
+   </property>
+  </action>
+  <action name="actionAddEntity">
+   <property name="icon">
+    <iconset resource="GEditor.qrc">
+     <normaloff>:/Resources/MetroStyle/add_folder.png</normaloff>:/Resources/MetroStyle/add_folder.png</iconset>
+   </property>
+   <property name="text">
+    <string>Add Entity</string>
+   </property>
+  </action>
+  <action name="AddEntity">
+   <property name="icon">
+    <iconset resource="GEditor.qrc">
+     <normaloff>:/Resources/MetroStyle/add_folder.png</normaloff>:/Resources/MetroStyle/add_folder.png</iconset>
+   </property>
+   <property name="text">
+    <string>Add Entity</string>
+   </property>
+   <property name="toolTip">
+    <string>Entity</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>TreeWidget</class>
+   <extends>QTreeWidget</extends>
+   <header>TreeWidget.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="GEditor.qrc"/>
+ </resources>
+ <connections/>
+</ui>

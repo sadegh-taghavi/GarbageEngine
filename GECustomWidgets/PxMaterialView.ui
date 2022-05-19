@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PxMaterialView</class>
+ <widget class="QWidget" name="PxMaterialView">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>271</width>
+    <height>22</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <item row="0" column="0">
+    <layout class="QHBoxLayout" name="ToolBarLayout">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+    </layout>
+   </item>
+   <item row="1" column="0">
+    <widget class="QComboBox" name="Materials">
+     <property name="contextMenuPolicy">
+      <enum>Qt::CustomContextMenu</enum>
+     </property>
+    </widget>
+   </item>
+  </layout>
+  <action name="SaveThis">
+   <property name="icon">
+    <iconset resource="pattern.qrc">
+     <normaloff>:/Resources/MetroStyle/save_as.png</normaloff>:/Resources/MetroStyle/save_as.png</iconset>
+   </property>
+   <property name="text">
+    <string>Save this</string>
+   </property>
+  </action>
+  <action name="SaveAll">
+   <property name="icon">
+    <iconset resource="pattern.qrc">
+     <normaloff>:/Resources/MetroStyle/save_as.png</normaloff>:/Resources/MetroStyle/save_as.png</iconset>
+   </property>
+   <property name="text">
+    <string>Save all</string>
+   </property>
+  </action>
+  <action name="ClearAll">
+   <property name="icon">
+    <iconset resource="pattern.qrc">
+     <normaloff>:/Resources/MetroStyle/delete.png</normaloff>:/Resources/MetroStyle/delete.png</iconset>
+   </property>
+   <property name="text">
+    <string>Clear all</string>
+   </property>
+  </action>
+  <action name="Open">
+   <property name="icon">
+    <iconset resource="pattern.qrc">
+     <normaloff>:/Resources/MetroStyle/documents.png</normaloff>:/Resources/MetroStyle/documents.png</iconset>
+   </property>
+   <property name="text">
+    <string>Open</string>
+   </property>
+  </action>
+  <action name="Rename">
+   <property name="icon">
+    <iconset resource="pattern.qrc">
+     <normaloff>:/Resources/MetroStyle/sinchronize.png</normaloff>:/Resources/MetroStyle/sinchronize.png</iconset>
+   </property>
+   <property name="text">
+    <string>Rename</string>
+   </property>
+  </action>
+  <action name="Duplicate">
+   <property name="icon">
+    <iconset resource="pattern.qrc">
+     <normaloff>:/Resources/MetroStyle/copy.png</normaloff>:/Resources/MetroStyle/copy.png</iconset>
+   </property>
+   <property name="text">
+    <string>Duplicate</string>
+   </property>
+   <property name="toolTip">
+    <string>Duplicate</string>
+   </property>
+  </action>
+  <action name="Copy">
+   <property name="icon">
+    <iconset resource="pattern.qrc">
+     <normaloff>:/Resources/MetroStyle/upload.png</normaloff>:/Resources/MetroStyle/upload.png</iconset>
+   </property>
+   <property name="text">
+    <string>Copy</string>
+   </property>
+   <property name="toolTip">
+    <string>Copy</string>
+   </property>
+  </action>
+  <action name="Paste">
+   <property name="icon">
+    <iconset resource="pattern.qrc">
+     <normaloff>:/Resources/MetroStyle/download.png</normaloff>:/Resources/MetroStyle/download.png</iconset>
+   </property>
+   <property name="text">
+    <string>Paste</string>
+   </property>
+   <property name="toolTip">
+    <string>Paste</string>
+   </property>
+  </action>
+  <action name="Add">
+   <property name="icon">
+    <iconset resource="pattern.qrc">
+     <normaloff>:/Resources/MetroStyle/plus.png</normaloff>:/Resources/MetroStyle/plus.png</iconset>
+   </property>
+   <property name="text">
+    <string>Add</string>
+   </property>
+   <property name="toolTip">
+    <string>Add</string>
+   </property>
+  </action>
+  <action name="Remove">
+   <property name="icon">
+    <iconset resource="pattern.qrc">
+     <normaloff>:/Resources/MetroStyle/minus.png</normaloff>:/Resources/MetroStyle/minus.png</iconset>
+   </property>
+   <property name="text">
+    <string>Remove</string>
+   </property>
+   <property name="toolTip">
+    <string>Remove</string>
+   </property>
+  </action>
+  <action name="Edit">
+   <property name="icon">
+    <iconset resource="pattern.qrc">
+     <normaloff>:/Resources/MetroStyle/edit.png</normaloff>:/Resources/MetroStyle/edit.png</iconset>
+   </property>
+   <property name="text">
+    <string>Edit</string>
+   </property>
+   <property name="toolTip">
+    <string>Edit</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="pattern.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,3 @@
+#define NUMBER_OF_SHADOW 3
+#define VISUALIZE_CASCADE
+#include "GE_DP_PS_DIR_TEMPLATE.hlsli"

@@ -1,0 +1,1036 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>387</width>
+    <height>151</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>387</width>
+    <height>151</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>GTextureConverter</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QGroupBox
+{
+	background-color:transparent;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border: 1px solid #005192;
+    border-top: none;
+    margin-top: 18px;
+}
+ 
+QGroupBox::title
+{
+	subcontrol-origin: margin;	
+    background:url(:/assets/subWindowBackground);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border: 1px solid #005192;
+    border-bottom: none;
+   background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #005192, stop: 1 #002f60);
+    padding: 2 5000 2 2; /* some large value, as QGrouBox actual width is not known */
+    color: white; 
+}
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_3">
+    <property name="leftMargin">
+     <number>3</number>
+    </property>
+    <property name="topMargin">
+     <number>3</number>
+    </property>
+    <property name="rightMargin">
+     <number>3</number>
+    </property>
+    <property name="bottomMargin">
+     <number>3</number>
+    </property>
+    <property name="spacing">
+     <number>3</number>
+    </property>
+    <item row="1" column="0">
+     <widget class="QGroupBox" name="groupBox_3">
+      <property name="title">
+       <string>Settings</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <property name="leftMargin">
+        <number>3</number>
+       </property>
+       <property name="topMargin">
+        <number>3</number>
+       </property>
+       <property name="rightMargin">
+        <number>3</number>
+       </property>
+       <property name="bottomMargin">
+        <number>3</number>
+       </property>
+       <property name="spacing">
+        <number>3</number>
+       </property>
+       <item row="0" column="0">
+        <widget class="QLabel" name="label">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string>Type:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QComboBox" name="Type">
+         <item>
+          <property name="text">
+           <string>2D</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Array</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Volume</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Cube</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>CubeArray</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Mega</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QCheckBox" name="GenerateMips">
+         <property name="text">
+          <string>Generate Mips</string>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_2">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string>Format:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QComboBox" name="Format">
+         <item>
+          <property name="text">
+           <string>R32G32B32A32_TYPELESS</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>R32G32B32A32_FLOAT</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>R32G32B32A32_UINT</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>R32G32B32A32_SINT</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>R32G32B32_TYPELESS</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>R32G32B32_FLOAT</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>R32G32B32_UINT</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>R32G32B32_SINT</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>R16G16B16A16_TYPELESS</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>R16G16B16A16_FLOAT</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>R16G16B16A16_UNORM</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>R16G16B16A16_UINT</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>R16G16B16A16_SNORM</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>R16G16B16A16_SINT</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>R32G32_TYPELESS</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>R32G32_FLOAT</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>R32G32_UINT</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>R32G32_SINT</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>R32G8X24_TYPELESS</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>D32_FLOAT_S8X24_UINT</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>R32_FLOAT_X8X24_TYPELESS</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>X32_TYPELESS_G8X24_UINT</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>R10G10B10A2_TYPELESS</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>R10G10B10A2_UNORM</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>R10G10B10A2_UINT</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>R11G11B10_FLOAT</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>R8G8B8A8_TYPELESS</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>R8G8B8A8_UNORM</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>R8G8B8A8_UNORM_SRGB</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>R8G8B8A8_UINT</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>R8G8B8A8_SNORM</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>R8G8B8A8_SINT</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>R16G16_TYPELESS</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>R16G16_FLOAT</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>R16G16_UNORM</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>R16G16_UINT</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>R16G16_SNORM</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>R16G16_SINT</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>R32_TYPELESS</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>D32_FLOAT</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>R32_FLOAT</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>R32_UINT</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>R32_SINT</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>R24G8_TYPELESS</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>D24_UNORM_S8_UINT</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>R24_UNORM_X8_TYPELESS</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>X24_TYPELESS_G8_UINT</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>R8G8_TYPELESS</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>R8G8_UNORM</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>R8G8_UINT</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>R8G8_SNORM</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>R8G8_SINT</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>R16_TYPELESS</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>R16_FLOAT </string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>D16_UNORM</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>R16_UNORM</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>R16_UINT</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>R16_SNORM</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>R16_SINT</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>R8_TYPELESS</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>R8_UNORM</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>R8_UINT</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>R8_SNORM</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>R8_SINT</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>A8_UNORM</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>R1_UNORM</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>R9G9B9E5_SHAREDEXP</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>R8G8_B8G8_UNORM</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>G8R8_G8B8_UNORM</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>BC1_TYPELESS</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>BC1_UNORM</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>BC1_UNORM_SRGB</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>BC2_TYPELESS</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>BC2_UNORM</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>BC2_UNORM_SRGB</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>BC3_TYPELESS</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>BC3_UNORM</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>BC3_UNORM_SRGB</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>BC4_TYPELESS</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>BC4_UNORM</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>BC4_SNORM</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>BC5_TYPELESS</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>BC5_UNORM</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>BC5_SNORM</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>B5G6R5_UNORM</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>B5G5R5A1_UNORM</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>B8G8R8A8_UNORM</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>B8G8R8X8_UNORM</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>R10G10B10_XR_BIAS_A2_UNORM</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>B8G8R8A8_TYPELESS</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>B8G8R8A8_UNORM_SRGB</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>B8G8R8X8_TYPELESS</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>B8G8R8X8_UNORM_SRGB</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>BC6H_TYPELESS</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>BC6H_UF16</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>BC6H_SF16</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>BC7_TYPELESS</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>BC7_UNORM</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>BC7_UNORM_SRGB</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>AYUV</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Y410</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Y416</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>NV12</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>P010</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>P016</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>420_OPAQUE</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>YUY2</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Y210</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Y216</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>NV11</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>AI44</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>IA44</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>P8</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>A8P8</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>B4G4R4A4_UNORM</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QPushButton" name="OK">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>90</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>OK</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_3">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string>Filter:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <property name="spacing">
+          <number>1</number>
+         </property>
+         <item>
+          <widget class="QComboBox" name="Filter">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="currentIndex">
+            <number>2</number>
+           </property>
+           <item>
+            <property name="text">
+             <string>POINT</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>LINEAR</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>CUBIC</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>FANT</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>BOX</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>TRIANGLE</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>POINT_DITHER</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>LINEAR_DITHER</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>CUBIC_DITHER</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>FANT_DITHER</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>BOX_DITHER</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>TRIANGLE_DITHER</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>POINT_DITHER_DIFFUSION</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>LINEAR_DITHER_DIFFUSION</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>CUBIC_DITHER_DIFFUSION</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>FANT_DITHER_DIFFUSION</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>BOX_DITHER_DIFFUSION</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>TRIANGLE_DITHER_DIFFUSION</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="Wrap">
+           <item>
+            <property name="text">
+             <string>Clamp</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Wrap</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Mirror</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="2" column="2">
+        <widget class="QPushButton" name="Cancel">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>90</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Cancel</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QGroupBox" name="groupBox">
+      <property name="title">
+       <string>Output</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout">
+       <property name="leftMargin">
+        <number>3</number>
+       </property>
+       <property name="topMargin">
+        <number>3</number>
+       </property>
+       <property name="rightMargin">
+        <number>3</number>
+       </property>
+       <property name="bottomMargin">
+        <number>3</number>
+       </property>
+       <property name="spacing">
+        <number>3</number>
+       </property>
+       <item row="0" column="0">
+        <widget class="QLineEdit" name="FileName">
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QToolButton" name="FileSelect">
+         <property name="text">
+          <string>...</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>FileName</tabstop>
+  <tabstop>FileSelect</tabstop>
+  <tabstop>Type</tabstop>
+  <tabstop>GenerateMips</tabstop>
+  <tabstop>Format</tabstop>
+  <tabstop>Filter</tabstop>
+  <tabstop>Wrap</tabstop>
+  <tabstop>OK</tabstop>
+  <tabstop>Cancel</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>Cancel</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>395</x>
+     <y>176</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>362</x>
+     <y>114</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Cancel</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>395</x>
+     <y>176</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>345</x>
+     <y>49</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Cancel</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>395</x>
+     <y>176</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>352</x>
+     <y>133</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Cancel</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>369</x>
+     <y>167</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>417</x>
+     <y>159</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

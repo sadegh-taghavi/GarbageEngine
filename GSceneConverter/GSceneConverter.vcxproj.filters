@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Hash">
+      <UniqueIdentifier>{7b3e2010-8068-4e3f-98cf-f52fc78faf67}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Hash\hl_md5.cpp">
+      <Filter>Hash</Filter>
+    </ClCompile>
+    <ClCompile Include="Hash\hl_md5wrapper.cpp">
+      <Filter>Hash</Filter>
+    </ClCompile>
+    <ClCompile Include="Hash\hl_sha1.cpp">
+      <Filter>Hash</Filter>
+    </ClCompile>
+    <ClCompile Include="Hash\hl_sha1wrapper.cpp">
+      <Filter>Hash</Filter>
+    </ClCompile>
+    <ClCompile Include="Hash\hl_sha2ext.cpp">
+      <Filter>Hash</Filter>
+    </ClCompile>
+    <ClCompile Include="Hash\hl_sha256.cpp">
+      <Filter>Hash</Filter>
+    </ClCompile>
+    <ClCompile Include="Hash\hl_sha256wrapper.cpp">
+      <Filter>Hash</Filter>
+    </ClCompile>
+    <ClCompile Include="Hash\hl_sha384wrapper.cpp">
+      <Filter>Hash</Filter>
+    </ClCompile>
+    <ClCompile Include="Hash\hl_sha512wrapper.cpp">
+      <Filter>Hash</Filter>
+    </ClCompile>
+    <ClCompile Include="Hash\hl_wrapperfactory.cpp">
+      <Filter>Hash</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="vcacheopt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Hash\hashlibpp.h">
+      <Filter>Hash</Filter>
+    </ClInclude>
+    <ClInclude Include="Hash\hl_exception.h">
+      <Filter>Hash</Filter>
+    </ClInclude>
+    <ClInclude Include="Hash\hl_hashwrapper.h">
+      <Filter>Hash</Filter>
+    </ClInclude>
+    <ClInclude Include="Hash\hl_md5.h">
+      <Filter>Hash</Filter>
+    </ClInclude>
+    <ClInclude Include="Hash\hl_md5wrapper.h">
+      <Filter>Hash</Filter>
+    </ClInclude>
+    <ClInclude Include="Hash\hl_sha1.h">
+      <Filter>Hash</Filter>
+    </ClInclude>
+    <ClInclude Include="Hash\hl_sha1wrapper.h">
+      <Filter>Hash</Filter>
+    </ClInclude>
+    <ClInclude Include="Hash\hl_sha2ext.h">
+      <Filter>Hash</Filter>
+    </ClInclude>
+    <ClInclude Include="Hash\hl_sha2mac.h">
+      <Filter>Hash</Filter>
+    </ClInclude>
+    <ClInclude Include="Hash\hl_sha256.h">
+      <Filter>Hash</Filter>
+    </ClInclude>
+    <ClInclude Include="Hash\hl_sha256wrapper.h">
+      <Filter>Hash</Filter>
+    </ClInclude>
+    <ClInclude Include="Hash\hl_sha384wrapper.h">
+      <Filter>Hash</Filter>
+    </ClInclude>
+    <ClInclude Include="Hash\hl_sha512wrapper.h">
+      <Filter>Hash</Filter>
+    </ClInclude>
+    <ClInclude Include="Hash\hl_types.h">
+      <Filter>Hash</Filter>
+    </ClInclude>
+    <ClInclude Include="Hash\hl_wrapperfactory.h">
+      <Filter>Hash</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

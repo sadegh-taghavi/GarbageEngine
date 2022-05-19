@@ -1,0 +1,121 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GEngine", "GEngine\GEngine.vcxproj", "{C34DF4DE-FEB1-4DAE-BBC4-8CDDD95BB839}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GEditor", "GEditor\GEditor.vcxproj", "{B12702AD-ABFB-343A-A199-8E24837244A3}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GSceneConverter", "GSceneConverter\GSceneConverter.vcxproj", "{D62118F2-6E44-455C-8001-939CBCFA0FA1}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GECustomWidgetsPlugin", "GECustomWidgetsPlugin\GECustomWidgetsPlugin.vcxproj", "{B5515D66-C50E-4D32-8F2B-3D1FC2F4811F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GTextureConverter", "GTextureConverter\GTextureConverter.vcxproj", "{8B80F738-2BCF-4681-9F84-206B263BA7AB}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GGlyphMaker", "GGlyphMaker\GGlyphMaker.vcxproj", "{CDC01F04-CE83-442B-B211-CA002CFF2E6B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GECustomWidgets", "GECustomWidgets\GECustomWidgets.vcxproj", "{69D527CB-AC66-4A4F-BA2D-88D52A7BEF4B}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 7
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://st-pc:8080/tfs/fip-co
+		SccProjectUniqueName0 = GEditor\\GEditor.vcxproj
+		SccProjectName0 = GEditor
+		SccAuxPath0 = http://st-pc:8080/tfs/fip-co
+		SccLocalPath0 = GEditor
+		SccProvider0 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName1 = GEngine\\GEngine.vcxproj
+		SccProjectName1 = GEngine
+		SccAuxPath1 = http://st-pc:8080/tfs/fip-co
+		SccLocalPath1 = GEngine
+		SccProvider1 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName2 = GSceneConverter\\GSceneConverter.vcxproj
+		SccProjectName2 = GSceneConverter
+		SccAuxPath2 = http://st-pc:8080/tfs/fip-co
+		SccLocalPath2 = GSceneConverter
+		SccProvider2 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName3 = GECustomWidgetsPlugin\\GECustomWidgetsPlugin.vcxproj
+		SccProjectName3 = GECustomWidgetsPlugin
+		SccAuxPath3 = http://st-pc:8080/tfs/fip-co
+		SccLocalPath3 = GECustomWidgetsPlugin
+		SccProvider3 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName4 = GTextureConverter\\GTextureConverter.vcxproj
+		SccProjectName4 = GTextureConverter
+		SccAuxPath4 = http://st-pc:8080/tfs/fip-co
+		SccLocalPath4 = GTextureConverter
+		SccProvider4 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName5 = GGlyphMaker\\GGlyphMaker.vcxproj
+		SccProjectName5 = GGlyphMaker
+		SccAuxPath5 = http://st-pc:8080/tfs/fip-co
+		SccLocalPath5 = GGlyphMaker
+		SccProvider5 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName6 = GECustomWidgets\\GECustomWidgets.vcxproj
+		SccProjectName6 = GECustomWidgets
+		SccAuxPath6 = http://st-pc:8080/tfs/fip-co
+		SccLocalPath6 = GECustomWidgets
+		SccProvider6 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C34DF4DE-FEB1-4DAE-BBC4-8CDDD95BB839}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C34DF4DE-FEB1-4DAE-BBC4-8CDDD95BB839}.Debug|Win32.Build.0 = Debug|Win32
+		{C34DF4DE-FEB1-4DAE-BBC4-8CDDD95BB839}.Debug|x64.ActiveCfg = Debug|x64
+		{C34DF4DE-FEB1-4DAE-BBC4-8CDDD95BB839}.Debug|x64.Build.0 = Debug|x64
+		{C34DF4DE-FEB1-4DAE-BBC4-8CDDD95BB839}.Release|Win32.ActiveCfg = Release|Win32
+		{C34DF4DE-FEB1-4DAE-BBC4-8CDDD95BB839}.Release|Win32.Build.0 = Release|Win32
+		{C34DF4DE-FEB1-4DAE-BBC4-8CDDD95BB839}.Release|x64.ActiveCfg = Release|x64
+		{C34DF4DE-FEB1-4DAE-BBC4-8CDDD95BB839}.Release|x64.Build.0 = Release|x64
+		{B12702AD-ABFB-343A-A199-8E24837244A3}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B12702AD-ABFB-343A-A199-8E24837244A3}.Debug|Win32.Build.0 = Debug|Win32
+		{B12702AD-ABFB-343A-A199-8E24837244A3}.Debug|x64.ActiveCfg = Debug|x64
+		{B12702AD-ABFB-343A-A199-8E24837244A3}.Debug|x64.Build.0 = Debug|x64
+		{B12702AD-ABFB-343A-A199-8E24837244A3}.Release|Win32.ActiveCfg = Release|Win32
+		{B12702AD-ABFB-343A-A199-8E24837244A3}.Release|Win32.Build.0 = Release|Win32
+		{B12702AD-ABFB-343A-A199-8E24837244A3}.Release|x64.ActiveCfg = Release|x64
+		{B12702AD-ABFB-343A-A199-8E24837244A3}.Release|x64.Build.0 = Release|x64
+		{D62118F2-6E44-455C-8001-939CBCFA0FA1}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D62118F2-6E44-455C-8001-939CBCFA0FA1}.Debug|x64.ActiveCfg = Debug|x64
+		{D62118F2-6E44-455C-8001-939CBCFA0FA1}.Debug|x64.Build.0 = Debug|x64
+		{D62118F2-6E44-455C-8001-939CBCFA0FA1}.Release|Win32.ActiveCfg = Release|Win32
+		{D62118F2-6E44-455C-8001-939CBCFA0FA1}.Release|Win32.Build.0 = Release|Win32
+		{D62118F2-6E44-455C-8001-939CBCFA0FA1}.Release|x64.ActiveCfg = Release|x64
+		{B5515D66-C50E-4D32-8F2B-3D1FC2F4811F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B5515D66-C50E-4D32-8F2B-3D1FC2F4811F}.Debug|Win32.Build.0 = Debug|Win32
+		{B5515D66-C50E-4D32-8F2B-3D1FC2F4811F}.Debug|x64.ActiveCfg = Debug|x64
+		{B5515D66-C50E-4D32-8F2B-3D1FC2F4811F}.Debug|x64.Build.0 = Debug|x64
+		{B5515D66-C50E-4D32-8F2B-3D1FC2F4811F}.Release|Win32.ActiveCfg = Release|Win32
+		{B5515D66-C50E-4D32-8F2B-3D1FC2F4811F}.Release|Win32.Build.0 = Release|Win32
+		{B5515D66-C50E-4D32-8F2B-3D1FC2F4811F}.Release|x64.ActiveCfg = Release|x64
+		{8B80F738-2BCF-4681-9F84-206B263BA7AB}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8B80F738-2BCF-4681-9F84-206B263BA7AB}.Debug|x64.ActiveCfg = Debug|x64
+		{8B80F738-2BCF-4681-9F84-206B263BA7AB}.Debug|x64.Build.0 = Debug|x64
+		{8B80F738-2BCF-4681-9F84-206B263BA7AB}.Release|Win32.ActiveCfg = Release|Win32
+		{8B80F738-2BCF-4681-9F84-206B263BA7AB}.Release|Win32.Build.0 = Release|Win32
+		{8B80F738-2BCF-4681-9F84-206B263BA7AB}.Release|x64.ActiveCfg = Release|x64
+		{CDC01F04-CE83-442B-B211-CA002CFF2E6B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{CDC01F04-CE83-442B-B211-CA002CFF2E6B}.Debug|x64.ActiveCfg = Debug|x64
+		{CDC01F04-CE83-442B-B211-CA002CFF2E6B}.Debug|x64.Build.0 = Debug|x64
+		{CDC01F04-CE83-442B-B211-CA002CFF2E6B}.Release|Win32.ActiveCfg = Release|Win32
+		{CDC01F04-CE83-442B-B211-CA002CFF2E6B}.Release|Win32.Build.0 = Release|Win32
+		{CDC01F04-CE83-442B-B211-CA002CFF2E6B}.Release|x64.ActiveCfg = Release|x64
+		{69D527CB-AC66-4A4F-BA2D-88D52A7BEF4B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{69D527CB-AC66-4A4F-BA2D-88D52A7BEF4B}.Debug|Win32.Build.0 = Debug|Win32
+		{69D527CB-AC66-4A4F-BA2D-88D52A7BEF4B}.Debug|x64.ActiveCfg = Debug|x64
+		{69D527CB-AC66-4A4F-BA2D-88D52A7BEF4B}.Debug|x64.Build.0 = Debug|x64
+		{69D527CB-AC66-4A4F-BA2D-88D52A7BEF4B}.Release|Win32.ActiveCfg = Release|Win32
+		{69D527CB-AC66-4A4F-BA2D-88D52A7BEF4B}.Release|Win32.Build.0 = Release|Win32
+		{69D527CB-AC66-4A4F-BA2D-88D52A7BEF4B}.Release|x64.ActiveCfg = Release|x64
+		{69D527CB-AC66-4A4F-BA2D-88D52A7BEF4B}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

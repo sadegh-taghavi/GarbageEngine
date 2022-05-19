@@ -1,0 +1,1169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ColorDialog.cpp" />
+    <ClCompile Include="ColorPreview.cpp" />
+    <ClCompile Include="ColorSelector.cpp" />
+    <ClCompile Include="ColorWheel.cpp" />
+    <ClCompile Include="CurveEdit.cpp" />
+    <ClCompile Include="DoubleSpinBox.cpp" />
+    <ClCompile Include="GeneratedFiles\$(ConfigurationName)\qrc_pattern.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_ColorDialog.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_ColorPreview.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_ColorSelector.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_ColorWheel.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_CurveEdit.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_DoubleSpinBox.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_GradientSlider.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_GroupBox.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_ListWidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_MaterialEditorDialog.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_PictureBox.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_PxMaterialView.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_ScrollArea.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_SpinBox.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_TreeWidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ColorDialog.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ColorPreview.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ColorSelector.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ColorWheel.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_CurveEdit.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_DoubleSpinBox.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_GradientSlider.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_GroupBox.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ListWidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_MaterialEditorDialog.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_PictureBox.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_PxMaterialView.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ScrollArea.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_SpinBox.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_TreeWidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GradientSlider.cpp" />
+    <ClCompile Include="GroupBox.cpp" />
+    <ClCompile Include="ListWidget.cpp" />
+    <ClCompile Include="PictureBox.cpp" />
+    <ClCompile Include="PxMaterialView.cpp" />
+    <ClCompile Include="ScrollArea.cpp" />
+    <ClCompile Include="SpinBox.cpp" />
+    <ClCompile Include="TreeWidget.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="CurveEdit.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing CurveEdit.h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing CurveEdit.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_WIDGETS_LIB -DGECUSTOMWIDGETS_LIB  "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(SolutionDir)3rdParty\DirectXTex" "-IC:\Program Files (x86)\Visual Leak Detector\include"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_WIDGETS_LIB -DGECUSTOMWIDGETS_LIB  "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(SolutionDir)3rdParty\DirectXTex" "-IC:\Program Files (x86)\Visual Leak Detector\include"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing CurveEdit.h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing CurveEdit.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_WIDGETS_LIB -DGECUSTOMWIDGETS_LIB  "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(SolutionDir)3rdParty\DirectXTex" "-IC:\Program Files (x86)\Visual Leak Detector\include"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_WIDGETS_LIB -DGECUSTOMWIDGETS_LIB  "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(SolutionDir)3rdParty\DirectXTex" "-IC:\Program Files (x86)\Visual Leak Detector\include"</Command>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="DoubleSpinBox.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing DoubleSpinBox.h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing DoubleSpinBox.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_WIDGETS_LIB -DGECUSTOMWIDGETS_LIB  "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(SolutionDir)3rdParty\DirectXTex" "-IC:\Program Files (x86)\Visual Leak Detector\include"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_WIDGETS_LIB -DGECUSTOMWIDGETS_LIB  "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(SolutionDir)3rdParty\DirectXTex" "-IC:\Program Files (x86)\Visual Leak Detector\include"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing DoubleSpinBox.h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing DoubleSpinBox.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_WIDGETS_LIB -DGECUSTOMWIDGETS_LIB  "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(SolutionDir)3rdParty\DirectXTex" "-IC:\Program Files (x86)\Visual Leak Detector\include"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_WIDGETS_LIB -DGECUSTOMWIDGETS_LIB  "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(SolutionDir)3rdParty\DirectXTex" "-IC:\Program Files (x86)\Visual Leak Detector\include"</Command>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="PictureBox.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing PictureBox.h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing PictureBox.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_WIDGETS_LIB -DGECUSTOMWIDGETS_LIB  "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(SolutionDir)3rdParty\DirectXTex" "-IC:\Program Files (x86)\Visual Leak Detector\include"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_WIDGETS_LIB -DGECUSTOMWIDGETS_LIB  "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(SolutionDir)3rdParty\DirectXTex" "-IC:\Program Files (x86)\Visual Leak Detector\include"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing PictureBox.h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing PictureBox.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_WIDGETS_LIB -DGECUSTOMWIDGETS_LIB  "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(SolutionDir)3rdParty\DirectXTex" "-IC:\Program Files (x86)\Visual Leak Detector\include"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_WIDGETS_LIB -DGECUSTOMWIDGETS_LIB  "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(SolutionDir)3rdParty\DirectXTex" "-IC:\Program Files (x86)\Visual Leak Detector\include"</Command>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="ScrollArea.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing ScrollArea.h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing ScrollArea.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_WIDGETS_LIB -DGECUSTOMWIDGETS_LIB  "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(SolutionDir)3rdParty\DirectXTex" "-IC:\Program Files (x86)\Visual Leak Detector\include"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_WIDGETS_LIB -DGECUSTOMWIDGETS_LIB  "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(SolutionDir)3rdParty\DirectXTex" "-IC:\Program Files (x86)\Visual Leak Detector\include"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing ScrollArea.h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing ScrollArea.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_WIDGETS_LIB -DGECUSTOMWIDGETS_LIB  "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(SolutionDir)3rdParty\DirectXTex" "-IC:\Program Files (x86)\Visual Leak Detector\include"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_WIDGETS_LIB -DGECUSTOMWIDGETS_LIB  "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(SolutionDir)3rdParty\DirectXTex" "-IC:\Program Files (x86)\Visual Leak Detector\include"</Command>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="SpinBox.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing SpinBox.h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing SpinBox.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_WIDGETS_LIB -DGECUSTOMWIDGETS_LIB  "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(SolutionDir)3rdParty\DirectXTex" "-IC:\Program Files (x86)\Visual Leak Detector\include"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_WIDGETS_LIB -DGECUSTOMWIDGETS_LIB  "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(SolutionDir)3rdParty\DirectXTex" "-IC:\Program Files (x86)\Visual Leak Detector\include"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing SpinBox.h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing SpinBox.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_WIDGETS_LIB -DGECUSTOMWIDGETS_LIB  "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(SolutionDir)3rdParty\DirectXTex" "-IC:\Program Files (x86)\Visual Leak Detector\include"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_WIDGETS_LIB -DGECUSTOMWIDGETS_LIB  "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(SolutionDir)3rdParty\DirectXTex" "-IC:\Program Files (x86)\Visual Leak Detector\include"</Command>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="ColorWheel.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing ColorWheel.h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing ColorWheel.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_WIDGETS_LIB -DGECUSTOMWIDGETS_LIB  "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(SolutionDir)3rdParty\DirectXTex" "-IC:\Program Files (x86)\Visual Leak Detector\include"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_WIDGETS_LIB -DGECUSTOMWIDGETS_LIB  "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(SolutionDir)3rdParty\DirectXTex" "-IC:\Program Files (x86)\Visual Leak Detector\include"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing ColorWheel.h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing ColorWheel.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_WIDGETS_LIB -DGECUSTOMWIDGETS_LIB  "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(SolutionDir)3rdParty\DirectXTex" "-IC:\Program Files (x86)\Visual Leak Detector\include"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_WIDGETS_LIB -DGECUSTOMWIDGETS_LIB  "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(SolutionDir)3rdParty\DirectXTex" "-IC:\Program Files (x86)\Visual Leak Detector\include"</Command>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="ColorPreview.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing ColorPreview.h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing ColorPreview.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_WIDGETS_LIB -DGECUSTOMWIDGETS_LIB  "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(SolutionDir)3rdParty\DirectXTex" "-IC:\Program Files (x86)\Visual Leak Detector\include"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_WIDGETS_LIB -DGECUSTOMWIDGETS_LIB  "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(SolutionDir)3rdParty\DirectXTex" "-IC:\Program Files (x86)\Visual Leak Detector\include"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing ColorPreview.h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing ColorPreview.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_WIDGETS_LIB -DGECUSTOMWIDGETS_LIB  "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(SolutionDir)3rdParty\DirectXTex" "-IC:\Program Files (x86)\Visual Leak Detector\include"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_WIDGETS_LIB -DGECUSTOMWIDGETS_LIB  "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(SolutionDir)3rdParty\DirectXTex" "-IC:\Program Files (x86)\Visual Leak Detector\include"</Command>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GeneratedFiles\$(ConfigurationName)\ui_ColorDialog.h" />
+    <ClInclude Include="GeneratedFiles\$(ConfigurationName)\ui_PxMaterialView.h" />
+    <CustomBuild Include="PxMaterialView.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing PxMaterialView.h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing PxMaterialView.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_WIDGETS_LIB -DGECUSTOMWIDGETS_LIB  "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(SolutionDir)3rdParty\DirectXTex" "-IC:\Program Files (x86)\Visual Leak Detector\include"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_WIDGETS_LIB -DGECUSTOMWIDGETS_LIB  "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(SolutionDir)3rdParty\DirectXTex" "-IC:\Program Files (x86)\Visual Leak Detector\include"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing PxMaterialView.h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing PxMaterialView.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_WIDGETS_LIB -DGECUSTOMWIDGETS_LIB  "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(SolutionDir)3rdParty\DirectXTex" "-IC:\Program Files (x86)\Visual Leak Detector\include"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_WIDGETS_LIB -DGECUSTOMWIDGETS_LIB  "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(SolutionDir)3rdParty\DirectXTex" "-IC:\Program Files (x86)\Visual Leak Detector\include"</Command>
+    </CustomBuild>
+    <CustomBuild Include="TreeWidget.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing TreeWidget.h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing TreeWidget.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_WIDGETS_LIB -DGECUSTOMWIDGETS_LIB  "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(SolutionDir)3rdParty\DirectXTex" "-IC:\Program Files (x86)\Visual Leak Detector\include"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_WIDGETS_LIB -DGECUSTOMWIDGETS_LIB  "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(SolutionDir)3rdParty\DirectXTex" "-IC:\Program Files (x86)\Visual Leak Detector\include"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing TreeWidget.h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing TreeWidget.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_WIDGETS_LIB -DGECUSTOMWIDGETS_LIB  "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(SolutionDir)3rdParty\DirectXTex" "-IC:\Program Files (x86)\Visual Leak Detector\include"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_WIDGETS_LIB -DGECUSTOMWIDGETS_LIB  "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(SolutionDir)3rdParty\DirectXTex" "-IC:\Program Files (x86)\Visual Leak Detector\include"</Command>
+    </CustomBuild>
+    <CustomBuild Include="GradientSlider.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing GradientSlider.h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing GradientSlider.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_WIDGETS_LIB -DGECUSTOMWIDGETS_LIB  "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(SolutionDir)3rdParty\DirectXTex" "-IC:\Program Files (x86)\Visual Leak Detector\include"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_WIDGETS_LIB -DGECUSTOMWIDGETS_LIB  "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(SolutionDir)3rdParty\DirectXTex" "-IC:\Program Files (x86)\Visual Leak Detector\include"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing GradientSlider.h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing GradientSlider.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_WIDGETS_LIB -DGECUSTOMWIDGETS_LIB  "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(SolutionDir)3rdParty\DirectXTex" "-IC:\Program Files (x86)\Visual Leak Detector\include"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_WIDGETS_LIB -DGECUSTOMWIDGETS_LIB  "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(SolutionDir)3rdParty\DirectXTex" "-IC:\Program Files (x86)\Visual Leak Detector\include"</Command>
+    </CustomBuild>
+    <CustomBuild Include="ColorDialog.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing ColorDialog.h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing ColorDialog.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_WIDGETS_LIB -DGECUSTOMWIDGETS_LIB  "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(SolutionDir)3rdParty\DirectXTex" "-IC:\Program Files (x86)\Visual Leak Detector\include"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_WIDGETS_LIB -DGECUSTOMWIDGETS_LIB  "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(SolutionDir)3rdParty\DirectXTex" "-IC:\Program Files (x86)\Visual Leak Detector\include"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing ColorDialog.h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing ColorDialog.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_WIDGETS_LIB -DGECUSTOMWIDGETS_LIB  "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(SolutionDir)3rdParty\DirectXTex" "-IC:\Program Files (x86)\Visual Leak Detector\include"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_WIDGETS_LIB -DGECUSTOMWIDGETS_LIB  "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(SolutionDir)3rdParty\DirectXTex" "-IC:\Program Files (x86)\Visual Leak Detector\include"</Command>
+    </CustomBuild>
+    <CustomBuild Include="ColorSelector.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing ColorSelector.h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing ColorSelector.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_WIDGETS_LIB -DGECUSTOMWIDGETS_LIB  "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(SolutionDir)3rdParty\DirectXTex" "-IC:\Program Files (x86)\Visual Leak Detector\include"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_WIDGETS_LIB -DGECUSTOMWIDGETS_LIB  "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(SolutionDir)3rdParty\DirectXTex" "-IC:\Program Files (x86)\Visual Leak Detector\include"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing ColorSelector.h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing ColorSelector.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_WIDGETS_LIB -DGECUSTOMWIDGETS_LIB  "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(SolutionDir)3rdParty\DirectXTex" "-IC:\Program Files (x86)\Visual Leak Detector\include"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_WIDGETS_LIB -DGECUSTOMWIDGETS_LIB  "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(SolutionDir)3rdParty\DirectXTex" "-IC:\Program Files (x86)\Visual Leak Detector\include"</Command>
+    </CustomBuild>
+    <CustomBuild Include="ListWidget.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing ListWidget.h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing ListWidget.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_WIDGETS_LIB -DGECUSTOMWIDGETS_LIB  "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(SolutionDir)3rdParty\DirectXTex" "-IC:\Program Files (x86)\Visual Leak Detector\include"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_WIDGETS_LIB -DGECUSTOMWIDGETS_LIB  "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(SolutionDir)3rdParty\DirectXTex" "-IC:\Program Files (x86)\Visual Leak Detector\include"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing ListWidget.h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing ListWidget.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_WIDGETS_LIB -DGECUSTOMWIDGETS_LIB  "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(SolutionDir)3rdParty\DirectXTex" "-IC:\Program Files (x86)\Visual Leak Detector\include"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_WIDGETS_LIB -DGECUSTOMWIDGETS_LIB  "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(SolutionDir)3rdParty\DirectXTex" "-IC:\Program Files (x86)\Visual Leak Detector\include"</Command>
+    </CustomBuild>
+    <CustomBuild Include="GroupBox.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing GroupBox.h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing GroupBox.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_WIDGETS_LIB -DGECUSTOMWIDGETS_LIB  "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(SolutionDir)3rdParty\DirectXTex" "-IC:\Program Files (x86)\Visual Leak Detector\include"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_WIDGETS_LIB -DGECUSTOMWIDGETS_LIB  "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(SolutionDir)3rdParty\DirectXTex" "-IC:\Program Files (x86)\Visual Leak Detector\include"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing GroupBox.h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing GroupBox.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_WIDGETS_LIB -DGECUSTOMWIDGETS_LIB  "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(SolutionDir)3rdParty\DirectXTex" "-IC:\Program Files (x86)\Visual Leak Detector\include"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_WIDGETS_LIB -DGECUSTOMWIDGETS_LIB  "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(SolutionDir)3rdParty\DirectXTex" "-IC:\Program Files (x86)\Visual Leak Detector\include"</Command>
+    </CustomBuild>
+    <CustomBuild Include="MaterialEditorDialog.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing MaterialEditorDialog.h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing MaterialEditorDialog.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_WIDGETS_LIB -DGECUSTOMWIDGETS_LIB "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(SolutionDir)3rdParty\DirectXTex" "-I.\GeneratedFiles$(ConfigurationName)\." "-IC:\Program Files (x86)\Visual Leak Detector\include"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_WIDGETS_LIB -DGECUSTOMWIDGETS_LIB "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(SolutionDir)3rdParty\DirectXTex" "-I.\GeneratedFiles$(ConfigurationName)\." "-IC:\Program Files (x86)\Visual Leak Detector\include"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing MaterialEditorDialog.h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing MaterialEditorDialog.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_WIDGETS_LIB -DGECUSTOMWIDGETS_LIB "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(SolutionDir)3rdParty\DirectXTex" "-I.\GeneratedFiles$(ConfigurationName)\." "-IC:\Program Files (x86)\Visual Leak Detector\include"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_WIDGETS_LIB -DGECUSTOMWIDGETS_LIB "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(SolutionDir)3rdParty\DirectXTex" "-I.\GeneratedFiles$(ConfigurationName)\." "-IC:\Program Files (x86)\Visual Leak Detector\include"</Command>
+    </CustomBuild>
+    <ClInclude Include="PaintBorder.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Resources\Alphaback.png" />
+    <Image Include="Resources\ColorPicker.png" />
+    <Image Include="Resources\MetroStyle\0.png" />
+    <Image Include="Resources\MetroStyle\08-24.png" />
+    <Image Include="Resources\MetroStyle\0_filled.png" />
+    <Image Include="Resources\MetroStyle\133-24.png" />
+    <Image Include="Resources\MetroStyle\1_filled.png" />
+    <Image Include="Resources\MetroStyle\2.png" />
+    <Image Include="Resources\MetroStyle\2_filled.png" />
+    <Image Include="Resources\MetroStyle\3.png" />
+    <Image Include="Resources\MetroStyle\3_filled.png" />
+    <Image Include="Resources\MetroStyle\4.png" />
+    <Image Include="Resources\MetroStyle\4_filled.png" />
+    <Image Include="Resources\MetroStyle\5.png" />
+    <Image Include="Resources\MetroStyle\5_filled.png" />
+    <Image Include="Resources\MetroStyle\6.png" />
+    <Image Include="Resources\MetroStyle\6_filled.png" />
+    <Image Include="Resources\MetroStyle\7.png" />
+    <Image Include="Resources\MetroStyle\7_filled.png" />
+    <Image Include="Resources\MetroStyle\8.png" />
+    <Image Include="Resources\MetroStyle\8_filled.png" />
+    <Image Include="Resources\MetroStyle\9.png" />
+    <Image Include="Resources\MetroStyle\9_filled.png" />
+    <Image Include="Resources\MetroStyle\about.png" />
+    <Image Include="Resources\MetroStyle\action.png" />
+    <Image Include="Resources\MetroStyle\address_book.png" />
+    <Image Include="Resources\MetroStyle\add_file.png" />
+    <Image Include="Resources\MetroStyle\add_folder.png" />
+    <Image Include="Resources\MetroStyle\add_link.png" />
+    <Image Include="Resources\MetroStyle\add_list.png" />
+    <Image Include="Resources\MetroStyle\add_user.png" />
+    <Image Include="Resources\MetroStyle\administrator.png" />
+    <Image Include="Resources\MetroStyle\adventures.png" />
+    <Image Include="Resources\MetroStyle\advertising.png" />
+    <Image Include="Resources\MetroStyle\ai.png" />
+    <Image Include="Resources\MetroStyle\airplane_landing.png" />
+    <Image Include="Resources\MetroStyle\airplane_take_off.png" />
+    <Image Include="Resources\MetroStyle\airport.png" />
+    <Image Include="Resources\MetroStyle\alarm_clock.png" />
+    <Image Include="Resources\MetroStyle\android.png" />
+    <Image Include="Resources\MetroStyle\angel.png" />
+    <Image Include="Resources\MetroStyle\angry.png" />
+    <Image Include="Resources\MetroStyle\appbar.arrow.expand.png" />
+    <Image Include="Resources\MetroStyle\appbar.fullscreen.png" />
+    <Image Include="Resources\MetroStyle\appbar.transform.rotate.clockwise.png" />
+    <Image Include="Resources\MetroStyle\applouse.png" />
+    <Image Include="Resources\MetroStyle\archive.png" />
+    <Image Include="Resources\MetroStyle\archive2.png" />
+    <Image Include="Resources\MetroStyle\armchair.png" />
+    <Image Include="Resources\MetroStyle\attach.png" />
+    <Image Include="Resources\MetroStyle\autograf.png" />
+    <Image Include="Resources\MetroStyle\average.png" />
+    <Image Include="Resources\MetroStyle\avi.png" />
+    <Image Include="Resources\MetroStyle\bank.png" />
+    <Image Include="Resources\MetroStyle\banknotes.png" />
+    <Image Include="Resources\MetroStyle\bank_cards.png" />
+    <Image Include="Resources\MetroStyle\bar.png" />
+    <Image Include="Resources\MetroStyle\barcode.png" />
+    <Image Include="Resources\MetroStyle\basketball.png" />
+    <Image Include="Resources\MetroStyle\bebo.png" />
+    <Image Include="Resources\MetroStyle\bed.png" />
+    <Image Include="Resources\MetroStyle\bicycle.png" />
+    <Image Include="Resources\MetroStyle\billing.png" />
+    <Image Include="Resources\MetroStyle\birthday_cake.png" />
+    <Image Include="Resources\MetroStyle\blackberry.png" />
+    <Image Include="Resources\MetroStyle\book.png" />
+    <Image Include="Resources\MetroStyle\bookmark.png" />
+    <Image Include="Resources\MetroStyle\books.png" />
+    <Image Include="Resources\MetroStyle\book_stack.png" />
+    <Image Include="Resources\MetroStyle\boombox.png" />
+    <Image Include="Resources\MetroStyle\box.png" />
+    <Image Include="Resources\MetroStyle\bred.png" />
+    <Image Include="Resources\MetroStyle\briefcase.png" />
+    <Image Include="Resources\MetroStyle\bug.png" />
+    <Image Include="Resources\MetroStyle\bunch_flowers.png" />
+    <Image Include="Resources\MetroStyle\burn.png" />
+    <Image Include="Resources\MetroStyle\bus.png" />
+    <Image Include="Resources\MetroStyle\businessman.png" />
+    <Image Include="Resources\MetroStyle\businesswoman.png" />
+    <Image Include="Resources\MetroStyle\business_contact.png" />
+    <Image Include="Resources\MetroStyle\calculator.png" />
+    <Image Include="Resources\MetroStyle\calendar.png" />
+    <Image Include="Resources\MetroStyle\camcoder.png" />
+    <Image Include="Resources\MetroStyle\camcoder_pro.png" />
+    <Image Include="Resources\MetroStyle\car.png" />
+    <Image Include="Resources\MetroStyle\cards.png" />
+    <Image Include="Resources\MetroStyle\card_inserting.png" />
+    <Image Include="Resources\MetroStyle\card_in_use.png" />
+    <Image Include="Resources\MetroStyle\carrot.png" />
+    <Image Include="Resources\MetroStyle\cash_receiving.png" />
+    <Image Include="Resources\MetroStyle\cheap.png" />
+    <Image Include="Resources\MetroStyle\checked_user.png" />
+    <Image Include="Resources\MetroStyle\checkmark.png" />
+    <Image Include="Resources\MetroStyle\checkout.png" />
+    <Image Include="Resources\MetroStyle\check_book.png" />
+    <Image Include="Resources\MetroStyle\cheese.png" />
+    <Image Include="Resources\MetroStyle\child_new_post.png" />
+    <Image Include="Resources\MetroStyle\chip.png" />
+    <Image Include="Resources\MetroStyle\church.png" />
+    <Image Include="Resources\MetroStyle\cllipboard.png" />
+    <Image Include="Resources\MetroStyle\clock.png" />
+    <Image Include="Resources\MetroStyle\closed_topic.png" />
+    <Image Include="Resources\MetroStyle\cloud.png" />
+    <Image Include="Resources\MetroStyle\clouds.png" />
+    <Image Include="Resources\MetroStyle\cloud_lighting.png" />
+    <Image Include="Resources\MetroStyle\cloud_storage.png" />
+    <Image Include="Resources\MetroStyle\clover.png" />
+    <Image Include="Resources\MetroStyle\clubs.png" />
+    <Image Include="Resources\MetroStyle\coffee_maker.png" />
+    <Image Include="Resources\MetroStyle\coins.png" />
+    <Image Include="Resources\MetroStyle\combo.png" />
+    <Image Include="Resources\MetroStyle\comedy.png" />
+    <Image Include="Resources\MetroStyle\comedy2.png" />
+    <Image Include="Resources\MetroStyle\comedy_mask.png" />
+    <Image Include="Resources\MetroStyle\comments.png" />
+    <Image Include="Resources\MetroStyle\commode.png" />
+    <Image Include="Resources\MetroStyle\compact_camera.png" />
+    <Image Include="Resources\MetroStyle\compass.png" />
+    <Image Include="Resources\MetroStyle\console.png" />
+    <Image Include="Resources\MetroStyle\contacts.png" />
+    <Image Include="Resources\MetroStyle\contacts2.png" />
+    <Image Include="Resources\MetroStyle\cooker.png" />
+    <Image Include="Resources\MetroStyle\cooker_hood.png" />
+    <Image Include="Resources\MetroStyle\cooking_pot.png" />
+    <Image Include="Resources\MetroStyle\cool.png" />
+    <Image Include="Resources\MetroStyle\copy.png" />
+    <Image Include="Resources\MetroStyle\crime.png" />
+    <Image Include="Resources\MetroStyle\crying.png" />
+    <Image Include="Resources\MetroStyle\cup.png" />
+    <Image Include="Resources\MetroStyle\cut.png" />
+    <Image Include="Resources\MetroStyle\dashboard.png" />
+    <Image Include="Resources\MetroStyle\delete.png" />
+    <Image Include="Resources\MetroStyle\delete_link.png" />
+    <Image Include="Resources\MetroStyle\delivery.png" />
+    <Image Include="Resources\MetroStyle\detective.png" />
+    <Image Include="Resources\MetroStyle\diamonds.png" />
+    <Image Include="Resources\MetroStyle\dice.png" />
+    <Image Include="Resources\MetroStyle\dll.png" />
+    <Image Include="Resources\MetroStyle\dmg.png" />
+    <Image Include="Resources\MetroStyle\documentary.png" />
+    <Image Include="Resources\MetroStyle\documents.png" />
+    <Image Include="Resources\MetroStyle\down.png" />
+    <Image Include="Resources\MetroStyle\download.png" />
+    <Image Include="Resources\MetroStyle\downloads.png" />
+    <Image Include="Resources\MetroStyle\down_circular.png" />
+    <Image Include="Resources\MetroStyle\drama.png" />
+    <Image Include="Resources\MetroStyle\edit.png" />
+    <Image Include="Resources\MetroStyle\eject.png" />
+    <Image Include="Resources\MetroStyle\electric_teapot.png" />
+    <Image Include="Resources\MetroStyle\empty_filter.png" />
+    <Image Include="Resources\MetroStyle\empty_flag.png" />
+    <Image Include="Resources\MetroStyle\empty_trash.png" />
+    <Image Include="Resources\MetroStyle\end.png" />
+    <Image Include="Resources\MetroStyle\erase.png" />
+    <Image Include="Resources\MetroStyle\error.png" />
+    <Image Include="Resources\MetroStyle\evil.png" />
+    <Image Include="Resources\MetroStyle\excel.png" />
+    <Image Include="Resources\MetroStyle\exe.png" />
+    <Image Include="Resources\MetroStyle\expensive.png" />
+    <Image Include="Resources\MetroStyle\facebook.png" />
+    <Image Include="Resources\MetroStyle\fan.png" />
+    <Image Include="Resources\MetroStyle\fantasy.png" />
+    <Image Include="Resources\MetroStyle\fast_forward.png" />
+    <Image Include="Resources\MetroStyle\file.png" />
+    <Image Include="Resources\MetroStyle\filing_cabinet.png" />
+    <Image Include="Resources\MetroStyle\filled_filter.png" />
+    <Image Include="Resources\MetroStyle\filled_flag.png" />
+    <Image Include="Resources\MetroStyle\film.png" />
+    <Image Include="Resources\MetroStyle\film2.png" />
+    <Image Include="Resources\MetroStyle\finish_flag.png" />
+    <Image Include="Resources\MetroStyle\flv.png" />
+    <Image Include="Resources\MetroStyle\fog_day.png" />
+    <Image Include="Resources\MetroStyle\fog_night.png" />
+    <Image Include="Resources\MetroStyle\folder.png" />
+    <Image Include="Resources\MetroStyle\football.png" />
+    <Image Include="Resources\MetroStyle\fork.png" />
+    <Image Include="Resources\MetroStyle\forward.png" />
+    <Image Include="Resources\MetroStyle\fridge.png" />
+    <Image Include="Resources\MetroStyle\full_trash.png" />
+    <Image Include="Resources\MetroStyle\gas_station.png" />
+    <Image Include="Resources\MetroStyle\gif.png" />
+    <Image Include="Resources\MetroStyle\gift.png" />
+    <Image Include="Resources\MetroStyle\github.png" />
+    <Image Include="Resources\MetroStyle\globe.png" />
+    <Image Include="Resources\MetroStyle\google_plus.png" />
+    <Image Include="Resources\MetroStyle\gps_device.png" />
+    <Image Include="Resources\MetroStyle\group.png" />
+    <Image Include="Resources\MetroStyle\guitar.png" />
+    <Image Include="Resources\MetroStyle\hail.png" />
+    <Image Include="Resources\MetroStyle\happy.png" />
+    <Image Include="Resources\MetroStyle\hdd.png" />
+    <Image Include="Resources\MetroStyle\hearts.png" />
+    <Image Include="Resources\MetroStyle\helicopter.png" />
+    <Image Include="Resources\MetroStyle\help.png" />
+    <Image Include="Resources\MetroStyle\historical.png" />
+    <Image Include="Resources\MetroStyle\home.png" />
+    <Image Include="Resources\MetroStyle\horror.png" />
+    <Image Include="Resources\MetroStyle\hospital.png" />
+    <Image Include="Resources\MetroStyle\hotel.png" />
+    <Image Include="Resources\MetroStyle\idea.png" />
+    <Image Include="Resources\MetroStyle\info.png" />
+    <Image Include="Resources\MetroStyle\internet.png" />
+    <Image Include="Resources\MetroStyle\in_love.png" />
+    <Image Include="Resources\MetroStyle\iphone.png" />
+    <Image Include="Resources\MetroStyle\iron.png" />
+    <Image Include="Resources\MetroStyle\joker.png" />
+    <Image Include="Resources\MetroStyle\jpg.png" />
+    <Image Include="Resources\MetroStyle\key.png" />
+    <Image Include="Resources\MetroStyle\keyboard.png" />
+    <Image Include="Resources\MetroStyle\kiss.png" />
+    <Image Include="Resources\MetroStyle\knife.png" />
+    <Image Include="Resources\MetroStyle\ladle.png" />
+    <Image Include="Resources\MetroStyle\lamp.png" />
+    <Image Include="Resources\MetroStyle\left.png" />
+    <Image Include="Resources\MetroStyle\left_circular.png" />
+    <Image Include="Resources\MetroStyle\library.png" />
+    <Image Include="Resources\MetroStyle\lifebuoy.png" />
+    <Image Include="Resources\MetroStyle\like.png" />
+    <Image Include="Resources\MetroStyle\likes.png" />
+    <Image Include="Resources\MetroStyle\like_outline.png" />
+    <Image Include="Resources\MetroStyle\line.png" />
+    <Image Include="Resources\MetroStyle\link.png" />
+    <Image Include="Resources\MetroStyle\linkedin.png" />
+    <Image Include="Resources\MetroStyle\linux_client.png" />
+    <Image Include="Resources\MetroStyle\little_rain.png" />
+    <Image Include="Resources\MetroStyle\little_snow.png" />
+    <Image Include="Resources\MetroStyle\lock-X.png" />
+    <Image Include="Resources\MetroStyle\lock-Y.png" />
+    <Image Include="Resources\MetroStyle\lock-Z.png" />
+    <Image Include="Resources\MetroStyle\lock.png" />
+    <Image Include="Resources\MetroStyle\login.png" />
+    <Image Include="Resources\MetroStyle\logout.png" />
+    <Image Include="Resources\MetroStyle\lol.png" />
+    <Image Include="Resources\MetroStyle\loudspeaker.png" />
+    <Image Include="Resources\MetroStyle\lyre.png" />
+    <Image Include="Resources\MetroStyle\mac_client.png" />
+    <Image Include="Resources\MetroStyle\magazine.png" />
+    <Image Include="Resources\MetroStyle\manager.png" />
+    <Image Include="Resources\MetroStyle\map.png" />
+    <Image Include="Resources\MetroStyle\map_marker.png" />
+    <Image Include="Resources\MetroStyle\marker.png" />
+    <Image Include="Resources\MetroStyle\megafone.png" />
+    <Image Include="Resources\MetroStyle\megafone2.png" />
+    <Image Include="Resources\MetroStyle\message.png" />
+    <Image Include="Resources\MetroStyle\microphone.png" />
+    <Image Include="Resources\MetroStyle\microphone2.png" />
+    <Image Include="Resources\MetroStyle\microwave.png" />
+    <Image Include="Resources\MetroStyle\minus.png" />
+    <Image Include="Resources\MetroStyle\mixer.png" />
+    <Image Include="Resources\MetroStyle\moneybox.png" />
+    <Image Include="Resources\MetroStyle\money_bag.png" />
+    <Image Include="Resources\MetroStyle\monitor.png" />
+    <Image Include="Resources\MetroStyle\moon.png" />
+    <Image Include="Resources\MetroStyle\motorcycle.png" />
+    <Image Include="Resources\MetroStyle\mountain.png" />
+    <Image Include="Resources\MetroStyle\mouse.png" />
+    <Image Include="Resources\MetroStyle\mov.png" />
+    <Image Include="Resources\MetroStyle\moved_topic.png" />
+    <Image Include="Resources\MetroStyle\MoveIcon.png" />
+    <Image Include="Resources\MetroStyle\movies.png" />
+    <Image Include="Resources\MetroStyle\mpg.png" />
+    <Image Include="Resources\MetroStyle\music.png" />
+    <Image Include="Resources\MetroStyle\music_conductor.png" />
+    <Image Include="Resources\MetroStyle\music_record.png" />
+    <Image Include="Resources\MetroStyle\mute.png" />
+    <Image Include="Resources\MetroStyle\myspace.png" />
+    <Image Include="Resources\MetroStyle\my_topic.png" />
+    <Image Include="Resources\MetroStyle\nas.png" />
+    <Image Include="Resources\MetroStyle\negative_dynamic.png" />
+    <Image Include="Resources\MetroStyle\news.png" />
+    <Image Include="Resources\MetroStyle\newspaper.png" />
+    <Image Include="Resources\MetroStyle\new_post.png" />
+    <Image Include="Resources\MetroStyle\note.png" />
+    <Image Include="Resources\MetroStyle\novel.png" />
+    <Image Include="Resources\MetroStyle\one_free.png" />
+    <Image Include="Resources\MetroStyle\online.png" />
+    <Image Include="Resources\MetroStyle\online_support.png" />
+    <Image Include="Resources\MetroStyle\opera_glasses.png" />
+    <Image Include="Resources\MetroStyle\outline.png" />
+    <Image Include="Resources\MetroStyle\outline_star.png" />
+    <Image Include="Resources\MetroStyle\package.png" />
+    <Image Include="Resources\MetroStyle\partly_cloudy_day.png" />
+    <Image Include="Resources\MetroStyle\partly_cloudy_night.png" />
+    <Image Include="Resources\MetroStyle\pause.png" />
+    <Image Include="Resources\MetroStyle\pdf.png" />
+    <Image Include="Resources\MetroStyle\pepper_shaker.png" />
+    <Image Include="Resources\MetroStyle\phone.png" />
+    <Image Include="Resources\MetroStyle\phone1.png" />
+    <Image Include="Resources\MetroStyle\phone2.png" />
+    <Image Include="Resources\MetroStyle\pictures.png" />
+    <Image Include="Resources\MetroStyle\pie.png" />
+    <Image Include="Resources\MetroStyle\pin.png" />
+    <Image Include="Resources\MetroStyle\ping_pong.png" />
+    <Image Include="Resources\MetroStyle\planner.png" />
+    <Image Include="Resources\MetroStyle\play.png" />
+    <Image Include="Resources\MetroStyle\plus.png" />
+    <Image Include="Resources\MetroStyle\png.png" />
+    <Image Include="Resources\MetroStyle\pocket_lantern.png" />
+    <Image Include="Resources\MetroStyle\poll_topic.png" />
+    <Image Include="Resources\MetroStyle\poo.png" />
+    <Image Include="Resources\MetroStyle\popular_topic.png" />
+    <Image Include="Resources\MetroStyle\positive_dynamic.png" />
+    <Image Include="Resources\MetroStyle\powerpoint.png" />
+    <Image Include="Resources\MetroStyle\price_tag.png" />
+    <Image Include="Resources\MetroStyle\price_tag_euro.png" />
+    <Image Include="Resources\MetroStyle\print.png" />
+    <Image Include="Resources\MetroStyle\printer.png" />
+    <Image Include="Resources\MetroStyle\private.png" />
+    <Image Include="Resources\MetroStyle\product.png" />
+    <Image Include="Resources\MetroStyle\psd.png" />
+    <Image Include="Resources\MetroStyle\public.png" />
+    <Image Include="Resources\MetroStyle\purse.png" />
+    <Image Include="Resources\MetroStyle\question.png" />
+    <Image Include="Resources\MetroStyle\radio1.png" />
+    <Image Include="Resources\MetroStyle\radio2.png" />
+    <Image Include="Resources\MetroStyle\railway_station.png" />
+    <Image Include="Resources\MetroStyle\rain.png" />
+    <Image Include="Resources\MetroStyle\rar.png" />
+    <Image Include="Resources\MetroStyle\read_message.png" />
+    <Image Include="Resources\MetroStyle\record.png" />
+    <Image Include="Resources\MetroStyle\remove_user.png" />
+    <Image Include="Resources\MetroStyle\repeat.png" />
+    <Image Include="Resources\MetroStyle\reply.png" />
+    <Image Include="Resources\MetroStyle\restaurant.png" />
+    <Image Include="Resources\MetroStyle\rewind.png" />
+    <Image Include="Resources\MetroStyle\right.png" />
+    <Image Include="Resources\MetroStyle\right_circular.png" />
+    <Image Include="Resources\MetroStyle\road.png" />
+    <Image Include="Resources\MetroStyle\rss-32.png" />
+    <Image Include="Resources\MetroStyle\rss.png" />
+    <Image Include="Resources\MetroStyle\rss2-32.png" />
+    <Image Include="Resources\MetroStyle\rugby.png" />
+    <Image Include="Resources\MetroStyle\ruler.png" />
+    <Image Include="Resources\MetroStyle\sad.png" />
+    <Image Include="Resources\MetroStyle\sale.png" />
+    <Image Include="Resources\MetroStyle\salt_shaker.png" />
+    <Image Include="Resources\MetroStyle\sandglass.png" />
+    <Image Include="Resources\MetroStyle\save_as.png" />
+    <Image Include="Resources\MetroStyle\scales.png" />
+    <Image Include="Resources\MetroStyle\scanner.png" />
+    <Image Include="Resources\MetroStyle\sci_fi.png" />
+    <Image Include="Resources\MetroStyle\scooter.png" />
+    <Image Include="Resources\MetroStyle\scv.png" />
+    <Image Include="Resources\MetroStyle\search.png" />
+    <Image Include="Resources\MetroStyle\services.png" />
+    <Image Include="Resources\MetroStyle\settings.png" />
+    <Image Include="Resources\MetroStyle\settings2.png" />
+    <Image Include="Resources\MetroStyle\sheep.png" />
+    <Image Include="Resources\MetroStyle\sheep_on_bike.png" />
+    <Image Include="Resources\MetroStyle\ship.png" />
+    <Image Include="Resources\MetroStyle\shop.png" />
+    <Image Include="Resources\MetroStyle\shoping_bag.png" />
+    <Image Include="Resources\MetroStyle\shoping_cart.png" />
+    <Image Include="Resources\MetroStyle\shoping_cart_filled.png" />
+    <Image Include="Resources\MetroStyle\shopping_basket.png" />
+    <Image Include="Resources\MetroStyle\shuffle.png" />
+    <Image Include="Resources\MetroStyle\signal_horn.png" />
+    <Image Include="Resources\MetroStyle\sinchronize.png" />
+    <Image Include="Resources\MetroStyle\skip_to_start.png" />
+    <Image Include="Resources\MetroStyle\sleeping.png" />
+    <Image Include="Resources\MetroStyle\slot_machine.png" />
+    <Image Include="Resources\MetroStyle\slr_camera.png" />
+    <Image Include="Resources\MetroStyle\slr_camera2.png" />
+    <Image Include="Resources\MetroStyle\snow.png" />
+    <Image Include="Resources\MetroStyle\snow_storm.png" />
+    <Image Include="Resources\MetroStyle\sofa.png" />
+    <Image Include="Resources\MetroStyle\solutions.png" />
+    <Image Include="Resources\MetroStyle\spades.png" />
+    <Image Include="Resources\MetroStyle\speech_bubble.png" />
+    <Image Include="Resources\MetroStyle\spoon.png" />
+    <Image Include="Resources\MetroStyle\sport.png" />
+    <Image Include="Resources\MetroStyle\ssd.png" />
+    <Image Include="Resources\MetroStyle\stack.png" />
+    <Image Include="Resources\MetroStyle\stadium.png" />
+    <Image Include="Resources\MetroStyle\star.png" />
+    <Image Include="Resources\MetroStyle\statistics.png" />
+    <Image Include="Resources\MetroStyle\steam.png" />
+    <Image Include="Resources\MetroStyle\stop.png" />
+    <Image Include="Resources\MetroStyle\stopwatch.png" />
+    <Image Include="Resources\MetroStyle\storm.png" />
+    <Image Include="Resources\MetroStyle\stylesheet-branch-closed-noSibling.png" />
+    <Image Include="Resources\MetroStyle\stylesheet-branch-closed.png" />
+    <Image Include="Resources\MetroStyle\stylesheet-branch-end.png" />
+    <Image Include="Resources\MetroStyle\stylesheet-branch-more.png" />
+    <Image Include="Resources\MetroStyle\stylesheet-branch-open-noSibling.png" />
+    <Image Include="Resources\MetroStyle\stylesheet-branch-open.png" />
+    <Image Include="Resources\MetroStyle\stylesheet-vline.png" />
+    <Image Include="Resources\MetroStyle\sun.png" />
+    <Image Include="Resources\MetroStyle\support.png" />
+    <Image Include="Resources\MetroStyle\surprised.png" />
+    <Image Include="Resources\MetroStyle\table.png" />
+    <Image Include="Resources\MetroStyle\tag.png" />
+    <Image Include="Resources\MetroStyle\talk.png" />
+    <Image Include="Resources\MetroStyle\taxi.png" />
+    <Image Include="Resources\MetroStyle\teapot.png" />
+    <Image Include="Resources\MetroStyle\tear_off_calendar.png" />
+    <Image Include="Resources\MetroStyle\tennis.png" />
+    <Image Include="Resources\MetroStyle\theatre_masks.png" />
+    <Image Include="Resources\MetroStyle\thumbs_down.png" />
+    <Image Include="Resources\MetroStyle\thumbs_up.png" />
+    <Image Include="Resources\MetroStyle\tongue.png" />
+    <Image Include="Resources\MetroStyle\tool_box.png" />
+    <Image Include="Resources\MetroStyle\topic.png" />
+    <Image Include="Resources\MetroStyle\tractor.png" />
+    <Image Include="Resources\MetroStyle\tragedy_mask.png" />
+    <Image Include="Resources\MetroStyle\trailer.png" />
+    <Image Include="Resources\MetroStyle\train.png" />
+    <Image Include="Resources\MetroStyle\tram.png" />
+    <Image Include="Resources\MetroStyle\tram2.png" />
+    <Image Include="Resources\MetroStyle\treble_clef.png" />
+    <Image Include="Resources\MetroStyle\triller.png" />
+    <Image Include="Resources\MetroStyle\trolleybus.png" />
+    <Image Include="Resources\MetroStyle\truck.png" />
+    <Image Include="Resources\MetroStyle\tv.png" />
+    <Image Include="Resources\MetroStyle\twitter.png" />
+    <Image Include="Resources\MetroStyle\umbrella-32.png" />
+    <Image Include="Resources\MetroStyle\umbrella.png" />
+    <Image Include="Resources\MetroStyle\unlock-X.png" />
+    <Image Include="Resources\MetroStyle\unlock-Y.png" />
+    <Image Include="Resources\MetroStyle\unlock-Z.png" />
+    <Image Include="Resources\MetroStyle\unlock.png" />
+    <Image Include="Resources\MetroStyle\up.png" />
+    <Image Include="Resources\MetroStyle\upload.png" />
+    <Image Include="Resources\MetroStyle\up_circular.png" />
+    <Image Include="Resources\MetroStyle\user.png" />
+    <Image Include="Resources\MetroStyle\variable.png" />
+    <Image Include="Resources\MetroStyle\very_popular_topic.png" />
+    <Image Include="Resources\MetroStyle\video_projector.png" />
+    <Image Include="Resources\MetroStyle\violin.png" />
+    <Image Include="Resources\MetroStyle\vkontakte.png" />
+    <Image Include="Resources\MetroStyle\voip_gateway.png" />
+    <Image Include="Resources\MetroStyle\volume_down.png" />
+    <Image Include="Resources\MetroStyle\volume_up.png" />
+    <Image Include="Resources\MetroStyle\wallet.png" />
+    <Image Include="Resources\MetroStyle\wardrobe.png" />
+    <Image Include="Resources\MetroStyle\washing_machine.png" />
+    <Image Include="Resources\MetroStyle\watch.png" />
+    <Image Include="Resources\MetroStyle\webcam.png" />
+    <Image Include="Resources\MetroStyle\western.png" />
+    <Image Include="Resources\MetroStyle\wheel.png" />
+    <Image Include="Resources\MetroStyle\widescreen_tv.png" />
+    <Image Include="Resources\MetroStyle\wifi.png" />
+    <Image Include="Resources\MetroStyle\win.png" />
+    <Image Include="Resources\MetroStyle\windows.png" />
+    <Image Include="Resources\MetroStyle\windows_client.png" />
+    <Image Include="Resources\MetroStyle\wink.png" />
+    <Image Include="Resources\MetroStyle\wired_network.png" />
+    <Image Include="Resources\MetroStyle\wma.png" />
+    <Image Include="Resources\MetroStyle\word.png" />
+    <Image Include="Resources\MetroStyle\youtube.png" />
+    <Image Include="Resources\MetroStyle\zip.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="ColorDialog.ui">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Uic%27ing %(Identity)...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\$(ConfigurationName)\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\$(ConfigurationName)\ui_%(Filename).h" "%(FullPath)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\$(ConfigurationName)\ui_%(Filename).h" "%(FullPath)"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Uic%27ing %(Identity)...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\$(ConfigurationName)\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\$(ConfigurationName)\ui_%(Filename).h" "%(FullPath)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\$(ConfigurationName)\ui_%(Filename).h" "%(FullPath)"</Command>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="pattern.qrc">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(FullPath);.\Resources\MetroStyle\0.png;.\Resources\MetroStyle\0_filled.png;.\Resources\MetroStyle\1_filled.png;.\Resources\MetroStyle\2.png;.\Resources\MetroStyle\2_filled.png;.\Resources\MetroStyle\3.png;.\Resources\MetroStyle\3_filled.png;.\Resources\MetroStyle\4.png;.\Resources\MetroStyle\4_filled.png;.\Resources\MetroStyle\5.png;.\Resources\MetroStyle\5_filled.png;.\Resources\MetroStyle\6.png;.\Resources\MetroStyle\6_filled.png;.\Resources\MetroStyle\7.png;.\Resources\MetroStyle\7_filled.png;.\Resources\MetroStyle\08-24.png;.\Resources\MetroStyle\8.png;.\Resources\MetroStyle\8_filled.png;.\Resources\MetroStyle\9.png;.\Resources\MetroStyle\9_filled.png;.\Resources\MetroStyle\133-24.png;.\Resources\MetroStyle\about.png;.\Resources\MetroStyle\action.png;.\Resources\MetroStyle\add_file.png;.\Resources\MetroStyle\add_folder.png;.\Resources\MetroStyle\add_link.png;.\Resources\MetroStyle\add_list.png;.\Resources\MetroStyle\add_user.png;.\Resources\MetroStyle\address_book.png;.\Resources\MetroStyle\administrator.png;.\Resources\MetroStyle\adventures.png;.\Resources\MetroStyle\advertising.png;.\Resources\MetroStyle\ai.png;.\Resources\MetroStyle\airplane_landing.png;.\Resources\MetroStyle\airplane_take_off.png;.\Resources\MetroStyle\airport.png;.\Resources\MetroStyle\alarm_clock.png;.\Resources\MetroStyle\android.png;.\Resources\MetroStyle\angel.png;.\Resources\MetroStyle\angry.png;.\Resources\MetroStyle\appbar.arrow.expand.png;.\Resources\MetroStyle\appbar.fullscreen.png;.\Resources\MetroStyle\appbar.transform.rotate.clockwise.png;.\Resources\MetroStyle\applouse.png;.\Resources\MetroStyle\archive.png;.\Resources\MetroStyle\archive2.png;.\Resources\MetroStyle\armchair.png;.\Resources\MetroStyle\attach.png;.\Resources\MetroStyle\autograf.png;.\Resources\MetroStyle\average.png;.\Resources\MetroStyle\avi.png;.\Resources\MetroStyle\bank.png;.\Resources\MetroStyle\bank_cards.png;.\Resources\MetroStyle\banknotes.png;.\Resources\MetroStyle\bar.png;.\Resources\MetroStyle\barcode.png;.\Resources\MetroStyle\basketball.png;.\Resources\MetroStyle\bebo.png;.\Resources\MetroStyle\bed.png;.\Resources\MetroStyle\bicycle.png;.\Resources\MetroStyle\billing.png;.\Resources\MetroStyle\birthday_cake.png;.\Resources\MetroStyle\blackberry.png;.\Resources\MetroStyle\book.png;.\Resources\MetroStyle\book_stack.png;.\Resources\MetroStyle\bookmark.png;.\Resources\MetroStyle\books.png;.\Resources\MetroStyle\boombox.png;.\Resources\MetroStyle\box.png;.\Resources\MetroStyle\bred.png;.\Resources\MetroStyle\briefcase.png;.\Resources\MetroStyle\bug.png;.\Resources\MetroStyle\bunch_flowers.png;.\Resources\MetroStyle\burn.png;.\Resources\MetroStyle\bus.png;.\Resources\MetroStyle\business_contact.png;.\Resources\MetroStyle\businessman.png;.\Resources\MetroStyle\businesswoman.png;.\Resources\MetroStyle\calculator.png;.\Resources\MetroStyle\calendar.png;.\Resources\MetroStyle\camcoder.png;.\Resources\MetroStyle\camcoder_pro.png;.\Resources\MetroStyle\car.png;.\Resources\MetroStyle\card_in_use.png;.\Resources\MetroStyle\card_inserting.png;.\Resources\MetroStyle\cards.png;.\Resources\MetroStyle\carrot.png;.\Resources\MetroStyle\cash_receiving.png;.\Resources\MetroStyle\cheap.png;.\Resources\MetroStyle\check_book.png;.\Resources\MetroStyle\checked_user.png;.\Resources\MetroStyle\checkmark.png;.\Resources\MetroStyle\checkout.png;.\Resources\MetroStyle\cheese.png;.\Resources\MetroStyle\child_new_post.png;.\Resources\MetroStyle\chip.png;.\Resources\MetroStyle\church.png;.\Resources\MetroStyle\cllipboard.png;.\Resources\MetroStyle\clock.png;.\Resources\MetroStyle\closed_topic.png;.\Resources\MetroStyle\cloud.png;.\Resources\MetroStyle\cloud_lighting.png;.\Resources\MetroStyle\cloud_storage.png;.\Resources\MetroStyle\clouds.png;.\Resources\MetroStyle\clover.png;.\Resources\MetroStyle\clubs.png;.\Resources\MetroStyle\coffee_maker.png;.\Resources\MetroStyle\coins.png;.\Resources\MetroStyle\combo.png;.\Resources\MetroStyle\comedy.png;.\Resources\MetroStyle\comedy_mask.png;.\Resources\MetroStyle\comedy2.png;.\Resources\MetroStyle\comments.png;.\Resources\MetroStyle\commode.png;.\Resources\MetroStyle\compact_camera.png;.\Resources\MetroStyle\compass.png;.\Resources\MetroStyle\console.png;.\Resources\MetroStyle\contacts.png;.\Resources\MetroStyle\contacts2.png;.\Resources\MetroStyle\cooker.png;.\Resources\MetroStyle\cooker_hood.png;.\Resources\MetroStyle\cooking_pot.png;.\Resources\MetroStyle\cool.png;.\Resources\MetroStyle\copy.png;.\Resources\MetroStyle\crime.png;.\Resources\MetroStyle\crying.png;.\Resources\MetroStyle\cup.png;.\Resources\MetroStyle\cut.png;.\Resources\MetroStyle\dashboard.png;.\Resources\MetroStyle\delete.png;.\Resources\MetroStyle\delete_link.png;.\Resources\MetroStyle\delivery.png;.\Resources\MetroStyle\detective.png;.\Resources\MetroStyle\diamonds.png;.\Resources\MetroStyle\dice.png;.\Resources\MetroStyle\dll.png;.\Resources\MetroStyle\dmg.png;.\Resources\MetroStyle\documentary.png;.\Resources\MetroStyle\documents.png;.\Resources\MetroStyle\down.png;.\Resources\MetroStyle\down_circular.png;.\Resources\MetroStyle\download.png;.\Resources\MetroStyle\downloads.png;.\Resources\MetroStyle\drama.png;.\Resources\MetroStyle\edit.png;.\Resources\MetroStyle\eject.png;.\Resources\MetroStyle\electric_teapot.png;.\Resources\MetroStyle\empty_filter.png;.\Resources\MetroStyle\empty_flag.png;.\Resources\MetroStyle\empty_trash.png;.\Resources\MetroStyle\end.png;.\Resources\MetroStyle\erase.png;.\Resources\MetroStyle\error.png;.\Resources\MetroStyle\evil.png;.\Resources\MetroStyle\excel.png;.\Resources\MetroStyle\exe.png;.\Resources\MetroStyle\expensive.png;.\Resources\MetroStyle\facebook.png;.\Resources\MetroStyle\fan.png;.\Resources\MetroStyle\fantasy.png;.\Resources\MetroStyle\fast_forward.png;.\Resources\MetroStyle\file.png;.\Resources\MetroStyle\filing_cabinet.png;.\Resources\MetroStyle\filled_filter.png;.\Resources\MetroStyle\filled_flag.png;.\Resources\MetroStyle\film.png;.\Resources\MetroStyle\film2.png;.\Resources\MetroStyle\finish_flag.png;.\Resources\MetroStyle\flv.png;.\Resources\MetroStyle\fog_day.png;.\Resources\MetroStyle\fog_night.png;.\Resources\MetroStyle\folder.png;.\Resources\MetroStyle\football.png;.\Resources\MetroStyle\fork.png;.\Resources\MetroStyle\forward.png;.\Resources\MetroStyle\fridge.png;.\Resources\MetroStyle\full_trash.png;.\Resources\MetroStyle\gas_station.png;.\Resources\MetroStyle\gif.png;.\Resources\MetroStyle\gift.png;.\Resources\MetroStyle\github.png;.\Resources\MetroStyle\globe.png;.\Resources\MetroStyle\google_plus.png;.\Resources\MetroStyle\gps_device.png;.\Resources\MetroStyle\group.png;.\Resources\MetroStyle\guitar.png;.\Resources\MetroStyle\hail.png;.\Resources\MetroStyle\happy.png;.\Resources\MetroStyle\hdd.png;.\Resources\MetroStyle\hearts.png;.\Resources\MetroStyle\helicopter.png;.\Resources\MetroStyle\help.png;.\Resources\MetroStyle\historical.png;.\Resources\MetroStyle\home.png;.\Resources\MetroStyle\horror.png;.\Resources\MetroStyle\hospital.png;.\Resources\MetroStyle\hotel.png;.\Resources\MetroStyle\idea.png;.\Resources\MetroStyle\in_love.png;.\Resources\MetroStyle\info.png;.\Resources\MetroStyle\internet.png;.\Resources\MetroStyle\iphone.png;.\Resources\MetroStyle\iron.png;.\Resources\MetroStyle\joker.png;.\Resources\MetroStyle\jpg.png;.\Resources\MetroStyle\key.png;.\Resources\MetroStyle\keyboard.png;.\Resources\MetroStyle\kiss.png;.\Resources\MetroStyle\knife.png;.\Resources\MetroStyle\ladle.png;.\Resources\MetroStyle\lamp.png;.\Resources\MetroStyle\left.png;.\Resources\MetroStyle\left_circular.png;.\Resources\MetroStyle\library.png;.\Resources\MetroStyle\lifebuoy.png;.\Resources\MetroStyle\like.png;.\Resources\MetroStyle\like_outline.png;.\Resources\MetroStyle\likes.png;.\Resources\MetroStyle\line.png;.\Resources\MetroStyle\link.png;.\Resources\MetroStyle\linkedin.png;.\Resources\MetroStyle\linux_client.png;.\Resources\MetroStyle\little_rain.png;.\Resources\MetroStyle\little_snow.png;.\Resources\MetroStyle\lock.png;.\Resources\MetroStyle\lock-X.png;.\Resources\MetroStyle\lock-Y.png;.\Resources\MetroStyle\lock-Z.png;.\Resources\MetroStyle\login.png;.\Resources\MetroStyle\logout.png;.\Resources\MetroStyle\lol.png;.\Resources\MetroStyle\loudspeaker.png;.\Resources\MetroStyle\lyre.png;.\Resources\MetroStyle\mac_client.png;.\Resources\MetroStyle\magazine.png;.\Resources\MetroStyle\manager.png;.\Resources\MetroStyle\map.png;.\Resources\MetroStyle\map_marker.png;.\Resources\MetroStyle\marker.png;.\Resources\MetroStyle\megafone.png;.\Resources\MetroStyle\megafone2.png;.\Resources\MetroStyle\message.png;.\Resources\MetroStyle\microphone.png;.\Resources\MetroStyle\microphone2.png;.\Resources\MetroStyle\microwave.png;.\Resources\MetroStyle\minus.png;.\Resources\MetroStyle\mixer.png;.\Resources\MetroStyle\money_bag.png;.\Resources\MetroStyle\moneybox.png;.\Resources\MetroStyle\monitor.png;.\Resources\MetroStyle\moon.png;.\Resources\MetroStyle\motorcycle.png;.\Resources\MetroStyle\mountain.png;.\Resources\MetroStyle\mouse.png;.\Resources\MetroStyle\mov.png;.\Resources\MetroStyle\moved_topic.png;.\Resources\MetroStyle\MoveIcon.png;.\Resources\MetroStyle\movies.png;.\Resources\MetroStyle\mpg.png;.\Resources\MetroStyle\music.png;.\Resources\MetroStyle\music_conductor.png;.\Resources\MetroStyle\music_record.png;.\Resources\MetroStyle\mute.png;.\Resources\MetroStyle\my_topic.png;.\Resources\MetroStyle\myspace.png;.\Resources\MetroStyle\nas.png;.\Resources\MetroStyle\negative_dynamic.png;.\Resources\MetroStyle\new_post.png;.\Resources\MetroStyle\news.png;.\Resources\MetroStyle\newspaper.png;.\Resources\MetroStyle\note.png;.\Resources\MetroStyle\novel.png;.\Resources\MetroStyle\one_free.png;.\Resources\MetroStyle\online.png;.\Resources\MetroStyle\online_support.png;.\Resources\MetroStyle\opera_glasses.png;.\Resources\MetroStyle\outline.png;.\Resources\MetroStyle\outline_star.png;.\Resources\MetroStyle\package.png;.\Resources\MetroStyle\partly_cloudy_day.png;.\Resources\MetroStyle\partly_cloudy_night.png;.\Resources\MetroStyle\pause.png;.\Resources\MetroStyle\pdf.png;.\Resources\MetroStyle\pepper_shaker.png;.\Resources\MetroStyle\phone.png;.\Resources\MetroStyle\phone1.png;.\Resources\MetroStyle\phone2.png;.\Resources\MetroStyle\pictures.png;.\Resources\MetroStyle\pie.png;.\Resources\MetroStyle\pin.png;.\Resources\MetroStyle\ping_pong.png;.\Resources\MetroStyle\planner.png;.\Resources\MetroStyle\play.png;.\Resources\MetroStyle\plus.png;.\Resources\MetroStyle\png.png;.\Resources\MetroStyle\pocket_lantern.png;.\Resources\MetroStyle\poll_topic.png;.\Resources\MetroStyle\poo.png;.\Resources\MetroStyle\popular_topic.png;.\Resources\MetroStyle\positive_dynamic.png;.\Resources\MetroStyle\powerpoint.png;.\Resources\MetroStyle\price_tag.png;.\Resources\MetroStyle\price_tag_euro.png;.\Resources\MetroStyle\print.png;.\Resources\MetroStyle\printer.png;.\Resources\MetroStyle\private.png;.\Resources\MetroStyle\product.png;.\Resources\MetroStyle\psd.png;.\Resources\MetroStyle\public.png;.\Resources\MetroStyle\purse.png;.\Resources\MetroStyle\question.png;.\Resources\MetroStyle\radio1.png;.\Resources\MetroStyle\radio2.png;.\Resources\MetroStyle\railway_station.png;.\Resources\MetroStyle\rain.png;.\Resources\MetroStyle\rar.png;.\Resources\MetroStyle\read_message.png;.\Resources\MetroStyle\record.png;.\Resources\MetroStyle\remove_user.png;.\Resources\MetroStyle\repeat.png;.\Resources\MetroStyle\reply.png;.\Resources\MetroStyle\restaurant.png;.\Resources\MetroStyle\rewind.png;.\Resources\MetroStyle\right.png;.\Resources\MetroStyle\right_circular.png;.\Resources\MetroStyle\road.png;.\Resources\MetroStyle\rss.png;.\Resources\MetroStyle\rss2-32.png;.\Resources\MetroStyle\rss-32.png;.\Resources\MetroStyle\rugby.png;.\Resources\MetroStyle\ruler.png;.\Resources\MetroStyle\sad.png;.\Resources\MetroStyle\sale.png;.\Resources\MetroStyle\salt_shaker.png;.\Resources\MetroStyle\sandglass.png;.\Resources\MetroStyle\save_as.png;.\Resources\MetroStyle\scales.png;.\Resources\MetroStyle\scanner.png;.\Resources\MetroStyle\sci_fi.png;.\Resources\MetroStyle\scooter.png;.\Resources\MetroStyle\scv.png;.\Resources\MetroStyle\search.png;.\Resources\MetroStyle\services.png;.\Resources\MetroStyle\settings.png;.\Resources\MetroStyle\settings2.png;.\Resources\MetroStyle\sheep.png;.\Resources\MetroStyle\sheep_on_bike.png;.\Resources\MetroStyle\ship.png;.\Resources\MetroStyle\shop.png;.\Resources\MetroStyle\shoping_bag.png;.\Resources\MetroStyle\shoping_cart.png;.\Resources\MetroStyle\shoping_cart_filled.png;.\Resources\MetroStyle\shopping_basket.png;.\Resources\MetroStyle\shuffle.png;.\Resources\MetroStyle\signal_horn.png;.\Resources\MetroStyle\sinchronize.png;.\Resources\MetroStyle\skip_to_start.png;.\Resources\MetroStyle\sleeping.png;.\Resources\MetroStyle\slot_machine.png;.\Resources\MetroStyle\slr_camera.png;.\Resources\MetroStyle\slr_camera2.png;.\Resources\MetroStyle\snow.png;.\Resources\MetroStyle\snow_storm.png;.\Resources\MetroStyle\sofa.png;.\Resources\MetroStyle\solutions.png;.\Resources\MetroStyle\spades.png;.\Resources\MetroStyle\speech_bubble.png;.\Resources\MetroStyle\spoon.png;.\Resources\MetroStyle\sport.png;.\Resources\MetroStyle\ssd.png;.\Resources\MetroStyle\stack.png;.\Resources\MetroStyle\stadium.png;.\Resources\MetroStyle\star.png;.\Resources\MetroStyle\statistics.png;.\Resources\MetroStyle\steam.png;.\Resources\MetroStyle\stop.png;.\Resources\MetroStyle\stopwatch.png;.\Resources\MetroStyle\storm.png;.\Resources\MetroStyle\stylesheet-branch-closed.png;.\Resources\MetroStyle\stylesheet-branch-closed-noSibling.png;.\Resources\MetroStyle\stylesheet-branch-end.png;.\Resources\MetroStyle\stylesheet-branch-more.png;.\Resources\MetroStyle\stylesheet-branch-open.png;.\Resources\MetroStyle\stylesheet-branch-open-noSibling.png;.\Resources\MetroStyle\stylesheet-vline.png;.\Resources\MetroStyle\sun.png;.\Resources\MetroStyle\support.png;.\Resources\MetroStyle\surprised.png;.\Resources\MetroStyle\table.png;.\Resources\MetroStyle\tag.png;.\Resources\MetroStyle\talk.png;.\Resources\MetroStyle\taxi.png;.\Resources\MetroStyle\teapot.png;.\Resources\MetroStyle\tear_off_calendar.png;.\Resources\MetroStyle\tennis.png;.\Resources\MetroStyle\theatre_masks.png;.\Resources\MetroStyle\thumbs_down.png;.\Resources\MetroStyle\thumbs_up.png;.\Resources\MetroStyle\tongue.png;.\Resources\MetroStyle\tool_box.png;.\Resources\MetroStyle\topic.png;.\Resources\MetroStyle\tractor.png;.\Resources\MetroStyle\tragedy_mask.png;.\Resources\MetroStyle\trailer.png;.\Resources\MetroStyle\train.png;.\Resources\MetroStyle\tram.png;.\Resources\MetroStyle\tram2.png;.\Resources\MetroStyle\treble_clef.png;.\Resources\MetroStyle\triller.png;.\Resources\MetroStyle\trolleybus.png;.\Resources\MetroStyle\truck.png;.\Resources\MetroStyle\tv.png;.\Resources\MetroStyle\twitter.png;.\Resources\MetroStyle\umbrella.png;.\Resources\MetroStyle\umbrella-32.png;.\Resources\MetroStyle\unlock.png;.\Resources\MetroStyle\unlock-X.png;.\Resources\MetroStyle\unlock-Y.png;.\Resources\MetroStyle\unlock-Z.png;.\Resources\MetroStyle\up.png;.\Resources\MetroStyle\up_circular.png;.\Resources\MetroStyle\upload.png;.\Resources\MetroStyle\user.png;.\Resources\MetroStyle\variable.png;.\Resources\MetroStyle\very_popular_topic.png;.\Resources\MetroStyle\video_projector.png;.\Resources\MetroStyle\violin.png;.\Resources\MetroStyle\vkontakte.png;.\Resources\MetroStyle\voip_gateway.png;.\Resources\MetroStyle\volume_down.png;.\Resources\MetroStyle\volume_up.png;.\Resources\MetroStyle\wallet.png;.\Resources\MetroStyle\wardrobe.png;.\Resources\MetroStyle\washing_machine.png;.\Resources\MetroStyle\watch.png;.\Resources\MetroStyle\webcam.png;.\Resources\MetroStyle\western.png;.\Resources\MetroStyle\wheel.png;.\Resources\MetroStyle\widescreen_tv.png;.\Resources\MetroStyle\wifi.png;.\Resources\MetroStyle\win.png;.\Resources\MetroStyle\windows.png;.\Resources\MetroStyle\windows_client.png;.\Resources\MetroStyle\wink.png;.\Resources\MetroStyle\wired_network.png;.\Resources\MetroStyle\wma.png;.\Resources\MetroStyle\word.png;.\Resources\MetroStyle\youtube.png;.\Resources\MetroStyle\zip.png;.\Resources\Alphaback.png;.\Resources\ColorPicker.png;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(FullPath);.\Resources\MetroStyle\0.png;.\Resources\MetroStyle\0_filled.png;.\Resources\MetroStyle\1_filled.png;.\Resources\MetroStyle\2.png;.\Resources\MetroStyle\2_filled.png;.\Resources\MetroStyle\3.png;.\Resources\MetroStyle\3_filled.png;.\Resources\MetroStyle\4.png;.\Resources\MetroStyle\4_filled.png;.\Resources\MetroStyle\5.png;.\Resources\MetroStyle\5_filled.png;.\Resources\MetroStyle\6.png;.\Resources\MetroStyle\6_filled.png;.\Resources\MetroStyle\7.png;.\Resources\MetroStyle\7_filled.png;.\Resources\MetroStyle\08-24.png;.\Resources\MetroStyle\8.png;.\Resources\MetroStyle\8_filled.png;.\Resources\MetroStyle\9.png;.\Resources\MetroStyle\9_filled.png;.\Resources\MetroStyle\133-24.png;.\Resources\MetroStyle\about.png;.\Resources\MetroStyle\action.png;.\Resources\MetroStyle\add_file.png;.\Resources\MetroStyle\add_folder.png;.\Resources\MetroStyle\add_link.png;.\Resources\MetroStyle\add_list.png;.\Resources\MetroStyle\add_user.png;.\Resources\MetroStyle\address_book.png;.\Resources\MetroStyle\administrator.png;.\Resources\MetroStyle\adventures.png;.\Resources\MetroStyle\advertising.png;.\Resources\MetroStyle\ai.png;.\Resources\MetroStyle\airplane_landing.png;.\Resources\MetroStyle\airplane_take_off.png;.\Resources\MetroStyle\airport.png;.\Resources\MetroStyle\alarm_clock.png;.\Resources\MetroStyle\android.png;.\Resources\MetroStyle\angel.png;.\Resources\MetroStyle\angry.png;.\Resources\MetroStyle\appbar.arrow.expand.png;.\Resources\MetroStyle\appbar.fullscreen.png;.\Resources\MetroStyle\appbar.transform.rotate.clockwise.png;.\Resources\MetroStyle\applouse.png;.\Resources\MetroStyle\archive.png;.\Resources\MetroStyle\archive2.png;.\Resources\MetroStyle\armchair.png;.\Resources\MetroStyle\attach.png;.\Resources\MetroStyle\autograf.png;.\Resources\MetroStyle\average.png;.\Resources\MetroStyle\avi.png;.\Resources\MetroStyle\bank.png;.\Resources\MetroStyle\bank_cards.png;.\Resources\MetroStyle\banknotes.png;.\Resources\MetroStyle\bar.png;.\Resources\MetroStyle\barcode.png;.\Resources\MetroStyle\basketball.png;.\Resources\MetroStyle\bebo.png;.\Resources\MetroStyle\bed.png;.\Resources\MetroStyle\bicycle.png;.\Resources\MetroStyle\billing.png;.\Resources\MetroStyle\birthday_cake.png;.\Resources\MetroStyle\blackberry.png;.\Resources\MetroStyle\book.png;.\Resources\MetroStyle\book_stack.png;.\Resources\MetroStyle\bookmark.png;.\Resources\MetroStyle\books.png;.\Resources\MetroStyle\boombox.png;.\Resources\MetroStyle\box.png;.\Resources\MetroStyle\bred.png;.\Resources\MetroStyle\briefcase.png;.\Resources\MetroStyle\bug.png;.\Resources\MetroStyle\bunch_flowers.png;.\Resources\MetroStyle\burn.png;.\Resources\MetroStyle\bus.png;.\Resources\MetroStyle\business_contact.png;.\Resources\MetroStyle\businessman.png;.\Resources\MetroStyle\businesswoman.png;.\Resources\MetroStyle\calculator.png;.\Resources\MetroStyle\calendar.png;.\Resources\MetroStyle\camcoder.png;.\Resources\MetroStyle\camcoder_pro.png;.\Resources\MetroStyle\car.png;.\Resources\MetroStyle\card_in_use.png;.\Resources\MetroStyle\card_inserting.png;.\Resources\MetroStyle\cards.png;.\Resources\MetroStyle\carrot.png;.\Resources\MetroStyle\cash_receiving.png;.\Resources\MetroStyle\cheap.png;.\Resources\MetroStyle\check_book.png;.\Resources\MetroStyle\checked_user.png;.\Resources\MetroStyle\checkmark.png;.\Resources\MetroStyle\checkout.png;.\Resources\MetroStyle\cheese.png;.\Resources\MetroStyle\child_new_post.png;.\Resources\MetroStyle\chip.png;.\Resources\MetroStyle\church.png;.\Resources\MetroStyle\cllipboard.png;.\Resources\MetroStyle\clock.png;.\Resources\MetroStyle\closed_topic.png;.\Resources\MetroStyle\cloud.png;.\Resources\MetroStyle\cloud_lighting.png;.\Resources\MetroStyle\cloud_storage.png;.\Resources\MetroStyle\clouds.png;.\Resources\MetroStyle\clover.png;.\Resources\MetroStyle\clubs.png;.\Resources\MetroStyle\coffee_maker.png;.\Resources\MetroStyle\coins.png;.\Resources\MetroStyle\combo.png;.\Resources\MetroStyle\comedy.png;.\Resources\MetroStyle\comedy_mask.png;.\Resources\MetroStyle\comedy2.png;.\Resources\MetroStyle\comments.png;.\Resources\MetroStyle\commode.png;.\Resources\MetroStyle\compact_camera.png;.\Resources\MetroStyle\compass.png;.\Resources\MetroStyle\console.png;.\Resources\MetroStyle\contacts.png;.\Resources\MetroStyle\contacts2.png;.\Resources\MetroStyle\cooker.png;.\Resources\MetroStyle\cooker_hood.png;.\Resources\MetroStyle\cooking_pot.png;.\Resources\MetroStyle\cool.png;.\Resources\MetroStyle\copy.png;.\Resources\MetroStyle\crime.png;.\Resources\MetroStyle\crying.png;.\Resources\MetroStyle\cup.png;.\Resources\MetroStyle\cut.png;.\Resources\MetroStyle\dashboard.png;.\Resources\MetroStyle\delete.png;.\Resources\MetroStyle\delete_link.png;.\Resources\MetroStyle\delivery.png;.\Resources\MetroStyle\detective.png;.\Resources\MetroStyle\diamonds.png;.\Resources\MetroStyle\dice.png;.\Resources\MetroStyle\dll.png;.\Resources\MetroStyle\dmg.png;.\Resources\MetroStyle\documentary.png;.\Resources\MetroStyle\documents.png;.\Resources\MetroStyle\down.png;.\Resources\MetroStyle\down_circular.png;.\Resources\MetroStyle\download.png;.\Resources\MetroStyle\downloads.png;.\Resources\MetroStyle\drama.png;.\Resources\MetroStyle\edit.png;.\Resources\MetroStyle\eject.png;.\Resources\MetroStyle\electric_teapot.png;.\Resources\MetroStyle\empty_filter.png;.\Resources\MetroStyle\empty_flag.png;.\Resources\MetroStyle\empty_trash.png;.\Resources\MetroStyle\end.png;.\Resources\MetroStyle\erase.png;.\Resources\MetroStyle\error.png;.\Resources\MetroStyle\evil.png;.\Resources\MetroStyle\excel.png;.\Resources\MetroStyle\exe.png;.\Resources\MetroStyle\expensive.png;.\Resources\MetroStyle\facebook.png;.\Resources\MetroStyle\fan.png;.\Resources\MetroStyle\fantasy.png;.\Resources\MetroStyle\fast_forward.png;.\Resources\MetroStyle\file.png;.\Resources\MetroStyle\filing_cabinet.png;.\Resources\MetroStyle\filled_filter.png;.\Resources\MetroStyle\filled_flag.png;.\Resources\MetroStyle\film.png;.\Resources\MetroStyle\film2.png;.\Resources\MetroStyle\finish_flag.png;.\Resources\MetroStyle\flv.png;.\Resources\MetroStyle\fog_day.png;.\Resources\MetroStyle\fog_night.png;.\Resources\MetroStyle\folder.png;.\Resources\MetroStyle\football.png;.\Resources\MetroStyle\fork.png;.\Resources\MetroStyle\forward.png;.\Resources\MetroStyle\fridge.png;.\Resources\MetroStyle\full_trash.png;.\Resources\MetroStyle\gas_station.png;.\Resources\MetroStyle\gif.png;.\Resources\MetroStyle\gift.png;.\Resources\MetroStyle\github.png;.\Resources\MetroStyle\globe.png;.\Resources\MetroStyle\google_plus.png;.\Resources\MetroStyle\gps_device.png;.\Resources\MetroStyle\group.png;.\Resources\MetroStyle\guitar.png;.\Resources\MetroStyle\hail.png;.\Resources\MetroStyle\happy.png;.\Resources\MetroStyle\hdd.png;.\Resources\MetroStyle\hearts.png;.\Resources\MetroStyle\helicopter.png;.\Resources\MetroStyle\help.png;.\Resources\MetroStyle\historical.png;.\Resources\MetroStyle\home.png;.\Resources\MetroStyle\horror.png;.\Resources\MetroStyle\hospital.png;.\Resources\MetroStyle\hotel.png;.\Resources\MetroStyle\idea.png;.\Resources\MetroStyle\in_love.png;.\Resources\MetroStyle\info.png;.\Resources\MetroStyle\internet.png;.\Resources\MetroStyle\iphone.png;.\Resources\MetroStyle\iron.png;.\Resources\MetroStyle\joker.png;.\Resources\MetroStyle\jpg.png;.\Resources\MetroStyle\key.png;.\Resources\MetroStyle\keyboard.png;.\Resources\MetroStyle\kiss.png;.\Resources\MetroStyle\knife.png;.\Resources\MetroStyle\ladle.png;.\Resources\MetroStyle\lamp.png;.\Resources\MetroStyle\left.png;.\Resources\MetroStyle\left_circular.png;.\Resources\MetroStyle\library.png;.\Resources\MetroStyle\lifebuoy.png;.\Resources\MetroStyle\like.png;.\Resources\MetroStyle\like_outline.png;.\Resources\MetroStyle\likes.png;.\Resources\MetroStyle\line.png;.\Resources\MetroStyle\link.png;.\Resources\MetroStyle\linkedin.png;.\Resources\MetroStyle\linux_client.png;.\Resources\MetroStyle\little_rain.png;.\Resources\MetroStyle\little_snow.png;.\Resources\MetroStyle\lock.png;.\Resources\MetroStyle\lock-X.png;.\Resources\MetroStyle\lock-Y.png;.\Resources\MetroStyle\lock-Z.png;.\Resources\MetroStyle\login.png;.\Resources\MetroStyle\logout.png;.\Resources\MetroStyle\lol.png;.\Resources\MetroStyle\loudspeaker.png;.\Resources\MetroStyle\lyre.png;.\Resources\MetroStyle\mac_client.png;.\Resources\MetroStyle\magazine.png;.\Resources\MetroStyle\manager.png;.\Resources\MetroStyle\map.png;.\Resources\MetroStyle\map_marker.png;.\Resources\MetroStyle\marker.png;.\Resources\MetroStyle\megafone.png;.\Resources\MetroStyle\megafone2.png;.\Resources\MetroStyle\message.png;.\Resources\MetroStyle\microphone.png;.\Resources\MetroStyle\microphone2.png;.\Resources\MetroStyle\microwave.png;.\Resources\MetroStyle\minus.png;.\Resources\MetroStyle\mixer.png;.\Resources\MetroStyle\money_bag.png;.\Resources\MetroStyle\moneybox.png;.\Resources\MetroStyle\monitor.png;.\Resources\MetroStyle\moon.png;.\Resources\MetroStyle\motorcycle.png;.\Resources\MetroStyle\mountain.png;.\Resources\MetroStyle\mouse.png;.\Resources\MetroStyle\mov.png;.\Resources\MetroStyle\moved_topic.png;.\Resources\MetroStyle\MoveIcon.png;.\Resources\MetroStyle\movies.png;.\Resources\MetroStyle\mpg.png;.\Resources\MetroStyle\music.png;.\Resources\MetroStyle\music_conductor.png;.\Resources\MetroStyle\music_record.png;.\Resources\MetroStyle\mute.png;.\Resources\MetroStyle\my_topic.png;.\Resources\MetroStyle\myspace.png;.\Resources\MetroStyle\nas.png;.\Resources\MetroStyle\negative_dynamic.png;.\Resources\MetroStyle\new_post.png;.\Resources\MetroStyle\news.png;.\Resources\MetroStyle\newspaper.png;.\Resources\MetroStyle\note.png;.\Resources\MetroStyle\novel.png;.\Resources\MetroStyle\one_free.png;.\Resources\MetroStyle\online.png;.\Resources\MetroStyle\online_support.png;.\Resources\MetroStyle\opera_glasses.png;.\Resources\MetroStyle\outline.png;.\Resources\MetroStyle\outline_star.png;.\Resources\MetroStyle\package.png;.\Resources\MetroStyle\partly_cloudy_day.png;.\Resources\MetroStyle\partly_cloudy_night.png;.\Resources\MetroStyle\pause.png;.\Resources\MetroStyle\pdf.png;.\Resources\MetroStyle\pepper_shaker.png;.\Resources\MetroStyle\phone.png;.\Resources\MetroStyle\phone1.png;.\Resources\MetroStyle\phone2.png;.\Resources\MetroStyle\pictures.png;.\Resources\MetroStyle\pie.png;.\Resources\MetroStyle\pin.png;.\Resources\MetroStyle\ping_pong.png;.\Resources\MetroStyle\planner.png;.\Resources\MetroStyle\play.png;.\Resources\MetroStyle\plus.png;.\Resources\MetroStyle\png.png;.\Resources\MetroStyle\pocket_lantern.png;.\Resources\MetroStyle\poll_topic.png;.\Resources\MetroStyle\poo.png;.\Resources\MetroStyle\popular_topic.png;.\Resources\MetroStyle\positive_dynamic.png;.\Resources\MetroStyle\powerpoint.png;.\Resources\MetroStyle\price_tag.png;.\Resources\MetroStyle\price_tag_euro.png;.\Resources\MetroStyle\print.png;.\Resources\MetroStyle\printer.png;.\Resources\MetroStyle\private.png;.\Resources\MetroStyle\product.png;.\Resources\MetroStyle\psd.png;.\Resources\MetroStyle\public.png;.\Resources\MetroStyle\purse.png;.\Resources\MetroStyle\question.png;.\Resources\MetroStyle\radio1.png;.\Resources\MetroStyle\radio2.png;.\Resources\MetroStyle\railway_station.png;.\Resources\MetroStyle\rain.png;.\Resources\MetroStyle\rar.png;.\Resources\MetroStyle\read_message.png;.\Resources\MetroStyle\record.png;.\Resources\MetroStyle\remove_user.png;.\Resources\MetroStyle\repeat.png;.\Resources\MetroStyle\reply.png;.\Resources\MetroStyle\restaurant.png;.\Resources\MetroStyle\rewind.png;.\Resources\MetroStyle\right.png;.\Resources\MetroStyle\right_circular.png;.\Resources\MetroStyle\road.png;.\Resources\MetroStyle\rss.png;.\Resources\MetroStyle\rss2-32.png;.\Resources\MetroStyle\rss-32.png;.\Resources\MetroStyle\rugby.png;.\Resources\MetroStyle\ruler.png;.\Resources\MetroStyle\sad.png;.\Resources\MetroStyle\sale.png;.\Resources\MetroStyle\salt_shaker.png;.\Resources\MetroStyle\sandglass.png;.\Resources\MetroStyle\save_as.png;.\Resources\MetroStyle\scales.png;.\Resources\MetroStyle\scanner.png;.\Resources\MetroStyle\sci_fi.png;.\Resources\MetroStyle\scooter.png;.\Resources\MetroStyle\scv.png;.\Resources\MetroStyle\search.png;.\Resources\MetroStyle\services.png;.\Resources\MetroStyle\settings.png;.\Resources\MetroStyle\settings2.png;.\Resources\MetroStyle\sheep.png;.\Resources\MetroStyle\sheep_on_bike.png;.\Resources\MetroStyle\ship.png;.\Resources\MetroStyle\shop.png;.\Resources\MetroStyle\shoping_bag.png;.\Resources\MetroStyle\shoping_cart.png;.\Resources\MetroStyle\shoping_cart_filled.png;.\Resources\MetroStyle\shopping_basket.png;.\Resources\MetroStyle\shuffle.png;.\Resources\MetroStyle\signal_horn.png;.\Resources\MetroStyle\sinchronize.png;.\Resources\MetroStyle\skip_to_start.png;.\Resources\MetroStyle\sleeping.png;.\Resources\MetroStyle\slot_machine.png;.\Resources\MetroStyle\slr_camera.png;.\Resources\MetroStyle\slr_camera2.png;.\Resources\MetroStyle\snow.png;.\Resources\MetroStyle\snow_storm.png;.\Resources\MetroStyle\sofa.png;.\Resources\MetroStyle\solutions.png;.\Resources\MetroStyle\spades.png;.\Resources\MetroStyle\speech_bubble.png;.\Resources\MetroStyle\spoon.png;.\Resources\MetroStyle\sport.png;.\Resources\MetroStyle\ssd.png;.\Resources\MetroStyle\stack.png;.\Resources\MetroStyle\stadium.png;.\Resources\MetroStyle\star.png;.\Resources\MetroStyle\statistics.png;.\Resources\MetroStyle\steam.png;.\Resources\MetroStyle\stop.png;.\Resources\MetroStyle\stopwatch.png;.\Resources\MetroStyle\storm.png;.\Resources\MetroStyle\stylesheet-branch-closed.png;.\Resources\MetroStyle\stylesheet-branch-closed-noSibling.png;.\Resources\MetroStyle\stylesheet-branch-end.png;.\Resources\MetroStyle\stylesheet-branch-more.png;.\Resources\MetroStyle\stylesheet-branch-open.png;.\Resources\MetroStyle\stylesheet-branch-open-noSibling.png;.\Resources\MetroStyle\stylesheet-vline.png;.\Resources\MetroStyle\sun.png;.\Resources\MetroStyle\support.png;.\Resources\MetroStyle\surprised.png;.\Resources\MetroStyle\table.png;.\Resources\MetroStyle\tag.png;.\Resources\MetroStyle\talk.png;.\Resources\MetroStyle\taxi.png;.\Resources\MetroStyle\teapot.png;.\Resources\MetroStyle\tear_off_calendar.png;.\Resources\MetroStyle\tennis.png;.\Resources\MetroStyle\theatre_masks.png;.\Resources\MetroStyle\thumbs_down.png;.\Resources\MetroStyle\thumbs_up.png;.\Resources\MetroStyle\tongue.png;.\Resources\MetroStyle\tool_box.png;.\Resources\MetroStyle\topic.png;.\Resources\MetroStyle\tractor.png;.\Resources\MetroStyle\tragedy_mask.png;.\Resources\MetroStyle\trailer.png;.\Resources\MetroStyle\train.png;.\Resources\MetroStyle\tram.png;.\Resources\MetroStyle\tram2.png;.\Resources\MetroStyle\treble_clef.png;.\Resources\MetroStyle\triller.png;.\Resources\MetroStyle\trolleybus.png;.\Resources\MetroStyle\truck.png;.\Resources\MetroStyle\tv.png;.\Resources\MetroStyle\twitter.png;.\Resources\MetroStyle\umbrella.png;.\Resources\MetroStyle\umbrella-32.png;.\Resources\MetroStyle\unlock.png;.\Resources\MetroStyle\unlock-X.png;.\Resources\MetroStyle\unlock-Y.png;.\Resources\MetroStyle\unlock-Z.png;.\Resources\MetroStyle\up.png;.\Resources\MetroStyle\up_circular.png;.\Resources\MetroStyle\upload.png;.\Resources\MetroStyle\user.png;.\Resources\MetroStyle\variable.png;.\Resources\MetroStyle\very_popular_topic.png;.\Resources\MetroStyle\video_projector.png;.\Resources\MetroStyle\violin.png;.\Resources\MetroStyle\vkontakte.png;.\Resources\MetroStyle\voip_gateway.png;.\Resources\MetroStyle\volume_down.png;.\Resources\MetroStyle\volume_up.png;.\Resources\MetroStyle\wallet.png;.\Resources\MetroStyle\wardrobe.png;.\Resources\MetroStyle\washing_machine.png;.\Resources\MetroStyle\watch.png;.\Resources\MetroStyle\webcam.png;.\Resources\MetroStyle\western.png;.\Resources\MetroStyle\wheel.png;.\Resources\MetroStyle\widescreen_tv.png;.\Resources\MetroStyle\wifi.png;.\Resources\MetroStyle\win.png;.\Resources\MetroStyle\windows.png;.\Resources\MetroStyle\windows_client.png;.\Resources\MetroStyle\wink.png;.\Resources\MetroStyle\wired_network.png;.\Resources\MetroStyle\wma.png;.\Resources\MetroStyle\word.png;.\Resources\MetroStyle\youtube.png;.\Resources\MetroStyle\zip.png;.\Resources\Alphaback.png;.\Resources\ColorPicker.png;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Rcc%27ing %(Identity)...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Rcc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\qrc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\$(ConfigurationName)\qrc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\rcc.exe" -name "%(Filename)" -no-compress "%(FullPath)" -o .\GeneratedFiles\$(ConfigurationName)\qrc_%(Filename).cpp</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\rcc.exe" -name "%(Filename)" -no-compress "%(FullPath)" -o .\GeneratedFiles\$(ConfigurationName)\qrc_%(Filename).cpp</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(FullPath);.\Resources\MetroStyle\0.png;.\Resources\MetroStyle\0_filled.png;.\Resources\MetroStyle\1_filled.png;.\Resources\MetroStyle\2.png;.\Resources\MetroStyle\2_filled.png;.\Resources\MetroStyle\3.png;.\Resources\MetroStyle\3_filled.png;.\Resources\MetroStyle\4.png;.\Resources\MetroStyle\4_filled.png;.\Resources\MetroStyle\5.png;.\Resources\MetroStyle\5_filled.png;.\Resources\MetroStyle\6.png;.\Resources\MetroStyle\6_filled.png;.\Resources\MetroStyle\7.png;.\Resources\MetroStyle\7_filled.png;.\Resources\MetroStyle\08-24.png;.\Resources\MetroStyle\8.png;.\Resources\MetroStyle\8_filled.png;.\Resources\MetroStyle\9.png;.\Resources\MetroStyle\9_filled.png;.\Resources\MetroStyle\133-24.png;.\Resources\MetroStyle\about.png;.\Resources\MetroStyle\action.png;.\Resources\MetroStyle\add_file.png;.\Resources\MetroStyle\add_folder.png;.\Resources\MetroStyle\add_link.png;.\Resources\MetroStyle\add_list.png;.\Resources\MetroStyle\add_user.png;.\Resources\MetroStyle\address_book.png;.\Resources\MetroStyle\administrator.png;.\Resources\MetroStyle\adventures.png;.\Resources\MetroStyle\advertising.png;.\Resources\MetroStyle\ai.png;.\Resources\MetroStyle\airplane_landing.png;.\Resources\MetroStyle\airplane_take_off.png;.\Resources\MetroStyle\airport.png;.\Resources\MetroStyle\alarm_clock.png;.\Resources\MetroStyle\android.png;.\Resources\MetroStyle\angel.png;.\Resources\MetroStyle\angry.png;.\Resources\MetroStyle\appbar.arrow.expand.png;.\Resources\MetroStyle\appbar.fullscreen.png;.\Resources\MetroStyle\appbar.transform.rotate.clockwise.png;.\Resources\MetroStyle\applouse.png;.\Resources\MetroStyle\archive.png;.\Resources\MetroStyle\archive2.png;.\Resources\MetroStyle\armchair.png;.\Resources\MetroStyle\attach.png;.\Resources\MetroStyle\autograf.png;.\Resources\MetroStyle\average.png;.\Resources\MetroStyle\avi.png;.\Resources\MetroStyle\bank.png;.\Resources\MetroStyle\bank_cards.png;.\Resources\MetroStyle\banknotes.png;.\Resources\MetroStyle\bar.png;.\Resources\MetroStyle\barcode.png;.\Resources\MetroStyle\basketball.png;.\Resources\MetroStyle\bebo.png;.\Resources\MetroStyle\bed.png;.\Resources\MetroStyle\bicycle.png;.\Resources\MetroStyle\billing.png;.\Resources\MetroStyle\birthday_cake.png;.\Resources\MetroStyle\blackberry.png;.\Resources\MetroStyle\book.png;.\Resources\MetroStyle\book_stack.png;.\Resources\MetroStyle\bookmark.png;.\Resources\MetroStyle\books.png;.\Resources\MetroStyle\boombox.png;.\Resources\MetroStyle\box.png;.\Resources\MetroStyle\bred.png;.\Resources\MetroStyle\briefcase.png;.\Resources\MetroStyle\bug.png;.\Resources\MetroStyle\bunch_flowers.png;.\Resources\MetroStyle\burn.png;.\Resources\MetroStyle\bus.png;.\Resources\MetroStyle\business_contact.png;.\Resources\MetroStyle\businessman.png;.\Resources\MetroStyle\businesswoman.png;.\Resources\MetroStyle\calculator.png;.\Resources\MetroStyle\calendar.png;.\Resources\MetroStyle\camcoder.png;.\Resources\MetroStyle\camcoder_pro.png;.\Resources\MetroStyle\car.png;.\Resources\MetroStyle\card_in_use.png;.\Resources\MetroStyle\card_inserting.png;.\Resources\MetroStyle\cards.png;.\Resources\MetroStyle\carrot.png;.\Resources\MetroStyle\cash_receiving.png;.\Resources\MetroStyle\cheap.png;.\Resources\MetroStyle\check_book.png;.\Resources\MetroStyle\checked_user.png;.\Resources\MetroStyle\checkmark.png;.\Resources\MetroStyle\checkout.png;.\Resources\MetroStyle\cheese.png;.\Resources\MetroStyle\child_new_post.png;.\Resources\MetroStyle\chip.png;.\Resources\MetroStyle\church.png;.\Resources\MetroStyle\cllipboard.png;.\Resources\MetroStyle\clock.png;.\Resources\MetroStyle\closed_topic.png;.\Resources\MetroStyle\cloud.png;.\Resources\MetroStyle\cloud_lighting.png;.\Resources\MetroStyle\cloud_storage.png;.\Resources\MetroStyle\clouds.png;.\Resources\MetroStyle\clover.png;.\Resources\MetroStyle\clubs.png;.\Resources\MetroStyle\coffee_maker.png;.\Resources\MetroStyle\coins.png;.\Resources\MetroStyle\combo.png;.\Resources\MetroStyle\comedy.png;.\Resources\MetroStyle\comedy_mask.png;.\Resources\MetroStyle\comedy2.png;.\Resources\MetroStyle\comments.png;.\Resources\MetroStyle\commode.png;.\Resources\MetroStyle\compact_camera.png;.\Resources\MetroStyle\compass.png;.\Resources\MetroStyle\console.png;.\Resources\MetroStyle\contacts.png;.\Resources\MetroStyle\contacts2.png;.\Resources\MetroStyle\cooker.png;.\Resources\MetroStyle\cooker_hood.png;.\Resources\MetroStyle\cooking_pot.png;.\Resources\MetroStyle\cool.png;.\Resources\MetroStyle\copy.png;.\Resources\MetroStyle\crime.png;.\Resources\MetroStyle\crying.png;.\Resources\MetroStyle\cup.png;.\Resources\MetroStyle\cut.png;.\Resources\MetroStyle\dashboard.png;.\Resources\MetroStyle\delete.png;.\Resources\MetroStyle\delete_link.png;.\Resources\MetroStyle\delivery.png;.\Resources\MetroStyle\detective.png;.\Resources\MetroStyle\diamonds.png;.\Resources\MetroStyle\dice.png;.\Resources\MetroStyle\dll.png;.\Resources\MetroStyle\dmg.png;.\Resources\MetroStyle\documentary.png;.\Resources\MetroStyle\documents.png;.\Resources\MetroStyle\down.png;.\Resources\MetroStyle\down_circular.png;.\Resources\MetroStyle\download.png;.\Resources\MetroStyle\downloads.png;.\Resources\MetroStyle\drama.png;.\Resources\MetroStyle\edit.png;.\Resources\MetroStyle\eject.png;.\Resources\MetroStyle\electric_teapot.png;.\Resources\MetroStyle\empty_filter.png;.\Resources\MetroStyle\empty_flag.png;.\Resources\MetroStyle\empty_trash.png;.\Resources\MetroStyle\end.png;.\Resources\MetroStyle\erase.png;.\Resources\MetroStyle\error.png;.\Resources\MetroStyle\evil.png;.\Resources\MetroStyle\excel.png;.\Resources\MetroStyle\exe.png;.\Resources\MetroStyle\expensive.png;.\Resources\MetroStyle\facebook.png;.\Resources\MetroStyle\fan.png;.\Resources\MetroStyle\fantasy.png;.\Resources\MetroStyle\fast_forward.png;.\Resources\MetroStyle\file.png;.\Resources\MetroStyle\filing_cabinet.png;.\Resources\MetroStyle\filled_filter.png;.\Resources\MetroStyle\filled_flag.png;.\Resources\MetroStyle\film.png;.\Resources\MetroStyle\film2.png;.\Resources\MetroStyle\finish_flag.png;.\Resources\MetroStyle\flv.png;.\Resources\MetroStyle\fog_day.png;.\Resources\MetroStyle\fog_night.png;.\Resources\MetroStyle\folder.png;.\Resources\MetroStyle\football.png;.\Resources\MetroStyle\fork.png;.\Resources\MetroStyle\forward.png;.\Resources\MetroStyle\fridge.png;.\Resources\MetroStyle\full_trash.png;.\Resources\MetroStyle\gas_station.png;.\Resources\MetroStyle\gif.png;.\Resources\MetroStyle\gift.png;.\Resources\MetroStyle\github.png;.\Resources\MetroStyle\globe.png;.\Resources\MetroStyle\google_plus.png;.\Resources\MetroStyle\gps_device.png;.\Resources\MetroStyle\group.png;.\Resources\MetroStyle\guitar.png;.\Resources\MetroStyle\hail.png;.\Resources\MetroStyle\happy.png;.\Resources\MetroStyle\hdd.png;.\Resources\MetroStyle\hearts.png;.\Resources\MetroStyle\helicopter.png;.\Resources\MetroStyle\help.png;.\Resources\MetroStyle\historical.png;.\Resources\MetroStyle\home.png;.\Resources\MetroStyle\horror.png;.\Resources\MetroStyle\hospital.png;.\Resources\MetroStyle\hotel.png;.\Resources\MetroStyle\idea.png;.\Resources\MetroStyle\in_love.png;.\Resources\MetroStyle\info.png;.\Resources\MetroStyle\internet.png;.\Resources\MetroStyle\iphone.png;.\Resources\MetroStyle\iron.png;.\Resources\MetroStyle\joker.png;.\Resources\MetroStyle\jpg.png;.\Resources\MetroStyle\key.png;.\Resources\MetroStyle\keyboard.png;.\Resources\MetroStyle\kiss.png;.\Resources\MetroStyle\knife.png;.\Resources\MetroStyle\ladle.png;.\Resources\MetroStyle\lamp.png;.\Resources\MetroStyle\left.png;.\Resources\MetroStyle\left_circular.png;.\Resources\MetroStyle\library.png;.\Resources\MetroStyle\lifebuoy.png;.\Resources\MetroStyle\like.png;.\Resources\MetroStyle\like_outline.png;.\Resources\MetroStyle\likes.png;.\Resources\MetroStyle\line.png;.\Resources\MetroStyle\link.png;.\Resources\MetroStyle\linkedin.png;.\Resources\MetroStyle\linux_client.png;.\Resources\MetroStyle\little_rain.png;.\Resources\MetroStyle\little_snow.png;.\Resources\MetroStyle\lock.png;.\Resources\MetroStyle\lock-X.png;.\Resources\MetroStyle\lock-Y.png;.\Resources\MetroStyle\lock-Z.png;.\Resources\MetroStyle\login.png;.\Resources\MetroStyle\logout.png;.\Resources\MetroStyle\lol.png;.\Resources\MetroStyle\loudspeaker.png;.\Resources\MetroStyle\lyre.png;.\Resources\MetroStyle\mac_client.png;.\Resources\MetroStyle\magazine.png;.\Resources\MetroStyle\manager.png;.\Resources\MetroStyle\map.png;.\Resources\MetroStyle\map_marker.png;.\Resources\MetroStyle\marker.png;.\Resources\MetroStyle\megafone.png;.\Resources\MetroStyle\megafone2.png;.\Resources\MetroStyle\message.png;.\Resources\MetroStyle\microphone.png;.\Resources\MetroStyle\microphone2.png;.\Resources\MetroStyle\microwave.png;.\Resources\MetroStyle\minus.png;.\Resources\MetroStyle\mixer.png;.\Resources\MetroStyle\money_bag.png;.\Resources\MetroStyle\moneybox.png;.\Resources\MetroStyle\monitor.png;.\Resources\MetroStyle\moon.png;.\Resources\MetroStyle\motorcycle.png;.\Resources\MetroStyle\mountain.png;.\Resources\MetroStyle\mouse.png;.\Resources\MetroStyle\mov.png;.\Resources\MetroStyle\moved_topic.png;.\Resources\MetroStyle\MoveIcon.png;.\Resources\MetroStyle\movies.png;.\Resources\MetroStyle\mpg.png;.\Resources\MetroStyle\music.png;.\Resources\MetroStyle\music_conductor.png;.\Resources\MetroStyle\music_record.png;.\Resources\MetroStyle\mute.png;.\Resources\MetroStyle\my_topic.png;.\Resources\MetroStyle\myspace.png;.\Resources\MetroStyle\nas.png;.\Resources\MetroStyle\negative_dynamic.png;.\Resources\MetroStyle\new_post.png;.\Resources\MetroStyle\news.png;.\Resources\MetroStyle\newspaper.png;.\Resources\MetroStyle\note.png;.\Resources\MetroStyle\novel.png;.\Resources\MetroStyle\one_free.png;.\Resources\MetroStyle\online.png;.\Resources\MetroStyle\online_support.png;.\Resources\MetroStyle\opera_glasses.png;.\Resources\MetroStyle\outline.png;.\Resources\MetroStyle\outline_star.png;.\Resources\MetroStyle\package.png;.\Resources\MetroStyle\partly_cloudy_day.png;.\Resources\MetroStyle\partly_cloudy_night.png;.\Resources\MetroStyle\pause.png;.\Resources\MetroStyle\pdf.png;.\Resources\MetroStyle\pepper_shaker.png;.\Resources\MetroStyle\phone.png;.\Resources\MetroStyle\phone1.png;.\Resources\MetroStyle\phone2.png;.\Resources\MetroStyle\pictures.png;.\Resources\MetroStyle\pie.png;.\Resources\MetroStyle\pin.png;.\Resources\MetroStyle\ping_pong.png;.\Resources\MetroStyle\planner.png;.\Resources\MetroStyle\play.png;.\Resources\MetroStyle\plus.png;.\Resources\MetroStyle\png.png;.\Resources\MetroStyle\pocket_lantern.png;.\Resources\MetroStyle\poll_topic.png;.\Resources\MetroStyle\poo.png;.\Resources\MetroStyle\popular_topic.png;.\Resources\MetroStyle\positive_dynamic.png;.\Resources\MetroStyle\powerpoint.png;.\Resources\MetroStyle\price_tag.png;.\Resources\MetroStyle\price_tag_euro.png;.\Resources\MetroStyle\print.png;.\Resources\MetroStyle\printer.png;.\Resources\MetroStyle\private.png;.\Resources\MetroStyle\product.png;.\Resources\MetroStyle\psd.png;.\Resources\MetroStyle\public.png;.\Resources\MetroStyle\purse.png;.\Resources\MetroStyle\question.png;.\Resources\MetroStyle\radio1.png;.\Resources\MetroStyle\radio2.png;.\Resources\MetroStyle\railway_station.png;.\Resources\MetroStyle\rain.png;.\Resources\MetroStyle\rar.png;.\Resources\MetroStyle\read_message.png;.\Resources\MetroStyle\record.png;.\Resources\MetroStyle\remove_user.png;.\Resources\MetroStyle\repeat.png;.\Resources\MetroStyle\reply.png;.\Resources\MetroStyle\restaurant.png;.\Resources\MetroStyle\rewind.png;.\Resources\MetroStyle\right.png;.\Resources\MetroStyle\right_circular.png;.\Resources\MetroStyle\road.png;.\Resources\MetroStyle\rss.png;.\Resources\MetroStyle\rss2-32.png;.\Resources\MetroStyle\rss-32.png;.\Resources\MetroStyle\rugby.png;.\Resources\MetroStyle\ruler.png;.\Resources\MetroStyle\sad.png;.\Resources\MetroStyle\sale.png;.\Resources\MetroStyle\salt_shaker.png;.\Resources\MetroStyle\sandglass.png;.\Resources\MetroStyle\save_as.png;.\Resources\MetroStyle\scales.png;.\Resources\MetroStyle\scanner.png;.\Resources\MetroStyle\sci_fi.png;.\Resources\MetroStyle\scooter.png;.\Resources\MetroStyle\scv.png;.\Resources\MetroStyle\search.png;.\Resources\MetroStyle\services.png;.\Resources\MetroStyle\settings.png;.\Resources\MetroStyle\settings2.png;.\Resources\MetroStyle\sheep.png;.\Resources\MetroStyle\sheep_on_bike.png;.\Resources\MetroStyle\ship.png;.\Resources\MetroStyle\shop.png;.\Resources\MetroStyle\shoping_bag.png;.\Resources\MetroStyle\shoping_cart.png;.\Resources\MetroStyle\shoping_cart_filled.png;.\Resources\MetroStyle\shopping_basket.png;.\Resources\MetroStyle\shuffle.png;.\Resources\MetroStyle\signal_horn.png;.\Resources\MetroStyle\sinchronize.png;.\Resources\MetroStyle\skip_to_start.png;.\Resources\MetroStyle\sleeping.png;.\Resources\MetroStyle\slot_machine.png;.\Resources\MetroStyle\slr_camera.png;.\Resources\MetroStyle\slr_camera2.png;.\Resources\MetroStyle\snow.png;.\Resources\MetroStyle\snow_storm.png;.\Resources\MetroStyle\sofa.png;.\Resources\MetroStyle\solutions.png;.\Resources\MetroStyle\spades.png;.\Resources\MetroStyle\speech_bubble.png;.\Resources\MetroStyle\spoon.png;.\Resources\MetroStyle\sport.png;.\Resources\MetroStyle\ssd.png;.\Resources\MetroStyle\stack.png;.\Resources\MetroStyle\stadium.png;.\Resources\MetroStyle\star.png;.\Resources\MetroStyle\statistics.png;.\Resources\MetroStyle\steam.png;.\Resources\MetroStyle\stop.png;.\Resources\MetroStyle\stopwatch.png;.\Resources\MetroStyle\storm.png;.\Resources\MetroStyle\stylesheet-branch-closed.png;.\Resources\MetroStyle\stylesheet-branch-closed-noSibling.png;.\Resources\MetroStyle\stylesheet-branch-end.png;.\Resources\MetroStyle\stylesheet-branch-more.png;.\Resources\MetroStyle\stylesheet-branch-open.png;.\Resources\MetroStyle\stylesheet-branch-open-noSibling.png;.\Resources\MetroStyle\stylesheet-vline.png;.\Resources\MetroStyle\sun.png;.\Resources\MetroStyle\support.png;.\Resources\MetroStyle\surprised.png;.\Resources\MetroStyle\table.png;.\Resources\MetroStyle\tag.png;.\Resources\MetroStyle\talk.png;.\Resources\MetroStyle\taxi.png;.\Resources\MetroStyle\teapot.png;.\Resources\MetroStyle\tear_off_calendar.png;.\Resources\MetroStyle\tennis.png;.\Resources\MetroStyle\theatre_masks.png;.\Resources\MetroStyle\thumbs_down.png;.\Resources\MetroStyle\thumbs_up.png;.\Resources\MetroStyle\tongue.png;.\Resources\MetroStyle\tool_box.png;.\Resources\MetroStyle\topic.png;.\Resources\MetroStyle\tractor.png;.\Resources\MetroStyle\tragedy_mask.png;.\Resources\MetroStyle\trailer.png;.\Resources\MetroStyle\train.png;.\Resources\MetroStyle\tram.png;.\Resources\MetroStyle\tram2.png;.\Resources\MetroStyle\treble_clef.png;.\Resources\MetroStyle\triller.png;.\Resources\MetroStyle\trolleybus.png;.\Resources\MetroStyle\truck.png;.\Resources\MetroStyle\tv.png;.\Resources\MetroStyle\twitter.png;.\Resources\MetroStyle\umbrella.png;.\Resources\MetroStyle\umbrella-32.png;.\Resources\MetroStyle\unlock.png;.\Resources\MetroStyle\unlock-X.png;.\Resources\MetroStyle\unlock-Y.png;.\Resources\MetroStyle\unlock-Z.png;.\Resources\MetroStyle\up.png;.\Resources\MetroStyle\up_circular.png;.\Resources\MetroStyle\upload.png;.\Resources\MetroStyle\user.png;.\Resources\MetroStyle\variable.png;.\Resources\MetroStyle\very_popular_topic.png;.\Resources\MetroStyle\video_projector.png;.\Resources\MetroStyle\violin.png;.\Resources\MetroStyle\vkontakte.png;.\Resources\MetroStyle\voip_gateway.png;.\Resources\MetroStyle\volume_down.png;.\Resources\MetroStyle\volume_up.png;.\Resources\MetroStyle\wallet.png;.\Resources\MetroStyle\wardrobe.png;.\Resources\MetroStyle\washing_machine.png;.\Resources\MetroStyle\watch.png;.\Resources\MetroStyle\webcam.png;.\Resources\MetroStyle\western.png;.\Resources\MetroStyle\wheel.png;.\Resources\MetroStyle\widescreen_tv.png;.\Resources\MetroStyle\wifi.png;.\Resources\MetroStyle\win.png;.\Resources\MetroStyle\windows.png;.\Resources\MetroStyle\windows_client.png;.\Resources\MetroStyle\wink.png;.\Resources\MetroStyle\wired_network.png;.\Resources\MetroStyle\wma.png;.\Resources\MetroStyle\word.png;.\Resources\MetroStyle\youtube.png;.\Resources\MetroStyle\zip.png;.\Resources\Alphaback.png;.\Resources\ColorPicker.png;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(FullPath);.\Resources\MetroStyle\0.png;.\Resources\MetroStyle\0_filled.png;.\Resources\MetroStyle\1_filled.png;.\Resources\MetroStyle\2.png;.\Resources\MetroStyle\2_filled.png;.\Resources\MetroStyle\3.png;.\Resources\MetroStyle\3_filled.png;.\Resources\MetroStyle\4.png;.\Resources\MetroStyle\4_filled.png;.\Resources\MetroStyle\5.png;.\Resources\MetroStyle\5_filled.png;.\Resources\MetroStyle\6.png;.\Resources\MetroStyle\6_filled.png;.\Resources\MetroStyle\7.png;.\Resources\MetroStyle\7_filled.png;.\Resources\MetroStyle\08-24.png;.\Resources\MetroStyle\8.png;.\Resources\MetroStyle\8_filled.png;.\Resources\MetroStyle\9.png;.\Resources\MetroStyle\9_filled.png;.\Resources\MetroStyle\133-24.png;.\Resources\MetroStyle\about.png;.\Resources\MetroStyle\action.png;.\Resources\MetroStyle\add_file.png;.\Resources\MetroStyle\add_folder.png;.\Resources\MetroStyle\add_link.png;.\Resources\MetroStyle\add_list.png;.\Resources\MetroStyle\add_user.png;.\Resources\MetroStyle\address_book.png;.\Resources\MetroStyle\administrator.png;.\Resources\MetroStyle\adventures.png;.\Resources\MetroStyle\advertising.png;.\Resources\MetroStyle\ai.png;.\Resources\MetroStyle\airplane_landing.png;.\Resources\MetroStyle\airplane_take_off.png;.\Resources\MetroStyle\airport.png;.\Resources\MetroStyle\alarm_clock.png;.\Resources\MetroStyle\android.png;.\Resources\MetroStyle\angel.png;.\Resources\MetroStyle\angry.png;.\Resources\MetroStyle\appbar.arrow.expand.png;.\Resources\MetroStyle\appbar.fullscreen.png;.\Resources\MetroStyle\appbar.transform.rotate.clockwise.png;.\Resources\MetroStyle\applouse.png;.\Resources\MetroStyle\archive.png;.\Resources\MetroStyle\archive2.png;.\Resources\MetroStyle\armchair.png;.\Resources\MetroStyle\attach.png;.\Resources\MetroStyle\autograf.png;.\Resources\MetroStyle\average.png;.\Resources\MetroStyle\avi.png;.\Resources\MetroStyle\bank.png;.\Resources\MetroStyle\bank_cards.png;.\Resources\MetroStyle\banknotes.png;.\Resources\MetroStyle\bar.png;.\Resources\MetroStyle\barcode.png;.\Resources\MetroStyle\basketball.png;.\Resources\MetroStyle\bebo.png;.\Resources\MetroStyle\bed.png;.\Resources\MetroStyle\bicycle.png;.\Resources\MetroStyle\billing.png;.\Resources\MetroStyle\birthday_cake.png;.\Resources\MetroStyle\blackberry.png;.\Resources\MetroStyle\book.png;.\Resources\MetroStyle\book_stack.png;.\Resources\MetroStyle\bookmark.png;.\Resources\MetroStyle\books.png;.\Resources\MetroStyle\boombox.png;.\Resources\MetroStyle\box.png;.\Resources\MetroStyle\bred.png;.\Resources\MetroStyle\briefcase.png;.\Resources\MetroStyle\bug.png;.\Resources\MetroStyle\bunch_flowers.png;.\Resources\MetroStyle\burn.png;.\Resources\MetroStyle\bus.png;.\Resources\MetroStyle\business_contact.png;.\Resources\MetroStyle\businessman.png;.\Resources\MetroStyle\businesswoman.png;.\Resources\MetroStyle\calculator.png;.\Resources\MetroStyle\calendar.png;.\Resources\MetroStyle\camcoder.png;.\Resources\MetroStyle\camcoder_pro.png;.\Resources\MetroStyle\car.png;.\Resources\MetroStyle\card_in_use.png;.\Resources\MetroStyle\card_inserting.png;.\Resources\MetroStyle\cards.png;.\Resources\MetroStyle\carrot.png;.\Resources\MetroStyle\cash_receiving.png;.\Resources\MetroStyle\cheap.png;.\Resources\MetroStyle\check_book.png;.\Resources\MetroStyle\checked_user.png;.\Resources\MetroStyle\checkmark.png;.\Resources\MetroStyle\checkout.png;.\Resources\MetroStyle\cheese.png;.\Resources\MetroStyle\child_new_post.png;.\Resources\MetroStyle\chip.png;.\Resources\MetroStyle\church.png;.\Resources\MetroStyle\cllipboard.png;.\Resources\MetroStyle\clock.png;.\Resources\MetroStyle\closed_topic.png;.\Resources\MetroStyle\cloud.png;.\Resources\MetroStyle\cloud_lighting.png;.\Resources\MetroStyle\cloud_storage.png;.\Resources\MetroStyle\clouds.png;.\Resources\MetroStyle\clover.png;.\Resources\MetroStyle\clubs.png;.\Resources\MetroStyle\coffee_maker.png;.\Resources\MetroStyle\coins.png;.\Resources\MetroStyle\combo.png;.\Resources\MetroStyle\comedy.png;.\Resources\MetroStyle\comedy_mask.png;.\Resources\MetroStyle\comedy2.png;.\Resources\MetroStyle\comments.png;.\Resources\MetroStyle\commode.png;.\Resources\MetroStyle\compact_camera.png;.\Resources\MetroStyle\compass.png;.\Resources\MetroStyle\console.png;.\Resources\MetroStyle\contacts.png;.\Resources\MetroStyle\contacts2.png;.\Resources\MetroStyle\cooker.png;.\Resources\MetroStyle\cooker_hood.png;.\Resources\MetroStyle\cooking_pot.png;.\Resources\MetroStyle\cool.png;.\Resources\MetroStyle\copy.png;.\Resources\MetroStyle\crime.png;.\Resources\MetroStyle\crying.png;.\Resources\MetroStyle\cup.png;.\Resources\MetroStyle\cut.png;.\Resources\MetroStyle\dashboard.png;.\Resources\MetroStyle\delete.png;.\Resources\MetroStyle\delete_link.png;.\Resources\MetroStyle\delivery.png;.\Resources\MetroStyle\detective.png;.\Resources\MetroStyle\diamonds.png;.\Resources\MetroStyle\dice.png;.\Resources\MetroStyle\dll.png;.\Resources\MetroStyle\dmg.png;.\Resources\MetroStyle\documentary.png;.\Resources\MetroStyle\documents.png;.\Resources\MetroStyle\down.png;.\Resources\MetroStyle\down_circular.png;.\Resources\MetroStyle\download.png;.\Resources\MetroStyle\downloads.png;.\Resources\MetroStyle\drama.png;.\Resources\MetroStyle\edit.png;.\Resources\MetroStyle\eject.png;.\Resources\MetroStyle\electric_teapot.png;.\Resources\MetroStyle\empty_filter.png;.\Resources\MetroStyle\empty_flag.png;.\Resources\MetroStyle\empty_trash.png;.\Resources\MetroStyle\end.png;.\Resources\MetroStyle\erase.png;.\Resources\MetroStyle\error.png;.\Resources\MetroStyle\evil.png;.\Resources\MetroStyle\excel.png;.\Resources\MetroStyle\exe.png;.\Resources\MetroStyle\expensive.png;.\Resources\MetroStyle\facebook.png;.\Resources\MetroStyle\fan.png;.\Resources\MetroStyle\fantasy.png;.\Resources\MetroStyle\fast_forward.png;.\Resources\MetroStyle\file.png;.\Resources\MetroStyle\filing_cabinet.png;.\Resources\MetroStyle\filled_filter.png;.\Resources\MetroStyle\filled_flag.png;.\Resources\MetroStyle\film.png;.\Resources\MetroStyle\film2.png;.\Resources\MetroStyle\finish_flag.png;.\Resources\MetroStyle\flv.png;.\Resources\MetroStyle\fog_day.png;.\Resources\MetroStyle\fog_night.png;.\Resources\MetroStyle\folder.png;.\Resources\MetroStyle\football.png;.\Resources\MetroStyle\fork.png;.\Resources\MetroStyle\forward.png;.\Resources\MetroStyle\fridge.png;.\Resources\MetroStyle\full_trash.png;.\Resources\MetroStyle\gas_station.png;.\Resources\MetroStyle\gif.png;.\Resources\MetroStyle\gift.png;.\Resources\MetroStyle\github.png;.\Resources\MetroStyle\globe.png;.\Resources\MetroStyle\google_plus.png;.\Resources\MetroStyle\gps_device.png;.\Resources\MetroStyle\group.png;.\Resources\MetroStyle\guitar.png;.\Resources\MetroStyle\hail.png;.\Resources\MetroStyle\happy.png;.\Resources\MetroStyle\hdd.png;.\Resources\MetroStyle\hearts.png;.\Resources\MetroStyle\helicopter.png;.\Resources\MetroStyle\help.png;.\Resources\MetroStyle\historical.png;.\Resources\MetroStyle\home.png;.\Resources\MetroStyle\horror.png;.\Resources\MetroStyle\hospital.png;.\Resources\MetroStyle\hotel.png;.\Resources\MetroStyle\idea.png;.\Resources\MetroStyle\in_love.png;.\Resources\MetroStyle\info.png;.\Resources\MetroStyle\internet.png;.\Resources\MetroStyle\iphone.png;.\Resources\MetroStyle\iron.png;.\Resources\MetroStyle\joker.png;.\Resources\MetroStyle\jpg.png;.\Resources\MetroStyle\key.png;.\Resources\MetroStyle\keyboard.png;.\Resources\MetroStyle\kiss.png;.\Resources\MetroStyle\knife.png;.\Resources\MetroStyle\ladle.png;.\Resources\MetroStyle\lamp.png;.\Resources\MetroStyle\left.png;.\Resources\MetroStyle\left_circular.png;.\Resources\MetroStyle\library.png;.\Resources\MetroStyle\lifebuoy.png;.\Resources\MetroStyle\like.png;.\Resources\MetroStyle\like_outline.png;.\Resources\MetroStyle\likes.png;.\Resources\MetroStyle\line.png;.\Resources\MetroStyle\link.png;.\Resources\MetroStyle\linkedin.png;.\Resources\MetroStyle\linux_client.png;.\Resources\MetroStyle\little_rain.png;.\Resources\MetroStyle\little_snow.png;.\Resources\MetroStyle\lock.png;.\Resources\MetroStyle\lock-X.png;.\Resources\MetroStyle\lock-Y.png;.\Resources\MetroStyle\lock-Z.png;.\Resources\MetroStyle\login.png;.\Resources\MetroStyle\logout.png;.\Resources\MetroStyle\lol.png;.\Resources\MetroStyle\loudspeaker.png;.\Resources\MetroStyle\lyre.png;.\Resources\MetroStyle\mac_client.png;.\Resources\MetroStyle\magazine.png;.\Resources\MetroStyle\manager.png;.\Resources\MetroStyle\map.png;.\Resources\MetroStyle\map_marker.png;.\Resources\MetroStyle\marker.png;.\Resources\MetroStyle\megafone.png;.\Resources\MetroStyle\megafone2.png;.\Resources\MetroStyle\message.png;.\Resources\MetroStyle\microphone.png;.\Resources\MetroStyle\microphone2.png;.\Resources\MetroStyle\microwave.png;.\Resources\MetroStyle\minus.png;.\Resources\MetroStyle\mixer.png;.\Resources\MetroStyle\money_bag.png;.\Resources\MetroStyle\moneybox.png;.\Resources\MetroStyle\monitor.png;.\Resources\MetroStyle\moon.png;.\Resources\MetroStyle\motorcycle.png;.\Resources\MetroStyle\mountain.png;.\Resources\MetroStyle\mouse.png;.\Resources\MetroStyle\mov.png;.\Resources\MetroStyle\moved_topic.png;.\Resources\MetroStyle\MoveIcon.png;.\Resources\MetroStyle\movies.png;.\Resources\MetroStyle\mpg.png;.\Resources\MetroStyle\music.png;.\Resources\MetroStyle\music_conductor.png;.\Resources\MetroStyle\music_record.png;.\Resources\MetroStyle\mute.png;.\Resources\MetroStyle\my_topic.png;.\Resources\MetroStyle\myspace.png;.\Resources\MetroStyle\nas.png;.\Resources\MetroStyle\negative_dynamic.png;.\Resources\MetroStyle\new_post.png;.\Resources\MetroStyle\news.png;.\Resources\MetroStyle\newspaper.png;.\Resources\MetroStyle\note.png;.\Resources\MetroStyle\novel.png;.\Resources\MetroStyle\one_free.png;.\Resources\MetroStyle\online.png;.\Resources\MetroStyle\online_support.png;.\Resources\MetroStyle\opera_glasses.png;.\Resources\MetroStyle\outline.png;.\Resources\MetroStyle\outline_star.png;.\Resources\MetroStyle\package.png;.\Resources\MetroStyle\partly_cloudy_day.png;.\Resources\MetroStyle\partly_cloudy_night.png;.\Resources\MetroStyle\pause.png;.\Resources\MetroStyle\pdf.png;.\Resources\MetroStyle\pepper_shaker.png;.\Resources\MetroStyle\phone.png;.\Resources\MetroStyle\phone1.png;.\Resources\MetroStyle\phone2.png;.\Resources\MetroStyle\pictures.png;.\Resources\MetroStyle\pie.png;.\Resources\MetroStyle\pin.png;.\Resources\MetroStyle\ping_pong.png;.\Resources\MetroStyle\planner.png;.\Resources\MetroStyle\play.png;.\Resources\MetroStyle\plus.png;.\Resources\MetroStyle\png.png;.\Resources\MetroStyle\pocket_lantern.png;.\Resources\MetroStyle\poll_topic.png;.\Resources\MetroStyle\poo.png;.\Resources\MetroStyle\popular_topic.png;.\Resources\MetroStyle\positive_dynamic.png;.\Resources\MetroStyle\powerpoint.png;.\Resources\MetroStyle\price_tag.png;.\Resources\MetroStyle\price_tag_euro.png;.\Resources\MetroStyle\print.png;.\Resources\MetroStyle\printer.png;.\Resources\MetroStyle\private.png;.\Resources\MetroStyle\product.png;.\Resources\MetroStyle\psd.png;.\Resources\MetroStyle\public.png;.\Resources\MetroStyle\purse.png;.\Resources\MetroStyle\question.png;.\Resources\MetroStyle\radio1.png;.\Resources\MetroStyle\radio2.png;.\Resources\MetroStyle\railway_station.png;.\Resources\MetroStyle\rain.png;.\Resources\MetroStyle\rar.png;.\Resources\MetroStyle\read_message.png;.\Resources\MetroStyle\record.png;.\Resources\MetroStyle\remove_user.png;.\Resources\MetroStyle\repeat.png;.\Resources\MetroStyle\reply.png;.\Resources\MetroStyle\restaurant.png;.\Resources\MetroStyle\rewind.png;.\Resources\MetroStyle\right.png;.\Resources\MetroStyle\right_circular.png;.\Resources\MetroStyle\road.png;.\Resources\MetroStyle\rss.png;.\Resources\MetroStyle\rss2-32.png;.\Resources\MetroStyle\rss-32.png;.\Resources\MetroStyle\rugby.png;.\Resources\MetroStyle\ruler.png;.\Resources\MetroStyle\sad.png;.\Resources\MetroStyle\sale.png;.\Resources\MetroStyle\salt_shaker.png;.\Resources\MetroStyle\sandglass.png;.\Resources\MetroStyle\save_as.png;.\Resources\MetroStyle\scales.png;.\Resources\MetroStyle\scanner.png;.\Resources\MetroStyle\sci_fi.png;.\Resources\MetroStyle\scooter.png;.\Resources\MetroStyle\scv.png;.\Resources\MetroStyle\search.png;.\Resources\MetroStyle\services.png;.\Resources\MetroStyle\settings.png;.\Resources\MetroStyle\settings2.png;.\Resources\MetroStyle\sheep.png;.\Resources\MetroStyle\sheep_on_bike.png;.\Resources\MetroStyle\ship.png;.\Resources\MetroStyle\shop.png;.\Resources\MetroStyle\shoping_bag.png;.\Resources\MetroStyle\shoping_cart.png;.\Resources\MetroStyle\shoping_cart_filled.png;.\Resources\MetroStyle\shopping_basket.png;.\Resources\MetroStyle\shuffle.png;.\Resources\MetroStyle\signal_horn.png;.\Resources\MetroStyle\sinchronize.png;.\Resources\MetroStyle\skip_to_start.png;.\Resources\MetroStyle\sleeping.png;.\Resources\MetroStyle\slot_machine.png;.\Resources\MetroStyle\slr_camera.png;.\Resources\MetroStyle\slr_camera2.png;.\Resources\MetroStyle\snow.png;.\Resources\MetroStyle\snow_storm.png;.\Resources\MetroStyle\sofa.png;.\Resources\MetroStyle\solutions.png;.\Resources\MetroStyle\spades.png;.\Resources\MetroStyle\speech_bubble.png;.\Resources\MetroStyle\spoon.png;.\Resources\MetroStyle\sport.png;.\Resources\MetroStyle\ssd.png;.\Resources\MetroStyle\stack.png;.\Resources\MetroStyle\stadium.png;.\Resources\MetroStyle\star.png;.\Resources\MetroStyle\statistics.png;.\Resources\MetroStyle\steam.png;.\Resources\MetroStyle\stop.png;.\Resources\MetroStyle\stopwatch.png;.\Resources\MetroStyle\storm.png;.\Resources\MetroStyle\stylesheet-branch-closed.png;.\Resources\MetroStyle\stylesheet-branch-closed-noSibling.png;.\Resources\MetroStyle\stylesheet-branch-end.png;.\Resources\MetroStyle\stylesheet-branch-more.png;.\Resources\MetroStyle\stylesheet-branch-open.png;.\Resources\MetroStyle\stylesheet-branch-open-noSibling.png;.\Resources\MetroStyle\stylesheet-vline.png;.\Resources\MetroStyle\sun.png;.\Resources\MetroStyle\support.png;.\Resources\MetroStyle\surprised.png;.\Resources\MetroStyle\table.png;.\Resources\MetroStyle\tag.png;.\Resources\MetroStyle\talk.png;.\Resources\MetroStyle\taxi.png;.\Resources\MetroStyle\teapot.png;.\Resources\MetroStyle\tear_off_calendar.png;.\Resources\MetroStyle\tennis.png;.\Resources\MetroStyle\theatre_masks.png;.\Resources\MetroStyle\thumbs_down.png;.\Resources\MetroStyle\thumbs_up.png;.\Resources\MetroStyle\tongue.png;.\Resources\MetroStyle\tool_box.png;.\Resources\MetroStyle\topic.png;.\Resources\MetroStyle\tractor.png;.\Resources\MetroStyle\tragedy_mask.png;.\Resources\MetroStyle\trailer.png;.\Resources\MetroStyle\train.png;.\Resources\MetroStyle\tram.png;.\Resources\MetroStyle\tram2.png;.\Resources\MetroStyle\treble_clef.png;.\Resources\MetroStyle\triller.png;.\Resources\MetroStyle\trolleybus.png;.\Resources\MetroStyle\truck.png;.\Resources\MetroStyle\tv.png;.\Resources\MetroStyle\twitter.png;.\Resources\MetroStyle\umbrella.png;.\Resources\MetroStyle\umbrella-32.png;.\Resources\MetroStyle\unlock.png;.\Resources\MetroStyle\unlock-X.png;.\Resources\MetroStyle\unlock-Y.png;.\Resources\MetroStyle\unlock-Z.png;.\Resources\MetroStyle\up.png;.\Resources\MetroStyle\up_circular.png;.\Resources\MetroStyle\upload.png;.\Resources\MetroStyle\user.png;.\Resources\MetroStyle\variable.png;.\Resources\MetroStyle\very_popular_topic.png;.\Resources\MetroStyle\video_projector.png;.\Resources\MetroStyle\violin.png;.\Resources\MetroStyle\vkontakte.png;.\Resources\MetroStyle\voip_gateway.png;.\Resources\MetroStyle\volume_down.png;.\Resources\MetroStyle\volume_up.png;.\Resources\MetroStyle\wallet.png;.\Resources\MetroStyle\wardrobe.png;.\Resources\MetroStyle\washing_machine.png;.\Resources\MetroStyle\watch.png;.\Resources\MetroStyle\webcam.png;.\Resources\MetroStyle\western.png;.\Resources\MetroStyle\wheel.png;.\Resources\MetroStyle\widescreen_tv.png;.\Resources\MetroStyle\wifi.png;.\Resources\MetroStyle\win.png;.\Resources\MetroStyle\windows.png;.\Resources\MetroStyle\windows_client.png;.\Resources\MetroStyle\wink.png;.\Resources\MetroStyle\wired_network.png;.\Resources\MetroStyle\wma.png;.\Resources\MetroStyle\word.png;.\Resources\MetroStyle\youtube.png;.\Resources\MetroStyle\zip.png;.\Resources\Alphaback.png;.\Resources\ColorPicker.png;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Rcc%27ing %(Identity)...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Rcc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\qrc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\$(ConfigurationName)\qrc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\rcc.exe" -name "%(Filename)" -no-compress "%(FullPath)" -o .\GeneratedFiles\$(ConfigurationName)\qrc_%(Filename).cpp</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\rcc.exe" -name "%(Filename)" -no-compress "%(FullPath)" -o .\GeneratedFiles\$(ConfigurationName)\qrc_%(Filename).cpp</Command>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="PxMaterialView.ui">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Uic%27ing %(Identity)...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\$(ConfigurationName)\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\$(ConfigurationName)\ui_%(Filename).h" "%(FullPath)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\$(ConfigurationName)\ui_%(Filename).h" "%(FullPath)"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Uic%27ing %(Identity)...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\$(ConfigurationName)\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\$(ConfigurationName)\ui_%(Filename).h" "%(FullPath)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\$(ConfigurationName)\ui_%(Filename).h" "%(FullPath)"</Command>
+    </CustomBuild>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
+    <ProjectGuid>{69D527CB-AC66-4A4F-BA2D-88D52A7BEF4B}</ProjectGuid>
+    <Keyword>Qt4VSv1.0</Keyword>
+    <SccProjectName>SAK</SccProjectName>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.21005.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>UNICODE;WIN32;WIN64;QT_DLL;QT_CORE_LIB;QT_WIDGETS_LIB;GECUSTOMWIDGETS_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include\QtCore;$(QTDIR)\include\QtWidgets;$(SolutionDir)3rdParty\DirectXTex;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Disabled</Optimization>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <DisableSpecificWarnings>%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)\$(ProjectName).lib</OutputFile>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>qtmaind.lib;Qt5Cored.lib;Qt5Widgetsd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>DirectXTex.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Lib>
+    <Lib>
+      <AdditionalLibraryDirectories>$(SolutionDir)3rdParty\DirectXTex\Bin\x86\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>UNICODE;WIN32;WIN64;QT_DLL;QT_CORE_LIB;QT_WIDGETS_LIB;GECUSTOMWIDGETS_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include\QtCore;$(QTDIR)\include\QtWidgets;$(SolutionDir)3rdParty\DirectXTex;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Disabled</Optimization>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <DisableSpecificWarnings>%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)\$(ProjectName).lib</OutputFile>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>qtmaind.lib;Qt5Cored.lib;Qt5Widgetsd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>DirectXTex.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Lib>
+    <Lib>
+      <AdditionalLibraryDirectories>$(SolutionDir)3rdParty\DirectXTex\Bin\x64\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>UNICODE;WIN32;WIN64;QT_DLL;QT_NO_DEBUG;NDEBUG;QT_CORE_LIB;QT_WIDGETS_LIB;GECUSTOMWIDGETS_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include\QtCore;$(QTDIR)\include\QtWidgets;$(SolutionDir)3rdParty\DirectXTex;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat />
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <BrowseInformation>true</BrowseInformation>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <DisableSpecificWarnings>%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)\$(ProjectName).lib</OutputFile>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AdditionalDependencies>qtmain.lib;Qt5Core.lib;Qt5Widgets.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Bscmake>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
+    <Lib>
+      <AdditionalLibraryDirectories>$(SolutionDir)3rdParty\DirectXTex\Bin\x86\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>DirectXTex.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/LTCG %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>UNICODE;WIN32;WIN64;QT_DLL;QT_NO_DEBUG;NDEBUG;QT_CORE_LIB;QT_WIDGETS_LIB;GECUSTOMWIDGETS_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include\QtCore;$(QTDIR)\include\QtWidgets;$(SolutionDir)3rdParty\DirectXTex;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <BrowseInformation>true</BrowseInformation>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <DisableSpecificWarnings>%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)\$(ProjectName).lib</OutputFile>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AdditionalDependencies>qtmain.lib;Qt5Core.lib;Qt5Widgets.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Bscmake>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
+    <Lib>
+      <AdditionalLibraryDirectories>$(SolutionDir)3rdParty\DirectXTex\Bin\x64\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>DirectXTex.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/LTCG %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties MocDir=".\GeneratedFiles\$(ConfigurationName)" UicDir=".\GeneratedFiles\$(ConfigurationName)" RccDir=".\GeneratedFiles\$(ConfigurationName)" lupdateOptions="" lupdateOnBuild="0" lreleaseOptions="" Qt5Version_x0020_Win32="Qt5.3.1_msvc2013_x86" Qt5Version_x0020_x64="Qt5.3.1_msvc2013_x64" MocOptions="" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

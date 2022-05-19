@@ -1,0 +1,601 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>GEW_Setting</class>
+ <widget class="QWidget" name="GEW_Setting">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>701</width>
+    <height>24</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Settings</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QGroupBox
+{
+	background-color:transparent;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border: 1px solid #005192;
+    border-top: none;
+    margin-top: 18px;
+}
+ 
+QGroupBox::title
+{
+	subcontrol-origin: margin;	
+    background:url(:/assets/subWindowBackground);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border: 1px solid #005192;
+    border-bottom: none;
+   background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #005192, stop: 1 #002f60);
+    padding: 2 5000 2 2; /* some large value, as QGrouBox actual width is not known */
+    color: white; 
+}
+</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <property name="spacing">
+    <number>3</number>
+   </property>
+   <item row="0" column="14">
+    <widget class="QComboBox" name="FXAAQuality">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="toolTip">
+      <string>FXAA Quality</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>Disable</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Low</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Medium</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>High</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Ultra</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="0" column="18">
+    <widget class="QComboBox" name="SyncLevel">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>20</height>
+      </size>
+     </property>
+     <property name="toolTip">
+      <string>Sync</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>Async</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Level 1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Level 2</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Level 3</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Level 4</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="0" column="0">
+    <widget class="QPushButton" name="ViewportBarPin">
+     <property name="maximumSize">
+      <size>
+       <width>24</width>
+       <height>24</height>
+      </size>
+     </property>
+     <property name="toolTip">
+      <string>Pin viewport bar on window</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="geditor.qrc">
+       <normaloff>:/Resources/MetroStyle/pin.png</normaloff>:/Resources/MetroStyle/pin.png</iconset>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="13">
+    <widget class="QComboBox" name="AnisotropicLevel">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="toolTip">
+      <string>Anisotropic Level</string>
+     </property>
+     <property name="maxVisibleItems">
+      <number>17</number>
+     </property>
+     <item>
+      <property name="text">
+       <string>Linear</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>1X</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>2X</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>3X</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>4X</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>5X</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>6X</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>7X</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>8X</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>9X</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>10X</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>11X</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>12X</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>13X</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>14X</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>15X</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>16X</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="0" column="8">
+    <widget class="QPushButton" name="PhysicsSimulation">
+     <property name="maximumSize">
+      <size>
+       <width>24</width>
+       <height>24</height>
+      </size>
+     </property>
+     <property name="toolTip">
+      <string>Physics Simulation</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="geditor.qrc">
+       <normaloff>:/Resources/MetroStyle/play.png</normaloff>
+       <normalon>:/Resources/MetroStyle/pause.png</normalon>:/Resources/MetroStyle/play.png</iconset>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <widget class="Line" name="line_9">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="5">
+    <widget class="QPushButton" name="ShadeMode">
+     <property name="maximumSize">
+      <size>
+       <width>24</width>
+       <height>24</height>
+      </size>
+     </property>
+     <property name="toolTip">
+      <string>Solid / WireFrame Shade Mode</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="geditor.qrc">
+       <normaloff>:/Resources/MetroStyle/SolidBox.png</normaloff>
+       <normalon>:/Resources/MetroStyle/WireBox.png</normalon>:/Resources/MetroStyle/SolidBox.png</iconset>
+     </property>
+     <property name="shortcut">
+      <string>Ctrl+W</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="11">
+    <widget class="Line" name="line_28">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="3">
+    <widget class="QPushButton" name="GameMode">
+     <property name="maximumSize">
+      <size>
+       <width>24</width>
+       <height>24</height>
+      </size>
+     </property>
+     <property name="toolTip">
+      <string>Game Mode</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="geditor.qrc">
+       <normaloff>:/Resources/MetroStyle/joystick.png</normaloff>:/Resources/MetroStyle/joystick.png</iconset>
+     </property>
+     <property name="shortcut">
+      <string>Ctrl+G</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="19">
+    <widget class="SpinBox" name="FPSLimit">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="toolTip">
+      <string>FPS Limit</string>
+     </property>
+     <property name="accelerated">
+      <bool>true</bool>
+     </property>
+     <property name="maximum">
+      <number>10000</number>
+     </property>
+     <property name="value">
+      <number>10000</number>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="22">
+    <spacer name="horizontalSpacer">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>192</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="0" column="2">
+    <widget class="QPushButton" name="Info">
+     <property name="maximumSize">
+      <size>
+       <width>24</width>
+       <height>24</height>
+      </size>
+     </property>
+     <property name="toolTip">
+      <string>Info Visible / Invisible</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="geditor.qrc">
+       <normaloff>:/Resources/MetroStyle/info.png</normaloff>:/Resources/MetroStyle/info.png</iconset>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="10">
+    <widget class="QPushButton" name="PhysicsReset">
+     <property name="maximumSize">
+      <size>
+       <width>24</width>
+       <height>24</height>
+      </size>
+     </property>
+     <property name="toolTip">
+      <string>Physics Reset</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="geditor.qrc">
+       <normaloff>:/Resources/MetroStyle/restart.png</normaloff>:/Resources/MetroStyle/restart.png</iconset>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="6">
+    <widget class="Line" name="line_29">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="9">
+    <widget class="QPushButton" name="PhysicsSingleStep">
+     <property name="maximumSize">
+      <size>
+       <width>24</width>
+       <height>24</height>
+      </size>
+     </property>
+     <property name="toolTip">
+      <string>Physics Single Step</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="geditor.qrc">
+       <normaloff>:/Resources/MetroStyle/fast_forward.png</normaloff>:/Resources/MetroStyle/fast_forward.png</iconset>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+     <property name="autoRepeat">
+      <bool>true</bool>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="12">
+    <widget class="QLabel" name="label_2">
+     <property name="text">
+      <string>Display</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="15">
+    <widget class="Line" name="line_30">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="16">
+    <widget class="QLabel" name="label_3">
+     <property name="text">
+      <string>Render</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="7">
+    <widget class="QLabel" name="label">
+     <property name="text">
+      <string>Physics</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="17">
+    <widget class="QPushButton" name="Render">
+     <property name="maximumSize">
+      <size>
+       <width>24</width>
+       <height>24</height>
+      </size>
+     </property>
+     <property name="toolTip">
+      <string>Physics Simulation</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="geditor.qrc">
+       <normaloff>:/Resources/MetroStyle/pause.png</normaloff>
+       <normalon>:/Resources/MetroStyle/play.png</normalon>:/Resources/MetroStyle/pause.png</iconset>
+     </property>
+     <property name="shortcut">
+      <string>F11</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>SpinBox</class>
+   <extends>QSpinBox</extends>
+   <header>SpinBox.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="geditor.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>ViewportBarPin</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>GEW_Setting</receiver>
+   <slot>setVisible(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>14</x>
+     <y>1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>41</x>
+     <y>-6</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

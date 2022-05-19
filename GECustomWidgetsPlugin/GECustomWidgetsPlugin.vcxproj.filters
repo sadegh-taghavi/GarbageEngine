@@ -1,0 +1,1593 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;cxx;c;def</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h</Extensions>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files\Debug">
+      <UniqueIdentifier>{a7e1411a-c7de-4ae1-ad79-92b5b1eca691}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Release">
+      <UniqueIdentifier>{31dc1122-b015-4f6d-a705-4f52b9f54c20}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Resource Files\Image">
+      <UniqueIdentifier>{0375c86d-a7e9-44b6-b53e-f1ce0adef8a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Image\MetroStyle">
+      <UniqueIdentifier>{85b45a7c-c4bd-4ad8-bc96-13b1114b5e47}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GeneratedFiles\Debug\moc_CurveEditPlugin.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_CurveEditPlugin.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_DoubleSpinBoxPlugin.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_DoubleSpinBoxPlugin.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_GECustomWidgetsPluginCollection.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_GECustomWidgetsPluginCollection.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_PictureBoxPlugin.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_PictureBoxPlugin.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_ScrollAreaPlugin.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ScrollAreaPlugin.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_SpinBoxPlugin.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_SpinBoxPlugin.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="CurveEditPlugin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DoubleSpinBoxPlugin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GECustomWidgetsPluginCollection.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PictureBoxPlugin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ScrollAreaPlugin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SpinBoxPlugin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ColorWheelPlugin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_ColorWheelPlugin.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ColorWheelPlugin.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_GradientSliderPlugin.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GradientSliderPlugin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_GradientSliderPlugin.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_ColorPreviewPlugin.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="ColorPreviewPlugin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ColorPreviewPlugin.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_ColorSelectorPlugin.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ColorSelectorPlugin.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="ColorSelectorPlugin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\$(ConfigurationName)\qrc_pattern.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_GroupBoxPlugin.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_GroupBoxPlugin.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GroupBoxPlugin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_ListWidgetPlugin.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ListWidgetPlugin.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_TreeWidgetPlugin.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_TreeWidgetPlugin.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="ListWidgetPlugin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TreeWidgetPlugin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_PxMaterialViewPlugin.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_PxMaterialViewPlugin.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="PxMaterialViewPlugin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="CurveEditPlugin.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="DoubleSpinBoxPlugin.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="GECustomWidgetsPluginCollection.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="PictureBoxPlugin.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ScrollAreaPlugin.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SpinBoxPlugin.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ColorWheelPlugin.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="GradientSliderPlugin.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ColorPreviewPlugin.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ColorSelectorPlugin.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="pattern.qrc">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="GroupBoxPlugin.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ListWidgetPlugin.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="TreeWidgetPlugin.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="PxMaterialViewPlugin.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Resources\alphaback.png">
+      <Filter>Resource Files\Image</Filter>
+    </Image>
+    <Image Include="Resources\CurveEdit.png">
+      <Filter>Resource Files\Image</Filter>
+    </Image>
+    <Image Include="Resources\DoubleSpinBox.png">
+      <Filter>Resource Files\Image</Filter>
+    </Image>
+    <Image Include="Resources\PictureBox.png">
+      <Filter>Resource Files\Image</Filter>
+    </Image>
+    <Image Include="Resources\ScrollArea.png">
+      <Filter>Resource Files\Image</Filter>
+    </Image>
+    <Image Include="Resources\SpinBox.png">
+      <Filter>Resource Files\Image</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\0.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\0_filled.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\1_filled.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\2.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\2_filled.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\3.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\3_filled.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\4.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\4_filled.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\5.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\5_filled.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\6.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\6_filled.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\7.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\7_filled.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\08-24.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\8.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\8_filled.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\9.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\9_filled.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\133-24.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\about.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\action.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\add_file.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\add_folder.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\add_link.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\add_list.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\add_user.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\address_book.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\administrator.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\adventures.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\advertising.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\ai.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\airplane_landing.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\airplane_take_off.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\airport.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\alarm_clock.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\android.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\angel.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\angry.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\appbar.arrow.expand.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\appbar.fullscreen.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\appbar.transform.rotate.clockwise.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\applouse.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\archive.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\archive2.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\armchair.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\attach.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\autograf.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\average.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\avi.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\bank.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\bank_cards.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\banknotes.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\bar.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\barcode.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\basketball.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\bebo.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\bed.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\bicycle.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\billing.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\birthday_cake.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\blackberry.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\book.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\book_stack.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\bookmark.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\books.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\boombox.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\box.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\bred.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\briefcase.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\bug.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\bunch_flowers.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\burn.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\bus.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\business_contact.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\businessman.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\businesswoman.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\calculator.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\calendar.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\camcoder.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\camcoder_pro.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\car.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\card_in_use.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\card_inserting.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\cards.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\carrot.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\cash_receiving.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\cheap.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\check_book.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\checked_user.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\checkmark.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\checkout.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\cheese.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\child_new_post.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\chip.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\church.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\cllipboard.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\clock.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\closed_topic.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\cloud.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\cloud_lighting.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\cloud_storage.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\clouds.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\clover.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\clubs.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\coffee_maker.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\coins.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\combo.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\comedy.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\comedy_mask.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\comedy2.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\comments.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\commode.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\compact_camera.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\compass.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\console.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\contacts.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\contacts2.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\cooker.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\cooker_hood.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\cooking_pot.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\cool.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\copy.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\crime.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\crying.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\cup.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\cut.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\dashboard.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\delete.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\delete_link.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\delivery.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\detective.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\diamonds.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\dice.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\dll.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\dmg.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\documentary.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\documents.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\down.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\down_circular.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\download.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\downloads.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\drama.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\edit.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\eject.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\electric_teapot.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\empty_filter.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\empty_flag.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\empty_trash.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\end.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\erase.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\error.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\evil.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\excel.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\exe.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\expensive.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\facebook.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\fan.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\fantasy.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\fast_forward.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\file.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\filing_cabinet.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\filled_filter.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\filled_flag.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\film.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\film2.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\finish_flag.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\flv.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\fog_day.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\fog_night.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\folder.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\football.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\fork.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\forward.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\fridge.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\full_trash.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\gas_station.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\gif.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\gift.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\github.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\globe.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\google_plus.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\gps_device.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\group.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\guitar.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\hail.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\happy.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\hdd.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\hearts.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\helicopter.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\help.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\historical.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\home.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\horror.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\hospital.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\hotel.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\idea.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\in_love.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\info.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\internet.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\iphone.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\iron.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\joker.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\jpg.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\key.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\keyboard.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\kiss.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\knife.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\ladle.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\lamp.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\left.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\left_circular.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\library.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\lifebuoy.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\like.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\like_outline.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\likes.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\line.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\link.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\linkedin.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\linux_client.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\little_rain.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\little_snow.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\lock.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\lock-X.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\lock-Y.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\lock-Z.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\login.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\logout.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\lol.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\loudspeaker.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\lyre.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\mac_client.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\magazine.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\manager.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\map.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\map_marker.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\marker.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\megafone.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\megafone2.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\message.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\microphone.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\microphone2.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\microwave.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\minus.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\mixer.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\money_bag.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\moneybox.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\monitor.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\moon.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\motorcycle.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\mountain.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\mouse.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\mov.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\moved_topic.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\MoveIcon.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\movies.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\mpg.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\music.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\music_conductor.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\music_record.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\mute.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\my_topic.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\myspace.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\nas.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\negative_dynamic.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\new_post.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\news.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\newspaper.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\note.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\novel.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\one_free.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\online.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\online_support.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\opera_glasses.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\outline.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\outline_star.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\package.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\partly_cloudy_day.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\partly_cloudy_night.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\pause.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\pdf.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\pepper_shaker.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\phone.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\phone1.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\phone2.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\pictures.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\pie.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\pin.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\ping_pong.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\planner.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\play.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\plus.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\png.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\pocket_lantern.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\poll_topic.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\poo.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\popular_topic.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\positive_dynamic.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\powerpoint.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\price_tag.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\price_tag_euro.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\print.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\printer.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\private.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\product.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\psd.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\public.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\purse.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\question.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\radio1.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\radio2.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\railway_station.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\rain.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\rar.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\read_message.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\record.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\remove_user.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\repeat.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\reply.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\restaurant.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\rewind.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\right.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\right_circular.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\road.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\rss.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\rss2-32.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\rss-32.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\rugby.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\ruler.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\sad.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\sale.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\salt_shaker.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\sandglass.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\save_as.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\scales.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\scanner.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\sci_fi.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\scooter.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\scv.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\search.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\services.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\settings.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\settings2.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\sheep.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\sheep_on_bike.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\ship.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\shop.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\shoping_bag.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\shoping_cart.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\shoping_cart_filled.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\shopping_basket.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\shuffle.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\signal_horn.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\sinchronize.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\skip_to_start.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\sleeping.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\slot_machine.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\slr_camera.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\slr_camera2.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\snow.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\snow_storm.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\sofa.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\solutions.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\spades.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\speech_bubble.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\spoon.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\sport.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\ssd.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\stack.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\stadium.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\star.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\statistics.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\steam.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\stop.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\stopwatch.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\storm.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\stylesheet-branch-closed.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\stylesheet-branch-closed-noSibling.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\stylesheet-branch-end.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\stylesheet-branch-more.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\stylesheet-branch-open.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\stylesheet-branch-open-noSibling.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\stylesheet-vline.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\sun.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\support.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\surprised.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\table.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\tag.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\talk.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\taxi.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\teapot.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\tear_off_calendar.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\tennis.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\theatre_masks.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\thumbs_down.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\thumbs_up.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\tongue.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\tool_box.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\topic.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\tractor.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\tragedy_mask.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\trailer.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\train.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\tram.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\tram2.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\treble_clef.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\triller.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\trolleybus.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\truck.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\tv.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\twitter.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\umbrella.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\umbrella-32.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\unlock.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\unlock-X.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\unlock-Y.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\unlock-Z.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\up.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\up_circular.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\upload.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\user.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\variable.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\very_popular_topic.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\video_projector.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\violin.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\vkontakte.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\voip_gateway.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\volume_down.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\volume_up.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\wallet.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\wardrobe.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\washing_machine.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\watch.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\webcam.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\western.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\wheel.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\widescreen_tv.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\wifi.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\win.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\windows.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\windows_client.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\wink.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\wired_network.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\wma.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\word.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\youtube.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\MetroStyle\zip.png">
+      <Filter>Resource Files\Image\MetroStyle</Filter>
+    </Image>
+    <Image Include="Resources\GroupBox.png">
+      <Filter>Resource Files\Image</Filter>
+    </Image>
+    <Image Include="Resources\ListWidget.png">
+      <Filter>Resource Files\Image</Filter>
+    </Image>
+    <Image Include="Resources\TreeWidget.png">
+      <Filter>Resource Files\Image</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
