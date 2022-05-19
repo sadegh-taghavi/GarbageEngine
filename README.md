@@ -24,9 +24,11 @@ The editor of the game engine that make game project to directly load by the gam
 
 Some shots from engine:
 
-(https://user-images.githubusercontent.com/47169854/169360986-649d8f11-c886-4cdf-960e-b8bb06fcd517.jpg)
-(https://user-images.githubusercontent.com/47169854/169360920-3279ff80-0068-4e4a-9dcc-a8398f051297.jpg)
 
+
+![  (35)](https://user-images.githubusercontent.com/47169854/169361218-1f20c28f-eed5-44ee-91d2-6ab2775ba4ae.jpg)
+![  (36)](https://user-images.githubusercontent.com/47169854/169361232-9e964d85-400a-4623-8adf-bbf3afd03ad2.jpg)
+![  (27)](https://user-images.githubusercontent.com/47169854/169361331-be9120f2-9b68-4dfe-ac13-bbb51b154bdd.jpg)
 
 
 A simple game has created by the engine that you can freely install and enjoy!
