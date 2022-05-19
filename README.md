@@ -22,7 +22,7 @@ GEditor:
 The editor of the game engine that make game project to directly load by the game
 
 
-Some shots from engine:
+Some shots from GEditor:
 
 
 
