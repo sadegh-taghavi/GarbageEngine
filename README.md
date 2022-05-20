@@ -22,7 +22,7 @@ GEditor:
 The editor of the game engine that make game project to directly load by the game
 
 Editor binary files:
-https://github.com/sadegh-taghavi/GarbageEngine/blob/master/Bin/x64/Release/GEditor.exe
+https://github.com/sadegh-taghavi/GarbageEngine/blob/master/Bin/x64/Release/
 
 Some shots from GEditor:
 
