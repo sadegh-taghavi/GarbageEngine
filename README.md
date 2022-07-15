@@ -38,7 +38,7 @@ Some shots from GEditor:
 ![5](https://user-images.githubusercontent.com/47169854/169366016-23eb721c-a740-464f-99e6-d4d069e4e271.png)
 
 
-Train sculpt tools:
+Terrain sculpt tools:
 
 ![Screenshot (102)](https://user-images.githubusercontent.com/47169854/169364212-17d5a130-38d7-45b0-b54e-074f60d81553.png)
 ![  (31)](https://user-images.githubusercontent.com/47169854/169363900-adc5d5e5-051e-4f89-be4b-973cec06da00.jpg)
