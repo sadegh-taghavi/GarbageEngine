@@ -1,5 +1,5 @@
 # GarbageEngine
-3d game engine using directx10 and its editor 
+3d game engine using directx11 and its editor 
 
 Subprojects:
 
